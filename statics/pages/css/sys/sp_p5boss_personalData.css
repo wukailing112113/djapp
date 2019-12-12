@@ -1,0 +1,12 @@
+body{
+	height: auto;
+}
+.aui-card {
+    margin-top: 15px;
+}
+
+/*input-placeholder居右*/
+::-webkit-input-placeholder { /* WebKit browsers */ direction: rtl;}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ direction: rtl;}
+::-moz-placeholder { /* Mozilla Firefox 19+ but I'm not sure about working */ direction: rtl;}
+:-ms-input-placeholder { /* Internet Explorer 10+ */ direction: rtl;}

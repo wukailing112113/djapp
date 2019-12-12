@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>人员分类</title>
+    <!-- aui核心css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui.css"/>
+    <!-- end -->
+    <!-- aui-accordion.css-->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/aui/css/aui-accordion.css"/>
+    <!-- end -->
+    <!-- 公司公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public.css"/>
+    <!-- end -->
+    <!-- 本项目公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_mobile.css"/>
+    <!-- end -->
+    <!-- 本页面css -->
+    <link rel="stylesheet" type="text/css" href="css/com_phonebook_type.css"/>
+    <style>
+    .bg-color-deongaree{background: #0e212f}/*深蓝色*/
+	.bg-color-white1{background: rgba(255,255,255,.1)}/*白色1度透明*/
+	.bg-color-white3{background: rgba(255,255,255,.3)}/*白色1度透明*/
+	.bg-color-white{background:white !important}/*白色*/
+    </style>
+</head>
+<body class="bg-color-deongaree fcolor-white">
+	<div class="aui-content pt-30em h-97b">
+		 <!--类别选择-->
+		<span class="aui-iconfont aui-icon-sort pl-10em f-24em"><span class="f-22em ml-10em">部门列表</span></span>
+		<ul id="department" class="lh-50 aui-list-view bg-color-deongaree over-a hr-st-gray1 h-88b">
+			<li class="aui-list-view-cell level_1"  >
+				<span class="aui-iconfont aui-icon-list pl-20em f-18em"><span class="ml-10">济南党总支</span></span>
+				<span class="aui-pull-right">
+					<span class="aui-iconfont aui-icon-right pr-100"></span>
+				</span>
+			</li>
+			<div id="type_'+i+'">
+				<li class="aui-list-view-cell level_2 bg-color-white1"  >
+					<span class="pl-50em f-16em">济南党支部</span>
+					<span class="aui-pull-right">
+						<span class="aui-iconfont aui-icon-right pr-100 level_right_2"></span>
+					</span>
+				</li>
+				<div id="type_'+i+"_"+j+'" class="f-14em">
+					<li class="aui-list-view-cell level_3 bg-color-white3"  >
+						<span class="pl-80em">高薪党小组</span>
+					</li>
+					<li class="aui-list-view-cell level_3 bg-color-white3"  >
+						<span class="pl-80em">高薪党小组</span>
+					</li>
+					<li class="aui-list-view-cell level_3 bg-color-white3"  >
+						<span class="pl-80em">高薪党小组</span>
+					</li>
+				</div>
+				<li class="aui-list-view-cell level_2 bg-color-white1">
+					<span class="pl-50em f-16em">济南党支部</span>
+					<span class="aui-pull-right">
+						<span class="aui-iconfont aui-icon-right pr-100 level_right_2"></span>
+					</span>
+				</li>
+				<div id="type_'+i+"_"+j+'" class="f-14em">
+					<li class="aui-list-view-cell level_3 bg-color-white3"  >
+						<span class="pl-80em">高薪党小组</span>
+					</li>
+					<li class="aui-list-view-cell level_3 bg-color-white3"  >
+						<span class="pl-80em">高薪党小组</span>
+					</li>
+					<li class="aui-list-view-cell level_3 bg-color-white3"  >
+						<span class="pl-80em">高薪党小组</span>
+					</li>
+				</div>
+				<li class="aui-list-view-cell level_2 bg-color-white1"  >
+					<span class="pl-50em f-16em">济南党支部</span>
+					<span class="aui-pull-right">
+						<span class="aui-iconfont aui-icon-right pr-100 level_right_2"></span>
+					</span>
+				</li>
+				<div id="type_'+i+"_"+j+'" class="f-14em">
+					<li class="aui-list-view-cell level_3 bg-color-white3"  >
+						<span class="pl-80em">高薪党小组</span>
+					</li>
+					<li class="aui-list-view-cell level_3 bg-color-white3"  >
+						<span class="pl-80em">高薪党小组</span>
+					</li>
+					<li class="aui-list-view-cell level_3 bg-color-white3"  >
+						<span class="pl-80em">高薪党小组</span>
+					</li>
+				</div>
+			</div>
+			<li class="aui-list-view-cell level_1"  >
+				<span class="aui-iconfont aui-icon-list pl-20em f-18em"><span class="ml-10">济南党总支</span></span>
+				<span class="aui-pull-right">
+					<span class="aui-iconfont aui-icon-right pr-100"></span>
+				</span>
+			</li>
+			<div id="type_'+i+'">
+				<li class="aui-list-view-cell level_2 bg-color-white1"  >
+					<span class="pl-50em f-16em">济南党支部</span>
+					<span class="aui-pull-right">
+						<span class="aui-iconfont aui-icon-right pr-100 level_right_2"></span>
+					</span>
+				</li>
+				<div id="type_'+i+"_"+j+'" class="f-14em">
+					<li class="aui-list-view-cell level_3 bg-color-white3"  >
+						<span class="pl-80em">高薪党小组</span>
+					</li>
+					<li class="aui-list-view-cell level_3 bg-color-white3"  >
+						<span class="pl-80em">高薪党小组</span>
+					</li>
+					<li class="aui-list-view-cell level_3 bg-color-white3"  >
+						<span class="pl-80em">高薪党小组</span>
+					</li>
+				</div>
+				<li class="aui-list-view-cell level_2 bg-color-white1"  >
+					<span class="pl-50em f-16em">济南党支部</span>
+					<span class="aui-pull-right">
+						<span class="aui-iconfont aui-icon-right pr-100 level_right_2"></span>
+					</span>
+				</li>
+				<div id="type_'+i+"_"+j+'" class="f-14em">
+					<li class="aui-list-view-cell level_3 bg-color-white3"  >
+						<span class="pl-80em">高薪党小组</span>
+					</li>
+					<li class="aui-list-view-cell level_3 bg-color-white3"  >
+						<span class="pl-80em">高薪党小组</span>
+					</li>
+					<li class="aui-list-view-cell level_3 bg-color-white3"  >
+						<span class="pl-80em">高薪党小组</span>
+					</li>
+				</div>
+				<li class="aui-list-view-cell level_2 bg-color-white1"  >
+					<span class="pl-50em f-16em">济南党支部</span>
+					<span class="aui-pull-right">
+						<span class="aui-iconfont aui-icon-right pr-100 level_right_2"></span>
+					</span>
+				</li>
+				<div id="type_'+i+"_"+j+'" class="f-14em">
+					<li class="aui-list-view-cell level_3 bg-color-white3"  >
+						<span class="pl-80em">高薪党小组</span>
+					</li>
+					<li class="aui-list-view-cell level_3 bg-color-white3"  >
+						<span class="pl-80em">高薪党小组</span>
+					</li>
+					<li class="aui-list-view-cell level_3 bg-color-white3"  >
+						<span class="pl-80em">高薪党小组</span>
+					</li>
+				</div>
+			</div>
+		
+		</ul>
+	</div>
+	<!-- <ul class="aui-list-view po-fix bottom-0 w-all m-0 bg-color-white1">
+		<li class="aui-list-view-cell level_1" onclick="getFollow()">
+			<span class="aui-iconfont aui-icon-favor pl-60 fsize-18"><span class="ml-10">我的关注</span></span>
+		</li>
+	</ul> -->
+	<!-- jquery核心 js -->
+	<script type="text/javascript" src="../../../statics/public/js/jquery.min.js"></script>
+	<!-- end -->
+	<!-- 页面js -->
+	<!-- alertjs -->
+    <script type="text/jscript" src="../../../statics/public/aui/js/aui-alert.js"></script>
+    <!--end-->
+    <!--项目公共js!-->
+	<script type="text/javascript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+	<!--end!-->
+	<script type="text/javascript" src="js/com_phoneBook_type.js"></script>
+	<script type="text/javascript">
+	$('#department div').hide();
+	$('#department li').click(function(){
+		$(this).siblings('div').stop().slideUp(300);
+		$(this).next().stop().slideToggle(300);
+	})
+	</script>
+</body>
+</html>

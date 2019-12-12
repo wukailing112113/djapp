@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>两学一做</title>
+    <!-- aui核心css -->
+    <link rel="stylesheet" type="text/css" href="../../../../statics/public/aui2/css/aui.css"/>
+    <!-- end -->
+    <!-- 公司公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../../statics/public/css/sp_public_mobile.css"/>
+    <!-- end -->
+    <style>
+    	.w-9em{width: 0.45rem !important;}
+    	.h-19em{height: 0.95rem !important;}
+    	.ces{z-index: 9999;width: 100%;height:100px;position:absolute;top:10px}
+    </style>
+</head>
+<body>
+    <!--<header class="aui-bar di-n aui-bar-nav aui-bar-info pt-25em">
+	    <ul>
+	    	<li class="h-45em">
+	    		<a class="aui-pull-left mt-15em" onclick="goBlack()">
+			        <img class="w-9em h-19em" src="../../../../statics/public/images/back.png" alt="返回" />
+			    </a>
+	    		<div class="aui-title" id="title"></div>
+	    	</li>
+	    </ul>
+    </header>-->
+    
+<script type="text/javascript" src="../../../../statics/public/js/jquery.min.js"></script>
+<!-- 本项目公共js -->
+<script type="text/javascript" src="../../../../statics/public/js/sp_public_p5boss.js"></script>
+<!-- end -->
+<script type="text/javascript" src="../../../../statics/plugins/aui/js/aui-alert.js"></script>
+<script>
+	apiready = function(){
+	//alert(api.pageParam.type)
+		changecolor();//根据配置文件改变头部颜色 
+		//get_edu_topic_info(api.pageParam.type);
+		api.openFrame({
+            name: 'edu_special_twostudies',
+            url: '../edu_special_twostudies.html',
+            reload:true,
+            rect: {
+	            y:($('header').height()/45*70),
+            },
+            bounces: false,
+            pageParam: {
+            	id:api.pageParam.id,
+            	url:api.pageParam.url,
+            	type:api.pageParam.type,
+            }
+        });
+        if(userAgent()){//系统小于4.4修改Y轴高度
+        	api.setFrameAttr({
+			    name: 'edu_special_twostudies',
+			    rect: {y: 45}
+			});
+        };
+	}
+	function get_edu_topic_info(type){
+		var url = localStorage.url+"Api/Edutopic/get_edu_topic_info";
+		api.ajax({
+			url:url,
+		    method: 'post',
+		    timeout: 100,
+		    data: {//传输参数
+		    	values: { 
+		            "topic_id":type,
+		        }
+		    }
+	    },function(ret,err){
+	    	if(ret){
+	    		if(ret.status){
+	    			$('#title').html(ret.topic_list.topic_title);
+	    		}else{
+	    			$('#title').html('专题学习');
+	    		}
+	    	}else{
+	    		$('#title').html('专题学习');
+	    	}
+	    });
+	}
+	//返回
+	function goBlack(){
+		api.closeWin({name:api.winName});
+	}
+</script>
+</body>
+</html>

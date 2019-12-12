@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui.css"/>
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_v2.1.css"/>
+	<!--aui幻灯片组建-->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui-slide.css"/> 
+     <!--刷新-->
+   <link rel="stylesheet" type="text/css" href="../../../statics/public/aui/css/aui-pull-refresh.css" />   
+    <!--项目公共css-->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_mobile.css"/>
+     <!--轮播图-->
+	<link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/swiper.min.css"/>
+    <!--本项目css-->
+    <link rel="stylesheet" type="text/css" href="css/bd_home.css"/>
+    
+
+    <style>
+    	  	
+    </style>
+</head>
+<body class="">
+ <!--下拉刷新-->
+	<!--<div class="aui-load-wrap">
+		<div class="aui-loading-dot"></div>
+		<div class="aui-loading-circle"></div>
+		<div class="aui-loading-title"></div>
+	</div>-->
+	
+<!--banenr背景-->
+<section><div class="ban di-n w-100b h-98em bg-color-fb4747 po-ab top-0em"></div><section>
+<!--banenr底部渐变背景-->
+<section><div class="ban_bg di-n w-100b h-200em bg-color-banner po-ab top-25em"></div><section>
+<!--banenr轮播-->
+<section>
+	<div class="banner pl-12em pr-12em po-re">
+		<div class="swiper-container s1 swiper-container-horizontal bor-ra-5em">
+			<div class="swiper-wrapper">
+			<!--骨架屏开始-->
+			<div class="bor-ra-5em gjp text-align swiper-slide blue-slide pulse swiper-slide-active">
+				<div class="bor-ra-5em w-100b h-200em bg-color-ed"></div>
+				<p class="icon_regular f-14em color-fff po-ab ad_title lh-15em w-100b"></p>
+			</div>
+			<!--骨架屏结束-->	
+				
+				
+			</div>
+		</div>		
+	</div>
+	
+	<!--页数展示-->
+	<div class="ban_fy di-n w-45em h-28em color-fff icon_normal">
+		<img class="w-45em h-28em po-ab top-right-1" src="../../../statics/public/aui2/img/ban.png">
+		<span class="num po-ab top-right-2 f-12em"></span>
+		<span class="toal po-ab top-right-3 f-16em"></span>
+	</div>
+</section>
+
+
+<!--导航区块开始-->
+<section class="aui-grid aui-margin-b-15 mt-25mem" style="background-color: #f5f5f5;">
+	<div class="aui-row pl-15em pr-15em">
+		<div class="aui-col-xs-3" onclick="openMatrix('hr_matrix_header')">
+			<i><img class="h-37em w-37em center-block" src="../../../statics/public/aui2/img/work.png"></i>
+			<div class="aui-grid-label color-12 pt-4em f-12em">党建矩阵</div>
+		</div>
+		<div class="aui-col-xs-3" onclick="openNotice('oa_notice_header')">
+			<i><img class="h-37em w-37em center-block" src="../../../statics/public/aui2/img/mess.png"></i>
+			<div class="aui-grid-label color-12 pt-4em f-12em">通知公告</div>
+		</div>
+		<div class="aui-col-xs-3" onclick="openOa_document('oa_document_header')">
+			<i><img class="h-37em w-37em center-block" src="../../../statics/public/aui2/img/home_receive.png"></i>
+			<div class="aui-grid-label color-12 pt-4em f-12em">公文收发</div>
+		</div>
+		<div class="aui-col-xs-3" onclick="openIntegral('hr_integral_header')">
+			<i><img class="h-37em w-37em center-block" src="../../../statics/public/aui2/img/home_integral.png"></i>
+			<div class="aui-grid-label color-12 pt-4em f-12em">党员积分</div>
+		</div>
+		<div class="aui-col-xs-3 mt-20mem" onclick="openFa('sp_fa_header')">
+			<i><img class="h-37em w-37em center-block" src="../../../statics/public/aui2/img/home_party.png"></i>
+			<div class="aui-grid-label color-12 pt-4em f-12em">党费缴纳</div>
+		</div>
+		<div class="aui-col-xs-3 mt-20mem" onclick="openedu_specialwin('edu_special_header')">
+			<i><img class="h-37em w-37em center-block" src="../../../statics/public/aui2/img/home_learning.png"></i>
+			<div class="aui-grid-label color-12 pt-4em f-12em">专题学习</div>
+		</div>
+		<div class="aui-col-xs-3 mt-20mem" onclick="openAttmeeting('oa_attmeeting_header')">
+			<i><img class="h-37em w-37em center-block" src="../../../statics/public/aui2/img/home_three.png"></i>
+			<div class="aui-grid-label color-12 pt-4em f-12em">三会一课</div>
+		</div>
+		<div class="aui-col-xs-3 mt-20mem" onclick="openExam('edu_exam')">
+			<i><img class="h-37em w-37em center-block" src="../../../statics/public/aui2/img/home_exam.png"></i>
+			<div class="aui-grid-label color-12 pt-4em f-12em">考试中心</div>
+		</div>
+		
+	</div>
+</section>
+<!--个人信息开始-->
+<!--<section id="home_mess" class="index_new mb-12em over-h mt-10mem">
+	<div class="clearfix bg-color-fa bb-1-f0 h-44em lh-44em pl-13em pr-13em">
+		<div class="pull-left">
+			<img id="home_communist_avatar" class="bor-ra-50b w-30em h-30em mt-76em pull-left" src="../../../statics/public/aui2/img/home_tx.png">
+			<div class="f-14em color-21 pull-left pl-6em h-44em lh-44em w-200em over-x">
+				<span class="" id="home_communist_name"></span>丨
+				<span class="home_party_name"></span>
+			</div>
+		</div>-->
+		<!--<div class="pull-right f-12em color-ff4242 po-re va-jz">
+			<div class="po-ab top-1em w-100em h-24em right-0mem">
+				<img class="" src="../../../statics/public/aui2/img/jifen.png">
+			</div>
+			<div class="po-ab right-3mem top-0em w-95em va-jz">
+				<span class="f-12em">积分：</span>
+				<span class="ml-8mem" id="home_integral"></span>
+			</div>
+		</div>-->
+		
+	<!--	<div class="pull-right f-12em color-ff4242 po-re va-jz jf_bg mt-10em" onclick="openIntegral('hr_integral_header')">
+			<div class="po-ab right-3mem top-0em w-95em va-jz">
+				<span class="f-12em">积分：</span>
+				<span class="ml-8mem" id="home_integral"></span>
+			</div>
+		</div>
+		
+		
+	</div>
+	<div class="home_infor">
+		<li class="h-40em lh-40em clearfix va-jz">
+			<img class="pull-left w-20em h-20em ml-18em" src="../../../statics/public/aui2/img/home_made.png">
+			<div class="pull-left w-100b ml-12em mr-12em" onclick="openMade('edu_topic_header')">
+				<p class="pull-left color-9e f-12em">点击制定属于自己的学习计划！！！</p>
+				<div class="pull-right">
+					<i class="iconfont color-de f-12em lh-22em ml-5mem">&#xe613;</i>
+				</div>
+			</div>
+		</li>
+		<div class="bb-1-f0 w-80b pull-right ml-20em mr-20em"></div>
+		<li class="h-40em lh-40em clearfix va-jz">
+			<img class="pull-left w-20em h-20em ml-18em" src="../../../statics/public/aui2/img/home_notice.png">
+			<div class="pull-left w-100b ml-12em mr-12em" onclick="openMessage('oa_message_header')">
+				<p class="pull-left color-9e f-12em">有重要信息等着您去回复</p>
+				<div class="pull-right">
+					<i class="iconfont color-de f-12em lh-22em ml-5mem">&#xe613;</i>
+				</div>
+			</div>
+		</li>
+	</div>
+
+</section>-->
+
+<!--党政动态开始-->
+
+<section class="index_new mb-12em pl-12em pr-12em">
+	<div class="over-h h-30em lh-44em">		
+		<span class="pull-left shade f-16em f-w">最新动态</span>
+		<span class="pull-right f-12em color-9e icon_regular" onclick="openPartyWork('cms_partyWork_list_header','党务动态')">更多
+		<i class="iconfont color-de f-12em lh-44em ml-5mem">&#xe613;</i>
+		</span>
+	</div>
+	<div>
+		<ul id="list">
+			
+		</ul>
+	</div>
+</section>
+
+<!--党政动态结束-->
+<!--<div class="w-100b text-align color-99 f-14em pt-10em pb-15em">技术支持森普软件</div>-->
+</body>
+<script type="text/javascript" src="../../../statics/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../../statics/public/aui2/js/api.js"></script>
+<script type="text/javascript" src="../../../statics/public/js/sp_H5APPFrame_public.js"></script>
+<!-- 重要js配置文件 -->
+<script type="text/javascript" src="../../../statics/public/js/config.js"></script>
+<!-- end -->
+<script type="text/javascript" src="../../../statics/public/aui/js/aui-alert.js"></script>
+ <!-- aui下拉刷新js -->
+	<script type="text/jscript" src="../../../statics/public/aui/js/aui-pull-refresh.js"></script>
+<!-- end -->
+<!-- aui列表滑动js -->
+<script type="text/jscript" src="../../../statics/public/aui2/js/aui-list-swipe.js"></script>
+<!-- end -->
+<!-- sha1加密核心库 -->
+<script type="text/jscript" src="../../../statics/public/js/hashes.js"></script>
+<!-- end -->
+<!--<script type="text/javascript" src="../../../statics/public/aui2/api.js"></script>-->
+
+<script type="text/javascript" src="../../../statics/public/aui2/js/aui-slide.js"></script>
+
+<script type="text/jscript" src="../../../statics/public/js/sp_p5boss_rongCloud2.js"></script>
+<script type="text/jscript" src="../../../statics/public/js/formatDate.js"></script>
+<!--项目公共js-->
+<script type="text/jscript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+<!--首页轮播图js-->
+<!--<script type="text/jscript" src="../../../statics/public/aui2/js/swiper.min.js"></script>-->
+<script type="text/jscript" src="../../../statics/public/aui2/js/swiper-3.4.2.min.js"></script>
+
+<!--结束-->
+<script type="text/javascript" src="js/bd_home.js"></script>
+<script type="text/javascript">
+
+</script> 
+
+</html>

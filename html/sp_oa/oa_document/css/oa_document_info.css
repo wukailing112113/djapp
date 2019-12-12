@@ -1,0 +1,32 @@
+body {
+
+}
+
+.w-14em{width: 0.7rem;}
+.h-12em{height: 0.6rem;}
+.w-38em{width: 1.9rem;}
+.h-38em{height: 1.9rem;}
+
+.p-12em{padding: 0.6rem;}
+.pl-12em{padding-left:0.6rem;}
+.pr-12em{padding-right: 0.6rem;}
+.pt-12em{padding-top: 0.6rem;}
+.pb-12em{padding-bottom: 0.6rem;}
+
+.mr-8em{margin-right: 0.4rem;}
+.mr-12em{margin-right: 0.6rem;}
+.mb-8em{margin-bottom: 0.4rem;}
+.mb-12em{margin-bottom: 0.6rem;}
+
+.f-17em{font-size: 0.8rem;}
+
+.color-b3{color: #b3b3b3;}
+.color-75{color: #757575;}
+.color-ff3032{color: #ff3032;}
+.color-ff9776{color: #ff9776;}
+.bg-color-ff3032{background: #ff3032;}
+
+.b-1-dfdfdf{border: 1px solid #dfdfdf;}
+.bt-1-dfdfdf{border-top: 1px solid #dfdfdf;}
+.bb-1-dfdfdf{border-bottom: 1px solid #dfdfdf;}
+.bg-color-fcfdfe{background: #fcfdfe;}

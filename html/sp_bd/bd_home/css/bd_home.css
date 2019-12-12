@@ -1,0 +1,191 @@
+/*——————————————————————————————本页面公用—————————————————————————————————————————*/
+body{margin:0px;background:#f4f4f4;}  
+body {font-size:20px;}
+/*margin类*/
+.mt-20{margin-top:0.5rem;}
+.mt-25{margin-top:0.625rem;}
+.mb-20{margin-bottom:0.5rem;}
+.mt-30{margin-top:0.75rem;}
+.mb-30{margin-bottom:0.75rem;}
+.mb-24{margin-bottom:0.6rem;}
+.mt-39em{margin-top: 1.95rem;}
+.ml-13em{margin-left:0.65rem;}
+.mt-76em{margin-top:0.38rem;}	
+.ml-8mem{margin-left:-0.35rem;}
+/*top类*/
+.top-0em{top:0rem;}
+.top-100mem {top:-4.5rem;}
+.top-0mem{top:0rem;}
+.top-25em{top:0.75rem;}
+.right-3mem{right:-1.2rem;}
+/*padding类*/
+.pt-13em {padding-top:0.65rem;}
+.pt-4em{padding-top:0.2rem;}
+.pl-10{padding-left:0.5rem;}
+.pt-30{padding-top:0.75rem;}
+.pt-25{padding-top:0.625rem;}
+.pl-13em{padding-left:0.65rem;}
+.pr-13em{padding-right:0.65rem;}
+.pl-6em{padding-left:0.3rem;}
+/*高度类*/
+.h-200em {height:10.5rem;}
+.h-37em{height:1.85rem;}
+.h-12em{height: 0.6rem;}
+.h-17em{height: 0.85rem;}
+.h-18em{height: 0.9rem;}
+.h-22em{height: 1.1rem;}
+.h-11em{height: 10rem;}
+.h-73em{height:3.65rem;}
+.lh-17em{line-height: 0.85rem;}
+.lh-18em{line-height: 0.9rem;}
+.lh-22em{line-height: 1.1rem;}
+/*宽度类*/
+.w-37em{width:1.85rem;}
+.w-217em{width:10.85rem;}
+.w-6em{width: 0.3rem;}
+.w-7em{width: 0.35rem;}
+.w-216em{width: 10.8rem;}
+.w-97em{width:4.85rem;}
+/*颜色类*/
+.color-54{color: #545454;}
+.color-a4{color: #a4a4a4;}
+.color-ff4844 {color:#ff4844;}
+.color-888888 {color:#888888}
+.color-12{color:#121212 !important;}
+.color-21{color:#212121 !important;}
+.color-ff4242{color:#ff4242 !important;}
+.color-9e{color:#9e9e9e;}
+.color-de{color:#dedede;}
+/*边线类*/
+.top-right-1{top:9.1rem; right:0.6rem; z-index: 999}
+.top-right-2{top:9.1rem; right:1.8rem;z-index: 999;}
+.top-right-3{top:9.5rem; right:1.1rem;z-index: 999;}
+.bb-1-e6e6e6{border-bottom: 1px solid #e6e6e6;}
+/*——————————————————————————————banner背景图—————————————————————————————————————————*/
+.bg-color-fb4747 {
+     background: -webkit-linear-gradient(left, #ff4242 , #ff5a2d);
+	/*background:#fb4747;*/
+}
+
+/*——————————————————————————————首页banner轮播—————————————————————————————————————————*/
+.banner {
+	width: 100%;
+	height: 100%;	
+}
+.bor-ra-5em{border-radius: 0.25rem;}
+.aui-slide-page-wrap{bottom: -8px !important;height: 6px !important;line-height: 6px !important;}
+.aui-slide-page-dot{width: 6px !important;height: 6px !important;background: #dfdfdf !important;margin-top: 0 !important;transition: all 0.3s !important;}
+.aui-slide-page-active{width: 10px !important;border-radius: 6px !important;
+background: -webkit-linear-gradient(#ff5a2d, #ff3032) !important; /* Safari 5.1 - 6.0 */
+background: -o-linear-gradient(#ff5a2d, #ff3032) !important; /* Opera 11.1 - 12.0 */
+background: -moz-linear-gradient(#ff5a2d, #ff3032) !important; /* Firefox 3.6 - 15 */
+background: linear-gradient(#ff5a2d, #ff3032) !important; /* 标准的语法 */
+box-shadow: 0 0 1px 0 #ff5a2d !important;
+}
+/*——————————————————————————————首页最新动态—————————————————————————————————————————*/
+.index_new{
+	width:94%;
+	margin-left:3%;
+	background-color: #ffffff;
+	box-shadow: 0rem 0rem 0.4rem 0rem 
+		rgba(0, 0, 0, 0.08);
+	border-radius: 0.25rem;
+}
+
+
+/*——————————————————————————————其他样式—————————————————————————————————————————*/
+.dis-flex{display:flex;    
+	-webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.fsize-14{font-size:0.7rem;}
+.fsize-16{font-size:0.8rem;}
+.fco-54{color:#545454;}
+.fco-a4{color:#a4a4a4;}
+.col-blcok{height:;padding:1.25rem 0.5rem 0rem 0.5rem;}
+.col-blcok .col-pa{;margin-bottom:0.6rem;padding:0px;border:blue;text-align:center;}
+.col-blcok .col-pa>i>img{max-width:2.5rem;height:2.5rem;margin: 0 auto;}
+.col-blcok .col-pa .aui-grid-label{font-size:0.6rem;color:#333333;}
+.aui-grid .aui-grid-label{margin-top: 0 !important;}
+.shade{/*字体渐变*/
+	color:#121212;
+}
+.letter-spacing{letter-spacing:2px;}
+.f-13em {
+	font-size:0.65rem;
+}
+.bg-color-ff4844 {
+	background:#ff592d;
+}
+.bg-color-banner {
+	background:url('../../../../statics/public/images/banner_bg.png') no-repeat center;
+	background-size: 100% 100%;
+}
+.bor-ra-2em{border-radius: 0.1rem}
+.b-r-10{
+	border-radius:0.5rem; /* 左上角、右上角、右下角、左下角 */
+ }
+.home-padding{
+	padding: 0rem 0.6rem 0rem 0.6rem;
+}
+#list li:last-child{
+	border:none;
+}
+/* 垂直居中 */
+.va-jz{
+	display: flex;
+    align-items:Center; 
+}
+
+.banner img {
+	width: 100%;
+}
+.swiper-slide {
+	color: #fff;
+	text-align: center;
+}
+.w-77b{width:77%;}
+.color-fff{color:#fff;}
+.ad_title{top:9.5rem;}
+.bg-color-fa{background: #fafafa}
+.bb-1-f0{border-bottom: 1px solid #f0f0f0;}
+.bb-3em-e6{border-bottom: 0.03rem solid #e6e6e6;}
+.top-1em{
+	top:0.5rem;
+}
+.right-0mem{
+	right:0rem;
+}
+.ml-18em{margin-left:0.9rem;}
+
+.over-x{
+	overflow-x:scroll;
+	white-space:nowrap;
+	}
+
+.jf_bg{
+	width: 4.88rem;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	background:url('../../../../statics/public/aui2/img/jifen.png') no-repeat center;
+	 background-size: 100% 100%;
+}
+.bg-color-ed{
+background-color:#ededed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

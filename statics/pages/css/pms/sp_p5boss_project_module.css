@@ -1,0 +1,29 @@
+.aui-user-view:after {
+  	border-top: none;
+}
+.border-radius{border-radius:50%;}
+.border-radius-5{border-radius:5px!important;}
+.aui-list-view{margin-bottom:0px;}
+.color-999{color:#999;}
+.ml-45{margin-left:45px;}
+.bg-w{background:white!important;}
+.mt-12{margin-top:12px;}
+.bg-f4{background:#f4f4f4;}
+.border{border:1px solid #C8C7CC;}
+.border-tb{border-top:1px solid #C8C7CC;border-bottom:1px solid #C8C7CC;}
+
+.aui-list-view-cell{padding:0;}
+.break{word-break : break-all;}
+.top-3{top:3px;}
+.h-21{height:21px;}
+.pb-10{padding-bottom:10px;}
+
+.lh-1_5{line-height:1.5;}
+.mb-5{margin-bottom:5px!important;}
+.mr-45{margin-right:45px;}
+button, .aui-btn{padding:2px 4px!important;}
+.aui-ellipsis-1{padding-right:5px;}
+.top-2{top:2px;}
+.bottom-5{bottom:5px;}
+.mt-9{margin-top:8px!important;}
+.pb-2b{padding-bottom:1.5%!important;}

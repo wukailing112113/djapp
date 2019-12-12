@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget id="A6013138052549" version="0.0.1"> 
+  <name>八桂党建</name>  
+  <description>八桂党建</description>  
+  <author email="biz@simpro.cn" href="http://www.simpro.cn">SimPro</author>  
+  <content src="welcome.html"/>  
+  <preference name="appBackground" value="rgba(0,0,0,0)"/>  
+  <preference name="windowBackground" value="rgba(0,0,0,0)"/>  
+  <preference name="frameBackgroundColor" value="rgba(0,0,0,0)"/>  
+  <preference name="autoLaunch" value="false"/>  
+  <preference name="bounces" value="false"/>  
+  <preference name="autoUpdate" value="true"/>  
+  <preference name="smartUpdate" value="true"/>  
+  <preference name="debug" value="false"/>  
+  <preference name="softInputMode" value="auto"/>  
+  <preference name="statusBarAppearance" value="true"/>  
+  <preference name="vScrollBarEnabled" value="false"/>  
+  <permission name="location"/>  
+  <permission name="internet"/>  
+  <access origin="*"/>  
+  <feature name="tencentPush"> 
+    <param name="android_accessId" value="2100258721"/>  
+    <param name="android_accessKey" value="A6WWF69WM34B"/> 
+  </feature>  
+  <feature name="tencentPush"> 
+    <param name="ios_accessId" value="2200208843"/>  
+    <param name="ios_accessKey" value="I6G9C53YT6WM"/> 
+  </feature>  
+  <feature name="bMap"> 
+    <param name="android_api_key" value="tEN0TnzZGIofaDRwhgu1yBHaOfRGPhzh"/>  
+    <param name="ios_api_key" value="G7G28Y95ahUaLokrz6VDn0zqn3bQzCOF"/> 
+  </feature>  
+  <feature name="wx"> 
+    <param name="urlScheme" value="wx0cdb1d3593e02909"/>  
+    <param name="apiKey" value="wx0cdb1d3593e02909"/>  
+    <param name="apiSecret" value="dd902ed6f5a72dea3e7a51352785140b"/> 
+  </feature>  
+  <feature name="rongCloud2"> 
+    <param name="appKey" value="p5tvi9dspeih4"/> 
+  </feature> 
+</widget>

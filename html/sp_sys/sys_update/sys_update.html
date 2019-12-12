@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>账号安全</title>
+    <!-- aui核心css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui.css"/>
+    <!-- end -->
+    <!--aui轮播-->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui-slide.css"/>
+    <!--end-->
+    <!-- 公司公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_mobile.css"/>
+    <!-- end -->
+    <!-- 本项目公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_p5boss.css"/>
+    <!-- end -->
+    <!-- 本页面css -->
+    <link rel="stylesheet" type="text/css" href="css/sys_update.css"/>
+    <!-- end -->
+</head>
+<style>
+
+</style>
+<body class="bg-color-f9">
+	<!--第一部分-->
+	<div class="bg-color-white">
+		<div class="pl-12em h-48em clearfix bb-df pr-5em" onclick="openNewWin('sys_update_pwd_header')">
+			<span class="color-75 f-15em lh-48em pull-left">修改密码</span>
+			<i class="iconfont f-15em color-33 lh-48em pull-right">&#xe765;</i>
+		</div>
+		<div class="pl-12em h-48em clearfix bb-df pr-5em" onclick="openNewWin('sys_update_phone_header')">
+			<span class="color-75 f-15em lh-48em pull-left">修改绑定手机号</span>
+			<i class="iconfont f-15em color-33 lh-48em pull-right">&#xe765;</i>
+		</div>
+	</div>
+	<!--第一部分 end-->
+
+</body>
+    <!-- jquery js -->
+	<script type="text/javascript" src="../../../statics/public/js/jquery.min.js"></script>
+	<!-- end -->
+    <!-- 公司公共apijs -->
+	<script type="text/javascript" src="../../../statics/public/js/api.js"></script>
+	<!-- end -->
+    <!--aui轮播-->
+    <script type="text/javascript" src="../../../statics/public/aui2/js/aui-slide.js"></script>
+    <!--end-->
+    <!-- 本项目公共js -->
+	<script type="text/jscript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+	<!-- end -->
+	<script type="text/javascript">
+		function openNewWin(winName){
+			//打开新页面
+			api.openWin({
+			    name: winName,
+			    url: 'header/'+winName+'.html',
+			    pageParam:{
+			    }
+		    });
+		}
+	</script>
+</html>

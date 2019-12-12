@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>新闻列表</title>
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui.css"/>
+	<!-- end -->
+	<!--公用css-->
+	<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public.css"/>
+	<!-- end -->
+	<!-- 轮播 -->
+	<link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui-slide.css" />
+	<!-- end -->
+	<!-- 本项目公共css -->
+	<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_mobile.css"/>
+	<!-- end -->
+	<link rel="stylesheet" type="text/css" href="css/cms_partyWork.css" />
+	<style>
+	
+	</style>
+</head>
+<body class="bg-color-white">
+<!--banenr开始-->
+<section class="">
+	<div id="aui-slide">
+	    <div class="aui-slide-wrap" id="bannerList">
+	        <!--<div class="aui-slide-node bg-dark">
+	            <img src="../../../statics/images/images_bd/bg-img_2.jpg" / height="6rem" width="100%">
+	        </div>
+	        <div class="aui-slide-node bg-dark">
+	            <img src="../../../statics/images/images_bd/bg-img_3.jpg" / height="6rem" width="100%">
+	        </div>
+	        <div class="aui-slide-node bg-dark">
+	            <img src="../../../statics/images/images_bd/bg-img_4.jpg" / height="6rem" width="100%">
+	        </div>-->
+	    </div>
+	    <div class="aui-slide-page-wrap"><!--分页容器--></div>
+	</div>
+
+</section>
+<!--banner结束-->	
+	
+	<div id="list_1_box" class="di-n">
+			<div class="pl-12em pr-12em pt-20em"><!--标题-->
+				<div class="h-20em mb-15em lh-20em">
+					<img class="pull-left w-7em h-17em mr-12em" src="../../../statics/public/aui2/img/dl-icon.png"/>
+					<span class="f-w shade f-18em lh-18em h-20em f-w letter-spacing">工作通知</span>
+	       			<span class="f-14em color-99 pull-right lh-47em" onclick="openList('cms_partyWork_list_header','工作通知')">更多 <i class="iconfont p-0 f-12em lh-47em">&#xe765;</i></span>	
+	       		</div>
+	       	</div><!--end-->
+			<div class="pb-15em bb-1-df"><!--列表-->
+			    <ul id="list_1" class="pl-12em pr-12em">
+					<!--<li class="over-h w-100b mb-14em" onclick="openInfo('cms_partyWork_info_header')">
+				        <div class="pull-left w-110em h-90em p-0 mt-16em mr-12em">
+				            <img class="w-100b h-100b bor-ra-3" src="../../../statics/public/aui2/img/pic-list.png">
+				        </div>
+				        <div class="pull-left w-228em p-0 mt-12em">
+				            <div class="f-16em color-33 lh-24em f-w">党的十九大以来，以习近平同志为核心的...</div>
+				            <div class="p-0 mt-5em f-14em lh-14em h-14em pb-15em color-a4">
+			                    <span class="pull-left pr-8em color-99 br-1-df">2017-07-07日</span>
+								<span class="pull-left ml-8em color-99">刘国强</span>
+				            </div>
+				        </div>
+					</li>-->
+				</ul>
+			</div><!--end-->
+		</div>
+		
+		<div id="list_2_box" class="di-n">
+			<div class="pl-12em pr-12em pt-20em"><!--标题1-->
+				<div class="h-20em mb-15em lh-20em">
+					<img class="pull-left w-7em h-17em mr-12em" src="../../../statics/public/aui2/img/dl-icon.png"/>
+					<span class="f-w shade f-18em lh-18em h-20em f-w letter-spacing">民生公示</span>
+	       			<span class="f-14em color-99 pull-right lh-47em" onclick="openList('cms_partyWork_list_header','民生公示')">更多 <i class="iconfont p-0 f-12em lh-47em">&#xe765;</i></span>	
+	       		</div>
+	       	</div><!--end-->
+			<div class="pb-15em"><!--列表3-->
+			    <ul id="list_2" class="pl-12em pr-12em">
+					<!--<li class="over-h w-100b mb-14em" onclick="openInfo('cms_partyWork_info_header')">
+				        <div class="pull-left w-110em h-90em p-0 mt-16em mr-12em">
+				            <img class="w-100b h-100b bor-ra-3" src="../../../statics/public/aui2/img/pic-list.png">
+				        </div>
+				        <div class="pull-left w-228em p-0 mt-12em">
+				            <div class="f-16em color-33 lh-24em f-w">党的十九大以来，以习近平同志为核心的...</div>
+				            <div class="p-0 mt-5em f-14em lh-14em h-14em pb-15em color-a4">
+			                    <span class="pull-left pr-8em color-99 br-1-df">2017-07-07日</span>
+								<span class="pull-left ml-8em color-99">刘国强</span>
+				            </div>
+				        </div>
+					</li>-->
+				</ul>
+			</div><!--end-->
+		</div>
+</body>
+<script type="text/jscript" src="../../../statics/public/js/jquery.min.js"></script>
+<!-- api核心js -->
+<script type="text/jscript" src="../../../statics/public/js/api.js"></script>
+<!-- end -->
+<!-- aui下拉刷新js -->
+<script type="text/jscript" src="../../../statics/plugins/aui/js/aui-pull-refresh.js"></script>
+<!-- end -->
+<!-- aui轮播 -->
+<script type="text/javascript" src="../../../statics/public/aui2/js/aui-slide.js"></script>
+<!-- end -->
+<!-- 项目公共js -->
+<script type="text/jscript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+<!-- end -->
+<!--本页面js-->
+<script type="text/jscript" src="js/cms_partyWork.js"></script>
+<!--end-->
+<script type="text/javascript">
+
+</script>
+</html>

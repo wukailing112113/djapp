@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>通讯录</title>
+    <!-- aui核心css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/aui/css/aui.css"/>
+    <!-- end -->
+    <!-- 公司公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public.css"/>
+    <!-- end -->
+    <!-- 本项目公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_mobile.css"/>
+    <!-- end -->
+    <!-- aui索引列表css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/aui/css/aui-indexed-list.css"/>
+    <!-- end -->
+    <!-- 本页面css -->
+    <link rel="stylesheet" type="text/css" href="css/com_phoneBook.css"/>
+    <!-- end -->
+    <style>
+    </style>
+</head>
+<body class="bg-color-whiter">
+	<!--<div id="conter" class="aui-content">
+	    <div class="aui-searchbar-wrap fixed" id="group-search">
+	        <div class="aui-searchbar aui-border-radius">
+	            <i class="aui-iconfont aui-icon-search"></i>
+	            <div class="aui-searchbar-text">输入首字母</div>
+	            <div class="aui-searchbar-input">
+	            	<input type="email" placeholder="输入首字母" id="aui-searchbar-input">
+	            </div>
+	            <i class="aui-iconfont aui-icon-roundclosefill" id="aui-searchbar-clear"></i>
+	        </div>
+	        <div class="aui-searchbar-cancel aui-text-info" id="aui-searchbar-cancel">清除</div>
+	    	<div class="aui-text-info pr-5 di-n" id="check_all">全选</div>
+	    </div> 
+	    <div class="aui-indexed-list">
+		    <ul class="aui-list-view aui-indexed-list-view aui-in" id="group_list" data-group="*">
+			</ul>
+		</div>
+		<div class="aui-indexed-list-toast"></div>
+		<div class="aui-indexed-list-bar" id="indexes_right">
+			<a>
+				<i class="aui-iconfont aui-icon-search" data-value="search"></i>
+			</a>
+			<a data-value="A">A</a>
+			<a data-value="B">B</a>
+			<a data-value="C">C</a>
+			<a data-value="D">D</a>
+			<a data-value="E">E</a>
+			<a data-value="F">F</a>
+			<a data-value="G">G</a>
+			<a data-value="H">H</a>
+			<a data-value="I">I</a>
+			<a data-value="J">J</a>
+			<a data-value="K">K</a>
+			<a data-value="L">L</a>
+			<a data-value="M">M</a>
+			<a data-value="N">N</a>
+			<a data-value="O">O</a>
+			<a data-value="P">P</a>
+			<a data-value="Q">Q</a>
+			<a data-value="R">R</a>
+			<a data-value="S">S</a>
+			<a data-value="T">T</a>
+			<a data-value="U">U</a>
+			<a data-value="V">V</a>
+			<a data-value="W">W</a>
+			<a data-value="X">X</a>
+			<a data-value="Y">Y</a>
+			<a data-value="Z">Z</a>
+		</div>
+		<img id="slid_img" class="po-fix top-50b z-index-max" src="../../../statics/public/images/res/phoneBook_APP_P5.png" height="100px" onclick="api.openSlidPane({type: 'left'});"/>
+    </div>-->
+    <!-- 处理汉字转换拼音隐藏域 -->
+    
+    <!--新通讯录-->
+    	<!--搜素框-->
+    		<div class="pl-12em pr-12em pt-5em pb-5em bg-color-f9 po-fix w-100b">
+    			<input class="p-0 m-0 pl-20em w-100b h-34em f-15em lh-34em color-33 bor-0 bor-ra-34 box-inset" placeholder="搜索" type="text" />
+    		</div>
+    	<!--结束-->
+    		
+    	<!--人员列表-->
+    		<div class="pt-44em">
+				<div>
+					<div class="f-16em color-ff4545 f-w h-28em lh-28em bg-color-f9 pl-12em pr-12em">A</div>
+					<ul class="pl-12em pr-12em pt-10em">
+						<li class="over-h">
+							<img class="pull-left w-40em h-40em bor-ra-100b mr-12em mb-10em" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+							<div class="pull-left w-298em">
+								<p class="f-16em lh-16em color-33 f-w pt-5em pb-8em">阿三</p>
+								<p class="f-16em lh-16em color-75 pb-12em">济南党工委</p>
+							</div>
+						</li>
+						<li class="over-h">
+							<img class="pull-left w-40em h-40em bor-ra-100b mr-12em mb-10em" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+							<div class="pull-left w-298em">
+								<p class="f-16em lh-16em color-33 f-w pt-5em pb-8em">阿四</p>
+								<p class="f-16em lh-16em color-75 pb-12em">济南党工委</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<div class="f-16em color-ff4545 f-w h-28em lh-28em bg-color-f9 pl-12em pr-12em">B</div>
+					<ul class="pl-12em pr-12em pt-10em">
+						<li class="over-h">
+							<img class="pull-left w-40em h-40em bor-ra-100b mr-12em mb-10em" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+							<div class="pull-left w-298em">
+								<p class="f-16em lh-16em color-33 f-w pt-5em pb-8em">白一</p>
+								<p class="f-16em lh-16em color-75 pb-12em">济南党工委</p>
+							</div>
+						</li>
+						<li class="over-h">
+							<img class="pull-left w-40em h-40em bor-ra-100b mr-12em mb-10em" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+							<div class="pull-left w-298em">
+								<p class="f-16em lh-16em color-33 f-w pt-5em pb-8em">白二</p>
+								<p class="f-16em lh-16em color-75 pb-12em">济南党工委</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<div class="f-16em color-ff4545 f-w h-28em lh-28em bg-color-f9 pl-12em pr-12em">C</div>
+					<ul class="pl-12em pr-12em pt-10em">
+						<li class="over-h">
+							<img class="pull-left w-40em h-40em bor-ra-100b mr-12em mb-10em" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+							<div class="pull-left w-298em">
+								<p class="f-16em lh-16em color-33 f-w pt-5em pb-8em">崔五</p>
+								<p class="f-16em lh-16em color-75 pb-12em">济南党工委</p>
+							</div>
+						</li>
+						<li class="over-h">
+							<img class="pull-left w-40em h-40em bor-ra-100b mr-12em mb-10em" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+							<div class="pull-left w-298em">
+								<p class="f-16em lh-16em color-33 f-w pt-5em pb-8em">崔六</p>
+								<p class="f-16em lh-16em color-75 pb-12em">济南党工委</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<div class="f-16em color-ff4545 f-w h-28em lh-28em bg-color-f9 pl-12em pr-12em">D</div>
+					<ul class="pl-12em pr-12em pt-10em">
+						<li class="over-h">
+							<img class="pull-left w-40em h-40em bor-ra-100b mr-12em mb-10em" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+							<div class="pull-left w-298em">
+								<p class="f-16em lh-16em color-33 f-w pt-5em pb-8em">杜七</p>
+								<p class="f-16em lh-16em color-75 pb-12em">济南党工委</p>
+							</div>
+						</li>
+						<li class="over-h">
+							<img class="pull-left w-40em h-40em bor-ra-100b mr-12em mb-10em" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+							<div class="pull-left w-298em">
+								<p class="f-16em lh-16em color-33 f-w pt-5em pb-8em">杜八</p>
+								<p class="f-16em lh-16em color-75 pb-12em">济南党工委</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+    	<!--结束-->
+    	
+    	<!--右侧首字母-->
+    		<ul class="w-30em color-75 f-14em lh-18em po-fix right-0 text-align top-80em f-w">
+    			<li>A</li>
+    			<li>B</li>
+    			<li>C</li>
+    			<li>D</li>
+    			<li>E</li>
+    			<li>F</li>
+    			<li>G</li>
+    			<li>H</li>
+    			<li>I</li>
+    			<li>J</li>
+    			<li>K</li>
+    			<li>L</li>
+    			<li>M</li>
+    			<li>N</li>
+    			<li>O</li>
+    			<li>P</li>
+    			<li>Q</li>
+    			<li>R</li>
+    			<li>S</li>
+    			<li>T</li>
+    			<li>U</li>
+    			<li>V</li>
+    			<li>W</li>
+    			<li>X</li>
+    			<li>Y</li>
+    			<li>Z</li>
+    		</ul>
+    	<!--结束-->
+    
+    <!--结束-->
+    
+    
+    
+    <input type="hidden" id="pinyin" />
+    <!-- apijs -->
+	<script type="text/javascript" src="../../../statics/public/js/api.js"></script>
+	<!-- end -->
+	<!-- jquery js -->
+	<script type="text/javascript" src="../../../statics/public/js/jquery.min.js"></script>
+	<!-- end -->
+	<!-- aui aui-tap.js -->
+	<script type="text/javascript" src="../../../statics/public/aui/js/aui-tap.js"></script>
+	<!-- end -->
+	<!-- aui indexed-list.js -->
+	<!--<script type="text/javascript" src="../../../statics/public/aui/js/aui-indexed-list.js"></script>-->
+	<!-- end -->
+	<!-- 汉语转拼音 -->
+	<script type="text/javascript" src="../../../statics/public/js/jQuery.Hz2Py-min.js"></script>
+	<!-- end -->
+    <!-- alertjs -->
+    <script type="text/jscript" src="../../../statics/public/aui/js/aui-alert.js"></script>
+    <!--end-->
+    <!--项目公共js!-->
+	<script type="text/javascript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+	<!--end!-->
+	<!-- 本页面.js -->
+	<script type="text/javascript" src="js/com_phoneBook.js"></script>
+	<!-- end -->
+	<script type="text/javascript">
+	</script>
+</body>
+</html>

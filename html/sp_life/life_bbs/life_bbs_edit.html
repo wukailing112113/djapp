@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<title>调查问卷</title>
+		<!-- aui核心css -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui.css"/>
+		<!-- end -->
+		<!--公用css-->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public.css"/>
+		<!-- end -->
+		<!-- 轮播 -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui-slide.css" />
+		<!-- end -->
+		<!-- 本项目公共css -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_mobile.css"/>
+		<!-- end -->
+		<!--本页面css-->
+		<link rel="stylesheet" type="text/css" href="css/life_bbs.css" />
+		<link rel="stylesheet" type="text/css" href="css/life_bbs_edit.css" />
+		<style>
+		
+		</style>
+	</head>
+	<body class="bg-color-whiter">
+		<!--提交信息-->
+			<div class="pl-12em pr-12em pt-12em  bb-1-df">
+				<!--<p class="over-h f-16em color-33 lh-30em mb-8em"><span class="pull-left">提交人: </span><input class="pull-right h-30em w-288em bg-color-f9 box-inset bor-ra-7" type="text" /></p>-->
+				<p class="over-h f-16em color-33 lh-30em mb-8em"><span class="pull-left">提交主题: </span><input id="title" class="pull-right h-30em w-273em bg-color-f9 box-inset bor-ra-7 pl-10em" type="text" /></p>
+				<p class="over-h f-16em color-33 lh-30em mb-12em">
+					<span class="pull-left">选择论坛类型: </span>
+					<select class="pull-right h-30em w-239em bg-color-f9 box-inset bor-ra-7"  name="" id="region">
+						<!--<option value="类型一">类型一</option>-->
+					</select>
+				</p>
+			</div>
+		<!--结束-->
+		
+		<!--提交内容-->
+			<div class="pl-12em pr-12em pt-12em pb-12em bb-1-df">
+				<textarea class="h-130em bg-color-f9 box-inset bor-ra-7 p-12em f-16em lh-20em color-33" name="" id="content" placeholder="请输入帖子内容"></textarea>
+				<!--<p class="pt-10em pb-12em f-10em lh-10em color-75"><i class="iconfont f-10em lh-10em color-75">&#xe879;</i><span>济南市高新区齐鲁软件园C座A312</span></p>-->
+			</div>
+			<div class="p-12em">
+				<p class="f-16em lh-20em color-33 f-w">添加图片<span class="pl-12em f-10em color-ff3032 lh-12em">只可添加一张图片</span><i class="pull-right f-20em color-b3 iconfont" onclick="onlyImg()">&#xe6df;</i></p>
+				<ul id="imgList" class="over-h w-100b"></ul>
+			</div>
+		<!--结束-->
+		
+		<!--提交按钮-->
+			<div class="w-100b pl-12em pr-12em pb-20em pt-100em">
+				<div class="pl-25em pr-25em">
+					<button class="w-100b h-35em text-align f-16em lh-35em color-white bor-0 grad" id="submit" onclick="setBbsPost()">提交</button>
+				</div>
+			</div>
+		<!--结束-->
+		
+		<script type="text/jscript" src="../../../statics/public/js/jquery.min.js"></script>
+		<!-- api核心js -->
+		<script type="text/jscript" src="../../../statics/public/js/api.js"></script>
+		<!-- end -->
+		<!-- aui下拉刷新js -->
+		<script type="text/jscript" src="../../../statics/public/aui2/js/aui-pull-refresh.js"></script>
+		<!-- end -->
+		<!-- aui轮播 -->
+		<script type="text/jscript" src="../../../statics/public/aui2/js/aui-slide.js"></script>
+		<!-- end -->
+		<!-- 项目公共js -->
+		<script type="text/jscript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+		<!-- end -->
+		<!-- 本页面js -->
+		<script type="text/jscript" src="js/life_bbs_edit.js"></script>
+		<!-- end -->
+		<script type="text/javascript">
+			
+		</script>
+		<!--end-->
+	</body>
+</html>

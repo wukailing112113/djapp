@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>我的上传详情</title>
+    <link rel="stylesheet" type="text/css" href="../../../statics/dangjian/public/css/mui.css"/>
+    <!-- 公司内部公共css文件，必须引用 -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/dangjian/public/css/sp_public_v2.1.css"/>
+      <!-- 项目公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/dangjian/public/css/sp_simproH5APPFrame_public.css"/>
+    <!-- 配色方案 -->
+    <link rel="stylesheet" type="text/css" id="skin" href="../../../statics/dangjian/public/css/skin/skin-red.css"/>
+	<style>
+	.img{
+		width: 75px;
+		margin-top: 5px;
+		height: 64px;
+		line-height: 64px;
+		padding-right:15px;
+	}
+	.ml-17{margin-left: 17px}
+	.mr_0{margin-right: 0px}
+	</style>
+</head>
+<body class="bg-color-gray3">
+	<div class="mui-content">
+		<div class="mui-row di-n"id='conter'>
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell">主题：<span id='tite'></span></li>
+				<li class="mui-table-view-cell">地点：<span id='address'></span></li>
+				<li class="mui-table-view-cell">时间：<span id='time'></span></li>
+				<li class="mui-table-view-cell">正文：<span id='text'></span></li>
+				<li><span id='img'></span></li>
+			</ul>
+		</div>
+	</div>
+<script type="text/javascript" src="../../../statics/dangjian/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../../statics/dangjian/public/js/mui.js"></script>
+<script type="text/javascript" src="../../../statics/dangjian/public/js/sp_H5APPFrame_public.js"></script>
+<script type="text/javascript" src="../../../statics/dangjian/public/js/mui.zoom.js"></script>
+<script type="text/javascript" src="../../../statics/dangjian/public/js/mui.previewimage.js"></script>
+<script type="text/javascript">
+	//图片放大预览
+	mui.previewImage();
+	var play_url=""
+	apiready=function(){
+		var url=localStorage.url+"/index.php/Api/Other/get_mymeeting_info";
+		$.ajax({
+			type:'post',
+			url: url,
+			async:false,
+			data:{
+				"meeting_id":api.pageParam.id
+			},
+			dataType: 'json',
+			success: function(data){
+				if(data.status==1){
+					$("#tite").html(data.meeting_list.meeting_title);
+					$("#address").html(data.meeting_list.meeting_address);
+					$("#time").html(data.meeting_list.add_time);
+					$("#text").html(data.meeting_list.meeting_content);
+					//img集合分割路径用
+					var img=new Array();
+					//字符串当没有，号只有一条数据使用拼加localStorage.url用于字符串分割直接用data.meeting_list.meeting_img会不认为是字符串
+					var image=localStorage.url+data.meeting_list.meeting_img;
+					//用于多条数据时分隔用
+					var image_Many=""+data.meeting_list.meeting_img
+					//判断数据长度，有无，分割
+					if(image_Many.indexOf(",")>0){
+						//分割字符串
+						img=image_Many.split(",");
+						for(var i=0;i<img.length;i++){
+							//判断后缀是否是mp4
+							if(img[i].substring(img[i].length-3,img[i].length)=='mp4'){
+								//分割后用/分割出路径
+								play_url=image;
+								var path=new Array();
+								path=img[i].split("/")
+								for(var i=0;i<path.length;i++){
+									image=path[i]
+								}
+								$("#img").append('<a class="ml-17" onclick=\'play("'+play_url+'")\'>'+image+'</a><br>')
+							}
+							else{
+								$("#img").append('<img src="'+localStorage.url+img[i]+'"class="img lh-65 ml-17"/>')
+							}
+						}
+					}
+					//无，分割的时候
+					else{
+						//判断是否是视频的操作
+						if(image.substring(image.length-3,image.length)=='mp4'){
+							play_url=image;
+							var path=new Array();
+							path=image.split("/")
+							for(var i=0;i<path.length;i++){
+								image=path[i]
+							}
+							$("#img").append('<a class="lh-65  ml-17" onclick=\'play("'+play_url+'")\'>'+image+'</a><br>')
+						}
+						else{
+							$("#img").append('<img src="'+image+'"class="img lh-65 ml-17"data-preview-src="" data-preview-group="1"/>')
+						}
+					}
+					$("#conter").show();
+				}else{
+					(data.msg,"提示");
+				}
+			},    
+		    error : function() {
+		    	api.toast({
+				    msg: '网络链接失败...',
+				    duration:3000,
+				    location: 'top'
+				});
+		    }
+		})
+	}
+	function play(url){
+		api.openVideo({
+		    url: url
+		});
+	}
+</script>
+</body>
+</html>

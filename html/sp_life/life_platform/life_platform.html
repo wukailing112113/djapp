@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>服务</title>
+    <!-- aui核心css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui.css"/>
+    <!-- end -->
+    <!--aui轮播-->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui-slide.css"/>
+    <!--刷新-->
+   <link rel="stylesheet" type="text/css" href="../../../statics/public/aui/css/aui-pull-refresh1.css" />
+    <!-- 公司公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public.css"/>
+    <!-- end -->
+    <!-- 本项目公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_p5boss.css"/>
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_mobile.css"/>
+    <!--轮播图-->
+	<link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/swiper.min.css"/> 
+    <link rel="stylesheet" type="text/css" href="css/life_platform.css"/>
+</head>
+<body class="bg-fcfcfc aui-load-container">
+ <!--下拉刷新-->
+	<div class="aui-load-wrap">
+		<div class="aui-loading-dot"></div>
+		<div class="aui-loading-circle"></div>
+		<div class="aui-loading-title"></div>
+	</div>
+	
+	
+	<!--办事指南-->
+	<section class="life_con mt-12em mb-12em">
+		<div class="clearfix pt-15em pl-12em pr-12em">
+			<div class="pull-left f-16em color-21 f-w">办事指南</div>
+				<div class="pull-right f-12em color-9e" onclick="openPartyWork('cms_partyWork_life_list_header','办事流程')">更多服务
+					<i class="iconfont color-de f-12em lh-20em ml-5mem">&#xe613;</i>
+				</div>
+		</div>
+		<div class="clearfix pt-15em pb-15em pl-12em pr-12em po-re life_flex">
+			<div class="flex-1 pr-6em" onclick="openPartyWork1('cms_partyWork_list1_header','办事流程')">
+				<p class="po-ab top-30em pl-15em f-12em color-21">办事流程</p>
+				<img class="w-100b h-130em" src="../../../statics/images/images_life/life_tu1.png">
+			</div>
+			<div class="flex-1">
+			<div onclick="openPartyWork1('cms_partyWork_list1_header','服务窗口')">
+				<p class="po-ab top-30em pl-15em f-12em color-21">服务窗口</p>
+				<img class="w-100b h-130em" src="../../../statics/images/images_life/life_tu2.png">
+			</div>
+			<div class="mt-7-6em" onclick="openPartyWork1('cms_partyWork_list1_header','联系我们')">
+				<p class="po-ab top-100em pl-15em f-12em color-21">联系我们</p>
+				<img class="w-100b h-130em" src="../../../statics/images/images_life/life_tu3.png">
+			</div>
+			</div>
+		</div>
+		
+	</section>
+	<!--热门文章-->
+	<section class="life_con mt-12em mb-12em over-h">
+		<div class="clearfix pt-15em pl-12em pr-12em">
+				<div class="pull-left f-16em color-21 f-w">热门文章</div>
+				<!--<div class="pull-right f-12em color-9e">更多文章
+				<i class="iconfont color-de f-12em lh-20em ml-5mem">&#xe613;</i>
+				</div>-->
+		</div>
+		<!--热门文章轮播-->
+	<div class="swiper-container">
+		<div class="swiper-wrapper">		
+
+		</div>
+	</div>
+
+	</section>
+	<!--党民互通-->
+	<section class="life_con mt-12em mb-12em">
+		<div class="clearfix pt-15em pl-12em pr-12em">
+				<div class="pull-left f-16em color-21 f-w">党民互通</div>
+				
+		</div>
+		<div class="aui-grid">
+				<div class="aui-row">					
+			        <div class="aui-col-xs-3" onclick="openSurvey('life_survey_header')">
+					<i><img class="h-49em w-49em center-block" src="../../../statics/public/aui2/img/life_que.png"></i>
+					<div class="aui-grid-label color-21 f-12em">调查问卷</div>
+					</div>
+					 <div class="aui-col-xs-3" onclick="openVote('life_vote_header')">
+					<i><img class="h-49em w-49em center-block" src="../../../statics/public/aui2/img/life_vote.png"></i>
+					<div class="aui-grid-label color-21 f-12em">投票管理</div>
+					</div>
+					<div class="aui-col-xs-3" onclick="openMessage('life_message_header')">
+					<i><img class="h-49em w-49em center-block" src="../../../statics/public/aui2/img/life_mess.png"></i>
+					<div class="aui-grid-label color-21 f-12em">留言建议</div>
+					</div>
+					<div class="aui-col-xs-3" onclick="openProblem('life_problem_header')">
+					<i><img class="h-49em w-49em center-block" src="../../../statics/public/aui2/img/life_take.png"></i>
+					<div class="aui-grid-label color-21 f-12em">随手拍</div>
+					</div>
+				</div>
+			</div>
+	</section>
+<!--社区服务-->	
+	<section class="life_con mt-12em mb-12em">
+		<div class="clearfix pt-15em pl-12em pr-12em">
+			<div class="pull-left icon_medium f-16em color-21 f-w">社区服务</div>				
+		</div>
+		<div class="clearfix mt-15em pb-15em ml-12em mr-12em po-re">
+			<div class="pull-left" onclick="openPhone()">
+				<p class="po-ab top-55em w-157em text-align f-13em color-33">通讯录</p>
+				<img class="w-157em h-80em" src="../../../statics/images/images_life/life_tx.png">
+			</div>
+			<div class="pull-right" onclick="openThreeservices('life_threeservices_header')">
+				<p class="po-ab top-55em w-157em text-align f-13em color-33">三务公开</p>
+				<img class="w-157em h-80em" src="../../../statics/images/images_life/life_sw.png">
+			</div>
+		</div>
+		
+	</section>
+<!--村务论坛-->		
+	<section class="life_con mt-12em mb-12em">
+		<div class="clearfix pt-15em pl-12em pr-12em">
+				<div class="pull-left icon_medium f-16em color-21 f-w">村务论坛</div>
+				<div class="pull-right icon_regular f-12em color-9e" onclick="openBbs('life_bbs_header',1)">更多
+				<i class="iconfont color-de f-12em lh-20em ml-5mem">&#xe613;</i>
+				</div>
+		</div>
+		
+	
+		
+		<div id="list1" class="mt-12em pb-12em ml-15em mr-15em life_flex">
+			<!--<div class="life_cw pt-10em pull-left mr-12em">
+				<img class="w-20em h-17em m-a" src="../../../statics/images/images_life/life_icon.png">
+				<p class="w-100em text-align mt-0em">三会一课</p>
+			</div>-->
+			
+		</div>
+	
+	</section>
+	<!--精准扶贫-->	
+	<section class="life_con mt-12em mb-12em">
+		<div class="clearfix pt-15em pl-12em pr-12em">
+				<div class="pull-left f-16em color-21 f-w">精准扶贫</div>
+				<div class="pull-right f-12em color-9e" onclick="openHelpwin('hr_poorhelp_header')">更多
+				<i class="iconfont color-de f-12em lh-20em ml-5mem">&#xe613;</i>
+				</div>
+		</div>
+		
+		<div class="clearfix po-re mt-15em pl-15em pr-15em poor_flex">
+			<div class="w-157em poor_item">
+				<div class="mb-12em" onclick="openList('hr_poorhelp_list_header','0')">
+					<p class="po-ab top-19em pl-20em f-12em color-21">扶贫政策</p>
+					<img class="w-157em h-50em" src="../../../statics/images/images_life/poor_tu1.png">
+				</div>
+				
+			</div>
+			<div class="w-157em poor_item">
+				<div class="mb-12em" onclick="openList('hr_poorhelp_list_header','2')">
+					<p class="po-ab top-19em pl-20em f-12em color-1f color-21">帮扶一对一</p>
+					<img class="w-157em h-50em" src="../../../statics/images/images_life/poor_tu2.png">
+				</div>
+			</div>
+			<div class="w-157em poor_item">
+				<div class="mb-12em" onclick="openList('hr_poorhelp_list_header','1')">
+				<p class="po-ab top-80em pl-20em f-12em color-1f color-21">扶贫动态</p>
+				<img class="w-157em h-50em" src="../../../statics/images/images_life/poor_tu3.png">
+				</div>
+			</div>
+			
+			<!--<div class="pull-left mr-12em">
+				<div class="mb-12em" onclick="openList('hr_poorhelp_list_header','0')">
+					<p class="po-ab top-19em pl-20em f-12em color-1f icon_regular f-w">扶贫政策</p>
+					<img class="w-157em h-50em" src="../../../statics/images/images_life/poor_tu1.png">
+				</div>
+				<div class="mb-12em" onclick="openList('hr_poorhelp_list_header','2')">
+					<p class="po-ab top-80em pl-20em f-12em color-1f icon_regular f-w">帮扶一对一</p>
+					<img class="w-157em h-50em" src="../../../statics/images/images_life/poor_tu2.png">
+				</div>
+			</div>
+			<div class="pull-left">
+				<div class="mb-12em" onclick="openList('hr_poorhelp_list_header','1')">
+				<p class="po-ab top-19em pl-20em f-12em color-1f icon_regular f-w">扶贫动态</p>
+				<img class="w-157em h-50em" src="../../../statics/images/images_life/poor_tu3.png">
+				</div>
+			</div>-->
+		</div>
+		
+	</section>
+
+
+	<!--<div class="over-h mb-8em bg-color-whiter pt-5em mb-8em">
+		<div class="pull-left w-33b pt-10em pb-10em">
+			<div class="m-a over-h w-60em" onclick="openProblem('life_problem_header')">
+				<img class="w-25em h-25em m-a" src="../../../statics/images/images_life/life_o2o.png" alt="" />
+				<p class="f-12em color-33 text-align mt-8em">随手拍</p>
+			</div>
+		</div>
+		<div class="pull-left w-33b pt-10em pb-10em">
+			<div class="m-a over-h w-60em" onclick="openHelpwin('hr_poorhelp_header')">
+				<img class="w-25em h-25em m-a" src="../../../statics/images/images_life/life_poorhelp.png" alt="" />
+				<p class="f-12em color-33 text-align mt-8em">精准扶贫</p>
+			</div>
+		</div>
+		<div class="pull-left w-33b pt-10em pb-10em">
+			<div class="m-a over-h w-60em" onclick="openBbs('life_bbs_header')">
+				<img class="w-25em h-25em m-a" src="../../../statics/images/images_life/life_bbs.png" alt="" />
+				<p class="f-12em color-33 text-align mt-8em">村务论坛</p>
+			</div>
+		</div>
+		<div class="pull-left w-33b pt-10em pb-15em">
+			<div class="m-a over-h w-60em" onclick="openThreeservices('life_threeservices_header')">
+				<img class="w-25em h-25em m-a" src="../../../statics/images/images_life/life_threeservices.png" alt="" />
+				<p class="f-12em color-33 text-align mt-8em">三务公开</p>
+			</div>
+		</div>
+		<div class="pull-left w-33b pt-10em pb-15em">
+			<div class="m-a over-h w-60em" onclick="openSurvey('life_survey_header')">
+				<img class="w-25em h-25em m-a" src="../../../statics/images/images_life/life_survey.png" alt="" />
+				<p class="f-12em color-33 text-align mt-8em">调查问卷</p>
+			</div>
+		</div>
+		<div class="pull-left w-33b pt-10em pb-15em">
+			<div class="m-a over-h w-60em" onclick="openVote('life_vote_header')">
+				<img class="w-25em h-25em m-a" src="../../../statics/images/images_life/life_volunteer.png" alt="" />
+				<p class="f-12em color-33 text-align mt-8em">投票</p>
+			</div>
+		</div>
+	</div>-->
+	<!--结束-->
+	
+	<!--为您推荐-->
+		<!--<div class="mt-8em p-12em bg-color-whiter">
+			<div class="over-h h-22em mb-5em">
+				<img class="pull-left w-7em h-17em lh-22em mr-12em" src="../../../statics/public/aui2/img/tit-icon.png">
+				<span class="pull-left shade f-18em lh-22em f-w letter-spacing">为您推荐</span>
+			</div>
+			<div class="over-h" id="list">
+				
+			</div>
+		</div>	-->
+	<!--结束-->
+	 
+	
+    <!-- 公司公共apijs -->
+	<script type="text/javascript" src="../../../statics/public/js/api.js"></script>
+	<!-- end -->
+	<!-- jquery js -->
+	<script type="text/javascript" src="../../../statics/public/js/jquery.min.js"></script>
+	<script type="text/jscript" src="../../../statics/public/aui2/js/swiper-3.4.2.min.js"></script>
+	<!-- alertjs -->
+    <script type="text/jscript" src="../../../statics/public/aui2/js/aui-alert.js"></script>
+    <!--end-->
+    <!--aui轮播-->
+    <script type="text/javascript" src="../../../statics/public/aui2/js/aui-slide.js"></script>
+    <!-- aui下拉刷新js -->
+	<script type="text/jscript" src="../../../statics/public/aui/js/aui-pull-refresh.js"></script>
+    <!-- 本项目公共js -->
+	<script type="text/jscript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+	<!-- end -->
+	<!-- 主要js配置文件 -->
+	<script type="text/jscript" src="../../../statics/public/js/config.js"></script>
+	<!-- end -->
+	<!-- 页面 js -->
+	<script type="text/javascript" src="js/life_platform.js"></script>
+	<!--<script src="http://cdn.jsdelivr.net/npm/eruda"></script>-->
+	<!-- end -->
+	<script type="text/javascript">
+	    
+	</script>
+</body>
+</html>

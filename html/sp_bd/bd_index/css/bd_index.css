@@ -1,0 +1,105 @@
+/*——————————————————————————————本页面公用—————————————————————————————————————————*/
+/*margin类*/
+.ml-17em{margin-left:0.85rem;}
+.mr-17em{margin-right:0.85rem;}
+.mt-14em{margin-top: 0.7rem !important;}
+.mt-3m{margin-top:-4px}
+.mt-2em{margin-top: 0.1rem !important;}
+.ml-8em{margin-left: 0.4rem !important;}
+.mr-8em{margin-right: 0.4rem !important;}
+.m-14em-auto-12em{margin: 0.7rem auto 0.6rem !important;}
+/*padding类*/
+.p-0{padding: 0 !important;}
+/*高度类*/
+.h-49em{height: 2.45rem !important;}
+.h-18em{height: 0.9rem !important;}
+.h-17em{height: 0.85rem;}
+/*宽度类*/
+.w-18em{width: 0.9rem !important;}
+.w-95b{width:95%;}
+.w-169em{width: 8.45rem;}
+/*边线类*/
+.bt-1-f9{border-top: 1px solid #f1f1f1;}
+
+/*——————————————————————————————头部—————————————————————————————————————————*/
+header ul li { display: none; height: 40px}
+header ul li.active{ display: block; }
+.aui-icon-roundadd{font-size: 40px !important;margin-top:8px}
+.aui-nav {
+    position: inherit;
+    
+}
+header ul li:lastchild.active {
+    display: none;
+}
+.aui-bar-info{
+    background:url("../../../../statics/public/images/headerBg2.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.aui-bar {
+     min-height: 0px!important
+}
+
+/*——————————————————————————————底部导航—————————————————————————————————————————*/
+
+.aui-nav{
+height: 2rem;
+		}
+.aui-nav .aui-bar-tab{height: 2rem;background:rgb(255, 255, 255);}
+.aui-border-tb:after {
+	border-top: 1px solid rgb(200, 200, 200);
+	border-bottom: 1px solid rgb(171, 8, 9);
+
+}
+/*.aui-nav .aui-bar-tab li,.aui-nav .aui-bar-tab .aui-iconfont{color:#ccc;}
+.aui-nav .aui-bar-tab #tabbar1{background: url("../../../../statics/images/images_bd/homePage1.png") no-repeat center 0.5rem;background-size: 25.5% 36%;}
+.aui-nav .aui-bar-tab #tabbar2{background: url("../../../../statics/images/images_bd/supermarket1.png") no-repeat center 0.5rem;background-size: 26.5% 36%;}
+.aui-nav .aui-bar-tab #tabbar3{background: url("../../../../statics/images/images_bd/partyLearn1.png") no-repeat center 0.5rem;background-size: 25.5% 36%;}
+.aui-nav .aui-bar-tab #tabbar4{background: url("../../../../statics/images/images_bd/livelihood1.png") no-repeat center 0.5rem;background-size: 28.5% 36%;}
+.aui-nav .aui-bar-tab #tabbar5{background: url("../../../../statics/images/images_bd/partyMember1.png") no-repeat center 0.5rem;background-size: 26.5% 36%;}*/
+
+.aui-nav .aui-bar-tab li p{width: 100%;line-height: 0.5rem;color:#333;font-size: 0.5rem;}
+.aui-nav .aui-bar-tab li .img2{display: none;}
+
+/*.aui-nav .aui-bar-tab #tabbar1[class="active-info"]{background: url("../../../../statics/images/images_bd/homePage2.png") no-repeat center 0.6rem;background-size: 50% 70%;transition: all 0.3s;}
+.aui-nav .aui-bar-tab #tabbar2[class="active-info"]{background: url("../../../../statics/images/images_bd/supermarket2.png") no-repeat center 0.6rem;background-size: 50% 70%;transition: all 0.3s;}
+.aui-nav .aui-bar-tab #tabbar3[class="active-info"]{background: url("../../../../statics/images/images_bd/partyLearn2.png") no-repeat center 0.6rem;background-size: 50% 70%;transition: all 0.3s;}
+.aui-nav .aui-bar-tab #tabbar4[class="active-info"]{background: url("../../../../statics/images/images_bd/livelihood2.png") no-repeat center 0.6rem;background-size: 50% 70%;transition: all 0.3s;}
+.aui-nav .aui-bar-tab #tabbar5[class="active-info"]{background: url("../../../../statics/images/images_bd/partyMember2.png") no-repeat center 0.6rem;background-size: 48% 70%;transition: all 0.3s;}*/
+
+.aui-nav .aui-bar-tab .active-info p{color:#ff4040 !important;}
+.aui-nav .aui-bar-tab .active-info .img1{display: none;}
+.aui-nav .aui-bar-tab .active-info .img2{display: inline-block;}
+.aui-border-tb:after{/*border-top: 1px solid #f3f3f3;*/}
+
+
+
+
+
+/*——————————————————————————————其他样式—————————————————————————————————————————*/
+.fcolor-white {color:#fff!important}
+.fsize-24{font-size:24px!important} 
+p{color:#666;font-size:0.5rem;}
+.wh-24em{width: 1.2rem !important;height: 1.2rem !important;}
+.wh-33em{width: 1.65rem !important;height: 1.65rem !important;}
+.color_ff{color:#fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

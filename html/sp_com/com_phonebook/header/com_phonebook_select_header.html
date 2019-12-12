@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>党支部</title>
+    <!-- aui核心css -->
+    <link rel="stylesheet" type="text/css" href="../../../../statics/public/aui/css/aui.css"/>
+    <!-- end -->
+    <!-- 公司公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../../statics/public/css/sp_public_mobile.css"/>
+    <!-- end -->
+    <!-- 项目公司公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../../statics/public/css/sp_public.css"/>
+    <!-- end -->
+    <style>
+    </style>
+</head>
+<body>
+    <header class="aui-bar aui-bar-nav aui-bar-info pt-25">
+	    <ul>
+	    	<li class="h-45">
+	    		<a class="aui-pull-left" onclick="goBlack()">
+			        <span class="aui-iconfont aui-icon-left"></span>返回
+			    </a>
+	    		<div class="aui-title">党支部</div>
+			    <a class="aui-pull-right" onclick="save(1)">
+					<div class="bg-color-tran bor_none p-0">
+						确定
+			    	</div>
+			    </a>
+	    	</li>
+	    </ul>
+    </header>
+<script type="text/javascript" src="../../../../statics/public/js/jquery.min.js"></script>
+<!-- 本项目公共js -->
+<script type="text/javascript" src="../../../../statics/public/js/sp_public_p5boss.js"></script>
+<!-- end -->
+<script type="text/javascript" src="../../../../statics/public/aui/js/aui-alert.js"></script>
+<script>
+	apiready = function(){
+		changecolor();//根据配置文件改变头部颜色 
+		api.openFrame({
+            name: 'com_phonebook_select',
+            url: '../com_phonebook_select.html',
+            rect: {
+	            y:($('header').height()/45*70),
+            },
+            bounces: false,
+            pageParam: {
+            	name:api.pageParam.name
+            }
+        });
+        if(userAgent()){//系统小于4.4修改Y轴高度
+        	api.setFrameAttr({
+			    name: 'com_phonebook_select',
+			    rect: {y: 45}
+			});
+        };
+	}
+	//返回
+	function goBlack(){
+		api.closeWin({name:api.winName});
+	}
+	function save(type){
+		api.execScript({
+//		    name: 'com_phonebook_select_header',
+		    frameName: 'com_phonebook_select',
+		    script: 'save()'
+		});
+	}
+</script>
+</body>
+</html>

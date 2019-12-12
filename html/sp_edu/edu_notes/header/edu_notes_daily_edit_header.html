@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>日常笔记</title>
+    <!-- aui核心css -->
+    <link rel="stylesheet" type="text/css" href="../../../../statics/public/aui2/css/aui.css"/>
+    <!-- end -->
+    <!-- 公司公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../../statics/public/css/sp_public.css"/>
+    <link rel="stylesheet" type="text/css" href="../../../../statics/public/css/sp_public_mobile.css"/>
+    <!-- end -->
+    <style>
+    header{background-image: none !important;}
+    .color-9e{color:#9e9e9e}
+	.color-21{color:#212121}
+	.top-0em{top:0}
+	.left-0em{left:0}
+	.color-ff3032{color: #ff3032;}
+	.border-3em-de{border-bottom:0.03rem solid #dedede}
+    </style>
+</head>
+<body>
+    <header class="aui-bar aui-bar-nav aui-bar-info pt-20em bg-color-whiter border-3em-de">
+	    <ul>
+	    	<li class="h-45em">
+	    		<div class="pull-left icon_regular pl-20em f-14em color-9e" onclick="goBlack()">
+					取消
+				</div>
+	    		<div class="aui-title f-w color-21 f-18em">写笔记</div>
+	    		
+	    	</li>
+	    </ul>
+    </header>
+<script type="text/jscript" src="../../../../statics/public/js/jquery.min.js"></script>
+<!-- 本项目公共js -->
+<script type="text/javascript" src="../../../../statics/public/js/sp_public_p5boss.js"></script>
+<!-- end -->
+<script type="text/javascript" src="../../../../statics/public/aui/js/aui-alert.js"></script>
+<script>
+	apiready = function(){
+		changecolor();//根据配置文件改变头部颜色 
+		api.openFrame({
+            name: 'edu_notes_daily_edit',
+            url: '../edu_notes_daily_edit.html',
+            rect: {
+	            y:($('header').height()/45*70),
+            },
+            bounces: false,
+            pageParam: {
+            	id:api.pageParam.id
+            }
+        });
+        if(userAgent()){//系统小于4.4修改Y轴高度
+        	api.setFrameAttr({
+			    name: 'edu_notes_daily_edit',
+			    rect: {y: 45}
+			});
+        };
+	}
+	//返回
+	function goBlack(){
+		api.closeWin({});
+	}
+</script>
+</body>
+</html>

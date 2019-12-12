@@ -1,0 +1,430 @@
+body {
+
+}
+/*width-height类*/
+.wh-24em{width: 1.2rem;height: 1.2rem;}
+.wh-32em{width: 1.6rem;height: 1.6rem;}
+
+/*wdth类*/
+.w-7em{width: 0.35rem;}
+.w-239em{width: 11.95rem !important;}
+.w-273em{width: 13.65rem !important;}
+.w-288em{width: 14.4rem !important;}
+.w-4-3em{width:2.375rem;}
+.h-4-3em{height:2.375rem;}
+
+/*height类*/
+.h-32em{height: 1.6rem !important;}
+.h-30em{height: 1.5rem !important;}
+.h-130em{height: 6.5rem !important;}
+.h-212em{height: 10.6rem;}
+
+/*line-height类*/
+.lh-12em{line-height: 0.6rem;}
+.lh-14em{line-height: 0.7rem;}
+.lh-20em{line-height: 1rem !important;}
+.lh-24{line-height: 1.2rem;}
+.lh-32em{line-height: 1.6rem !important;}
+
+/*padding类*/
+.pt-6em{padding-top: 0.3rem !important;}
+
+.pb-6em{padding-bottom: 0.3rem !important;}
+
+.pl-5em{padding-left: 0.25rem !important;}
+.pl-20em{padding-left: 1rem !important;}
+
+/*margin类*/
+
+
+/*color类*/
+.color-b3{color: #b3b3b3 !important;}
+.color-4e{color: #4e4e4e;}
+.color-75{color: #757575;}
+.color-df{color: #dfdfdf !important;}
+.color-ff3032{color: #ff3032;}
+.color-ff1b1e{color: #ff1b1e;}
+
+/*font-size类*/
+.f-16em{font-size: 0.8rem !important;}
+
+/*background类*/
+.bg-color-f1{background: #f1f1f1 !important;}
+.bg-color-f9{background: #f9f9f9 !important;}
+
+/*border类*/
+.bor-0{border: 0 !important;}
+.b-1-ff1b1e{border: 1px solid #ff1b1e;}
+
+.bl-1-ff9033{border-left: 1px solid #ff9033;}
+
+.bb-1-df{border-bottom: 1px solid #dfdfdf;}
+
+.bor-ra-7{border-radius: 7px !important;}
+.bor-ra-32em{border-radius: 1.6rem !important;}
+
+/*top类*/
+.top-f12em{top: -0.6rem;}
+
+/*right类*/
+.right-f13em{right: -0.65rem;}
+
+/*box-shadow类*/
+.box-4-df{box-shadow: 0 0 4px 0 #dfdfdf;}
+
+.shade {
+    background-image: -webkit-gradient(linear, left center, right center, from(rgba(252, 152, 118, 1)), to(rgba(254, 192, 115, 1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.opt{
+	color: #ffffff;
+	background: -webkit-linear-gradient(left, #ff4d4d , #ff3032 ,#ff5a2d); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(right, #ff4d4d, #ff3032 ,#ff5a2d); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(right, #ff4d4d, #ff3032 ,#ff5a2d); /* Firefox 3.6 - 15 */
+	background: linear-gradient(to right, #ff4d4d , #ff3032 ,#ff5a2d); /* 标准的语法 */
+}
+
+.box-inset{
+	box-shadow: 0 0 3px 0 #dfdfdf inset !important;
+}
+
+.grad {
+  background: -webkit-linear-gradient(left, #ff4d4d , #ff3032 , #ff5a2d); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #ff4d4d , #ff3032 , #ff5a2d); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #ff4d4d , #ff3032 , #ff5a2d); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #ff4d4d , #ff3032 , #ff5a2d); /* 标准的语法 */
+}
+
+/*自定义样式*/
+.edu_notes_option{
+min-height: 2.25rem;
+	position: absolute;
+	margin: 0;
+	text-align: center;
+	white-space: nowrap;
+	right: 3.5rem;
+	left: 3.5rem;
+	width: auto;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	z-index: 2;
+}
+
+.edu_notes_option select option{margin: 0 auto;text-align:text;}
+.color-9e{color:#9e9e9e;}
+.edu_notes_option select {
+/*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+border: none !important;
+/*很关键：将默认的select选择框样式清除*/
+appearance:none;
+-moz-appearance:none;
+-webkit-appearance:none;
+/*在选择框的最右侧中间显示小箭头图片*/
+background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent;
+/*为下拉小箭头留出一点位置，避免被文字覆盖*/
+padding-right: 0.3rem;
+margin: 0 auto;text-align:text;
+}
+.color-21{color:#212121;}
+.color-12{color:#121212;}
+.color-376bf5{color:#376bf5;}
+/*本页面日历css样式*/
+#test2 .layui-laydate-main {
+    width: 100% !important;
+   
+}
+#test2 .layui-laydate .layui-this{
+  	width: 2.6rem !important;
+	height: 1.6rem !important;
+  /* background-color: #ff3032;
+    background-size:1.6rem 1.6rem;
+    border-radius:50% !important;*/
+  background: url("../../../../statics/images/images_edu/edu_notes_rili_bg.png") no-repeat !important; 
+  background-size:63% 100% !important;
+  background-position:center center !important;
+  color:#fff !important;
+ 
+}
+#test2 .layui-laydate, .layui-laydate-hint {
+     border: none !important; 
+     box-shadow: none !important; 
+     background-color: none !important; 
+     color: #9e9e9e !important;
+}
+#test2 .layui-laydate-content {
+    position: relative;
+    padding: 0px !important;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+#test2 .layui-laydate-content table tr{
+	display: inline;
+}
+#test2 .layui-laydate-content table {
+    width:100% !important;
+    border-collapse: collapse;
+    border-spacing: 0;
+    
+}
+#test2 .layui-laydate-content>table>tbody>tr>td {
+	text-align: center !important;
+    width: 2.6rem !important;
+    height:1.6rem !important;
+    font-size:0.6rem !important;
+    color: #212121 !important; 
+     margin: 0 auto !important;
+     float:left !important;
+    
+}
+#test2 .layui-laydate-content>table>thead>tr>th{
+	text-align: center !important;
+	color: #9e9e9e;
+	font-size: 0.5rem;
+	width: 2.7rem !important;
+    height:1.6rem !important;
+    
+   
+}
+
+#test2 .layui-laydate-content>table>tbody{
+	
+}
+#test2 .layui-laydate-content>table>thead>tr{
+	position:absolute !important;
+	top:1.3rem !important;
+
+}
+
+#test2 .layui-laydate-content td,.layui-laydate-header *,.layui-laydate-list li {
+	transition-duration:.1s !important;
+	-webkit-transition-duration:.1s !important;
+}
+#test2 .layui-laydate-content td:hover,#test2 .layui-laydate-list li:hover {
+	
+	color:#fff;	
+}
+ #testView{
+	
+	color:#333;
+	margin-bottom: 0.57rem !important;
+}
+.edu_notes_con{
+	width:94%;
+	margin-left:3%;
+	background-color: #ffffff;
+	box-shadow: 0rem 0rem 0.4rem 0rem 
+		rgba(0, 0, 0, 0.08);
+	border-radius: 0.25rem;
+}
+.w-32em{width:1.6rem;}
+.h-32em{height:1.6rem;}
+.color-a3{color: #a3a3a3;;}
+.color-a4{color: #a4a4a4;;}
+.border-3em-de{
+border: solid 0.03rem #dedede;
+}
+.border-radius-25em{border-radius: 0.25rem;}
+.mt-13em{margin-top:0.68rem;}
+.mt-9em{margin-top:0.48rem;}	
+.w-281em{width:14.28rem;}
+.h-160em{height:8.2rem;}
+.bb-1-de{border-bottom: 0.03rem solid #dedede;}
+
+#tabBox4{
+		background: #fff;
+		overflow: hidden;
+	}
+	#tabBox4 li{
+		width: 3rem;
+		float: left;
+		text-align: center;
+		position: relative;
+		border-right:none !important;
+	}
+	#tabBox4 li a{
+	font-size:0.7rem;
+		display: block;
+		margin: 0 auto;
+		color: #757575;
+	}
+	#tabBox4 li .active{
+		display: none;
+		width: 2rem;
+		height: 1px;
+		position: absolute;
+		bottom: -0.25rem;
+		left: 50%;
+		background: #fe9c44;
+		margin-left: -1rem;
+	}
+	#tabBox4 .tabBox2-active a{
+		color: #ff4040;
+		font-size:0.7rem;
+		font-weight: bold;
+	}
+	#tabBox4 .tabBox2-active .active{
+		display: block;
+	}	
+
+.top-0em{top:0rem;}
+.left-0em{left:0rem;}
+/*日历遮罩样式***************************************************/
+.z-index-mask{z-index: 2000 !important;}
+#test3 .layui-laydate-main {
+    width: 100% !important;
+   
+}
+#test3 .layui-laydate .layui-this{
+  	width: 2.7rem !important;
+	height: 1.6rem !important;
+  background: url("../../../../statics/images/images_edu/edu_notes_rili_bg.png") no-repeat !important; 
+  background-size:63% 100% !important;
+  background-position:center center !important;
+  color:#fff !important;
+ 
+}
+#test3 .layui-laydate, .layui-laydate-hint {
+	width: 100% !important;
+	border: none !important; 
+     box-shadow: none !important; 
+     background-color: none !important; 
+}
+#test3 .layui-laydate-content {
+border-top: 1px solid #e2e2e2 !important;
+padding-top:0.5rem !important;
+    /*position: relative;
+    padding: 0px !important;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;*/
+}
+#test3 .laydate-prev-y, #test3 .laydate-next-y{
+    display: none !important; 
+}
+#test3 .laydate-prev-m,#test3 .laydate-next-m{
+	display: none !important; 
+}
+/*
+#test3 .laydate-day-prev,#test3 .laydate-day-next{
+    color: #fff !important; 
+}*/
+#test3 .layui-laydate .laydate-disabled,.layui-laydate .laydate-disabled:hover {
+	background:0 0 !important;
+	color:#d2d2d2 !important;
+	cursor:not-allowed !important;
+	-moz-user-select:none;
+	-webkit-user-select:none;
+	-ms-user-select:none
+}
+
+
+#test3 .layui-laydate-content table tr{
+/*	display: inline;*/
+}
+#test3 .layui-laydate-content table {
+   /* 
+    border-collapse: collapse;
+    border-spacing: 0;*/
+   width:100% !important;
+    
+}
+#test3 .laydate-set-ym {
+    color: #212121 !important;
+    font-size: 0.9rem !important;
+}
+#test3 .layui-laydate-content>table>tbody>tr>td {
+	text-align: center !important;
+    width: 2.7rem !important;
+    height:1.6rem !important;
+    font-size:0.6rem !important;
+     margin: 0 auto !important;
+     padding:0 !important;
+    
+}
+#test3 .layui-laydate-content>table>thead>tr>th{
+	/*text-align: center !important;
+	
+	font-size: 0.5rem;
+	width: 2.7rem !important;
+    height:1.6rem !important;*/
+    color: #212121 !important;
+    font-size: 0.7rem !important;
+   
+}
+
+#test3 .layui-laydate-content>table>tbody{
+	
+}
+#test3 .layui-laydate-content>table>thead>tr{
+	
+
+}
+
+#test3 .layui-laydate-content td,.layui-laydate-header *,.layui-laydate-list li {
+	transition-duration:.1s !important;
+	-webkit-transition-duration:.1s !important;
+}
+#test3 .layui-laydate-content td:hover,#test3 .layui-laydate-list li:hover {
+	
+	color:#fff;	
+}
+#test3 .layui-laydate-header {
+    width: 70% !important;
+    position: relative !important;
+    line-height: 30px !important;
+    padding: 10px 70px 5px !important;
+    margin: 0 auto !important;
+}
+#test3 .layui-laydate-header {
+     border-bottom: none !important;
+}
+#test3 .layui-laydate-header i {
+    position: absolute;
+    top: 10px;
+    color: #212121 !important;
+    font-size: 0.7rem !important;
+}
+
+ #testView{
+	
+	color:#333;
+	margin-bottom: 0.57rem !important;
+}
+.left-11em{left:0.57rem;}
+
+/*笔记详情样式*/
+.edu_notes_info_con{
+	width:94%;
+	margin-left:3%;
+	
+}
+.edu_notes_info_pic{
+	width:94%;
+	margin-left:3%;
+	background-color: #ffffff;
+	box-shadow: 0rem 0.18rem 0.8rem 0rem 
+		rgba(0, 0, 0, 0.12);
+	border-radius: 0.25rem;
+}
+.color-9e{color: #9e9e9e;}
+.pt-16em{padding-top:0.8rem;}
+.w-12em{width:0.65rem;}
+/* 垂直居中 */
+.va-jz{
+	display: flex;
+    align-items:Center; 
+}
+.h-201em{height: 13rem;}
+.color-f37019{color:#f37019}
+
+#list{display:none}
+
+.text-r{text-align:right;}
+.w-33b{width:33%;}
+
+
+
+

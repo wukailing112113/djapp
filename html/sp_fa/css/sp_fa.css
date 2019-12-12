@@ -1,0 +1,64 @@
+body {
+	background: #fff;
+}
+/*tab切换样式2*/
+#tabBox2{
+	background: #fff;
+	overflow: hidden;
+}
+#tabBox2 li{
+	width: 33.33%;
+	float: left;
+	border-right: 1px solid #eeeeee;
+	text-align: center;
+	position: relative;
+}
+#tabBox2 li a{
+	display: block;
+	margin: 0 auto;
+	color: #757575;
+}
+#tabBox2 li .active{
+	display: none;
+	width: 2rem;
+	height: 1px;
+	position: absolute;
+	bottom: -0.25rem;
+	left: 50%;
+	background: #ff3032;
+	margin-left: -1rem;
+}
+#tabBox2 .tabBox2-active a{
+	color: #ff3032;
+}
+#tabBox2 .tabBox2-active .active{
+	display: block;
+}
+/*end*/
+.h-44em{height: 2.2rem;}
+
+.pl-12em{padding-left: 0.6rem;}
+.pr-12em{padding-right: 0.6rem;}
+
+.lh-18em{line-height: 0.9rem;}
+.lh-27em{line-height: 1.35rem;}
+.lh-46em{line-height: 2.3rem;}
+
+.color-ff3032{color: #ff3032;}
+.color-89{color: #898989;}
+.color-b3{color: #b3b3b3;}
+
+.f-27em{font-size: 1.35rem;}
+
+.pr-4em{padding-right: 0.2rem;}
+
+.b-0{border: 0;}
+
+.bb-1-dfdfdf{border-bottom: 1px solid #dfdfdf;}
+
+.grad {
+  background: -webkit-linear-gradient(left, #ff5a2d , #ff3032, #ff5a2d); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #ff5a2d, #ff3032, #ff5a2d); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #ff5a2d, #ff3032, #ff5a2d); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #ff5a2d , #ff3032, #ff5a2d); /* 标准的语法 */
+}

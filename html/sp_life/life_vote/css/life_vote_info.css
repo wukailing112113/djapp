@@ -1,0 +1,37 @@
+body {
+
+}
+
+
+.wh-17em{width: 0.85rem;height: 0.85rem;}
+.lh-14em{line-height: 0.7rem;}
+.lh-18em{line-height: 0.9rem;}
+.pb-8em{padding-bottom: 0.4rem;}
+.bor-0{border: 0 !important;}
+.b-1-df{border: 1px solid #dfdfdf;}
+.left-25em{left: 1.25rem;}
+
+.color-33{color: #333333;}
+.color-ff3032{color: #ff3032;}
+
+.opt span{color: #ff4545;}
+
+.grad {
+  background: -webkit-linear-gradient(left, #ff4d4d , #ff3032 , #ff5a2d); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #ff4d4d , #ff3032 , #ff5a2d); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #ff4d4d , #ff3032 , #ff5a2d); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #ff4d4d , #ff3032 , #ff5a2d); /* 标准的语法 */
+}
+
+.masking{background: rgba(0,0,0,0.5);width: 100%;position: fixed;left: 0;top: 0;}
+.alert-div{
+	display: none;
+	width: 15.1rem;
+	height: 11rem;
+	position: absolute;
+	left: 50%;top: 50%;
+	margin-left: -7.55rem;
+	margin-top: -5.5rem;
+	background: #ffffff;
+	text-align: center;
+}

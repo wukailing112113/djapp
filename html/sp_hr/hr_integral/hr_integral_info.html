@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+	<title>积分详情</title>
+    <!-- api核心css -->
+	<link rel="stylesheet" type="text/css" href="../../../statics/public/css/api.css"/>
+    <!-- end -->
+    <!-- aui核心css -->
+	<link rel="stylesheet" type="text/css" href="../../../statics/public/aui/css/aui.css"/>
+    <!-- end -->
+    <!-- 公司内部公共css -->
+	<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public.css"/>
+    <!-- end -->
+    <!-- 本项目css -->
+	<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_mobile.css"/>
+    <!-- end --> 
+    <!--本页面-->
+    <link rel="stylesheet" type="text/css" href="css/hr_integral_info.css"/>
+    <!--end-->
+    <style>
+    </style>
+</head> 
+<body class="bg-color-f9">
+	<!--积分排名切换-->
+		<ul class="bb-1-dfdfdf" id="tabBox2">
+		    <li id="name1" class="mt-5em mb-5em tabBox2-active" onclick="getHrCommunistIntegralList(1)">
+		   	 <a name="#tab1">个人本支部排名</a><span class="active"></span>
+		    </li>
+		    <li id="name2" class="mt-5em mb-5em" onclick="getHrCommunistIntegralList(2)">
+		   	 <a name="#tab2">系统内排名</a><span class="active"></span>
+		    </li>
+		</ul>
+	<!--结束-->
+	
+	<!--积分排名详情-->
+		<p id="title" class="p-20em f-18em lh-18em color-33 f-w text-align">积分排名</p>
+		<div class="pl-8em pr-8em">
+			<ul class="box-4-df p-12em bg-color-whiter" id="list">
+				<!--<li class="h-32em lh-34em f-14em color-white f-w mb-8em bor-ra-3 text-r bg-color-f8c807"><span class="pr-8em">赵建国</span><span class="num">666</span><span class="pr-12em">分</span></li>
+				<li class="h-32em lh-34em f-14em color-white f-w mb-8em bor-ra-3 text-r bg-color-f8c807"><span class="pr-8em">赵建国</span><span class="num">555</span><span class="pr-12em">分</span></li>
+				<li class="h-32em lh-34em f-14em color-white f-w mb-8em bor-ra-3 text-r bg-color-f8c807"><span class="pr-8em">赵建国</span><span class="num">444</span><span class="pr-12em">分</span></li>
+				<li class="h-32em lh-34em f-14em color-white f-w mb-8em bor-ra-3 text-r bg-color-f8c807"><span class="pr-8em">赵建国</span><span class="num">333</span><span class="pr-12em">分</span></li>
+				<li class="h-32em lh-34em f-14em color-white f-w mb-8em bor-ra-3 text-r bg-color-f8c807"><span class="pr-8em">赵建国</span><span class="num">222</span><span class="pr-12em">分</span></li>
+				<li class="h-32em lh-34em f-14em color-white f-w mb-8em bor-ra-3 text-r bg-color-bfbfbf"><span class="pr-8em">赵建国</span><span class="num">111</span><span class="pr-12em">分</span></li>
+				<li class="h-32em lh-34em f-14em color-white f-w mb-8em bor-ra-3 text-r bg-color-bfbfbf"><span class="pr-8em">赵建国</span><span class="num">99</span><span class="pr-12em">分</span></li>-->
+			</ul>
+		</div>
+	<!--结束-->
+	
+	
+</body>
+</html>
+<script type="text/javascript" src="../../../statics/public/js/jquery.min.js"></script>
+<!-- api核心js -->
+<script type="text/javascript" src="../../../statics/public/js/api.js"></script>
+<!-- end -->
+<script type="text/javascript" src="../../../statics/public/aui/js/aui-alert.js"></script>
+<!-- 项目公共js -->
+<script type="text/javascript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+<!-- end -->
+<!--本页面-->
+<script type="text/javascript" src="js/hr_integral_info.js"></script>
+<!--end-->
+<script type="text/javascript">
+	
+</script>

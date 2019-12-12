@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/mui/mui.css"/>
+		<!-- 公司内部公共css文件，必须引用 -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_v2.1.css"/>
+		<!-- 配色方案 -->
+		<link rel="stylesheet" type="text/css" id="skin" href="../../../statics/public/css/skin/skin-red.css"/>
+		<!-- mui中插件选择器css -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/mui/mui.picker.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/mui/mui.dtpicker.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/mui/mui.poppicker.css"/>
+		<!--公司公共css-->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public.css"/>
+		<!--end-->
+		<!--党建项目公共css-->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_mobile.css"/>
+		<!--end-->
+		<link rel="stylesheet" type="text/css" href="css/mine_personal.css"/>
+	</head>
+	<style>
+		.po-fix{
+            bottom:15px;
+        }        
+		.bg-color-white{background:transparent !important}
+	</style>
+	<body class="login_bg">
+		<!--登录人员切换 党员和非党员登录-->
+			<!--<ul class="bb-1-dfdfdf m-0 p-0" id="tabBox2" num="1">
+			    <li id="name1" class="mt-5em mb-5em f-w tabBox2-active" num="1">
+			    <a name="#tab1">党员登录</a><span class="active"></span></li>
+			    <li id="name2" class="mt-5em mb-5em f-w" num="2"><a name="#tab2">非党员登录</a>
+			    <span class="active"></span>
+			    </li>
+			</ul>-->
+		<!--结束-->
+		
+		<!--党员登录-->
+		<div id="party_login" class="mt-50em pl-20em pr-20em">
+			<div id='login-form' class="">
+			<!--选择党组织-->
+				<!--<div class="clearfix mb-15em over-h" onclick="openselectWin('com_phonebook_select_header')">	
+							
+					<input class="pull-left w-50b h-42em p-0 mb-0 color-fff f-20em" id='branch' type="text" onfocus="this.blur()"  placeholder="请选择支部或党委">
+					<input type="hidden" id='branch_hide'/>
+					<div class="pull-left w-15em h-42em text-align">
+						<img class="w-12em h-7em mt-18em" src="../../../statics/images/images_mine/mine_login1.png" alt="" />
+					</div>
+				</div>-->
+				<div class="color-fff f-w f-20em mt-50em" id="logo_name"></div>
+				<div class="color-fff f-w f-40em mt-30em">登录</div>
+				<!--输入用户名-->
+				<div class="po-re w-80b top-145em left-10em h-44em lh-44em">					
+					<fieldset class="fieldset">
+					<legend class="color-9e pl-1em pr-1em">用户名</legend>
+					<input class="po-ab top-23em b-0 w-100b p-0 ml-20em color-21 f-14em f-w" id='user_name' type="text" onfocus="add(this);"onblur="rem(this)" placeholder="请输入用户名">
+				</fieldset>
+				</div>
+				
+				
+				<!--<div class="po-re w-80b top-145em left-30em h-44em lh-44em">					
+					<div class="f-12em color-9e po-ab top-10mem left-20em">用户名</div>
+					<input class="b-0 w-100b p-0 ml-20em color-21 f-14em f-w" id='user_name' type="text" onfocus="add(this);"onblur="rem(this)" placeholder="请输入用户名">
+				</div>-->
+				<!--输入密码 -->
+				<div class="po-re top-178em w-80b h-40em lh-40em left-10em">		
+				<fieldset class="fieldset">
+					<legend class="color-9e pl-1em pr-1em">密码</legend>
+					<i class="iconfont color-66 show po-ab right-5 z-index-max top-25em f-20em h-40em lh-40em p-0">&#xe8ad;</i>
+					<i class="iconfont color-66 hide po-ab right-5 z-index-max top-25em f-20em h-40em lh-40em p-0">&#xe8ac;</i>			
+					<input type="password" class="po-ab top-25em b-0 w-100b p-0 ml-20em color-21 f-14em f-w" id='password' maxlength="18" type="password" onfocus="add(this);"onblur="rem(this)" placeholder="请输入密码">
+				</fieldset>
+				
+				</div>
+				
+				<!--<div class="po-re top-178em w-80b h-40em lh-40em left-30em">		
+				<div class="f-12em color-9e po-ab top-10mem left-20em">密码</div>		
+					<i class="iconfont color-66 show po-ab right-5 f-20em lh-40em mb-8em mt-0em p-0">&#xe8ad;</i>
+					<i class="iconfont color-66 hide po-ab right-5 f-20em lh-40em mb-8em mt-0em p-0">&#xe8ac;</i>		
+					<input type="password" class="b-0 w-100b p-0 ml-20em color-21 f-14em f-w" id='password' maxlength="18" type="password" onfocus="add(this);"onblur="rem(this)" placeholder="请输入密码">
+				</div>-->
+			</div>
+			
+			<!--登录-->
+			<div class="mt-210em" id="buttonAll">			
+				<div class="grad lh-46em h-42em bor-ra-3 text-align color-white f-16em w-150em m-a" onclick="login()">
+					登录
+				</div>
+				
+			</div>
+			<!--注册-->
+			<div class="mt-40em color-66 f-14em text-align w-100b left-0" onclick="openRegistered('mine_personal_registered_header')">注册账号</div>
+			
+		<!--	<div class="mt-50em di-n" id="button">
+				<div class="grad lh-46em h-42em bor-ra-3 text-align color-white f-16em" onclick="login()">
+					登录
+				</div>
+			</div>-->
+		</div>
+		
+		<!--非党员登录-->
+		<div id="non_party_login" class="mt-40em pl-20em pr-20em">
+			<div id='' class="">
+				<div class="bb-1-df po-re">	
+					<i class="iconfont po-ab left-0 f-20em lh-20em mb-8em mt-18em p-0">&#xe607;</i>
+					<input class="mb-8em mt-18em b-0 w-100b p-0 pl-35em h-20em lh-20em color-33 f-16em" id='real_name' type="text" onfocus="add(this);"onblur="rem(this)" placeholder="请输入姓名">
+				</div>
+				<div class="bb-1-df po-re">
+					<i class="iconfont po-ab left-0 f-20em lh-20em mb-8em mt-18em p-0">&#xe871;</i>	
+						
+					<input class="mb-8em mt-18em b-0 w-100b p-0 pl-35em h-20em lh-20em color-33 f-16em" id='IDCard' maxlength="18" type="email" onfocus="add(this);"onblur="rem(this)" placeholder="请输入身份证号">
+					<span class="po-ab right-0 f-10em lh-20em color-2aa2ff mb-8em mt-18em top-0">忘记密码？</span>
+				</div>
+			</div>
+			<div class="mt-50em">
+				<div class="w-162em bg-color-whiter b-1-ff3032 lh-46em h-42em bor-ra-3 text-align color-ff3032 f-16em pull-left" onclick="openRegistered('mine_personal_registered_header')">
+					注册
+				</div>
+				<div class="w-162em grad lh-46em h-42em bor-ra-3 text-align color-white f-16em pull-right" onclick="login()">
+					登录
+				</div>
+			</div>
+		</div>
+		<!--<div class="w-100b text-align color-99 f-14em po-fix">技术支持森普软件</div>-->
+		
+		<script type="text/javascript" src="../../../statics/public/js/jquery.min.js"></script>
+		<script type="text/javascript" src="../../../statics/public/mui/mui.js"></script>
+		<script type="text/javascript" src="../../../statics/public/js/sp_H5APPFrame_public.js"></script>
+		<!-- mui中插件选择器js -->
+		<script type="text/javascript" src="../../../statics/public/mui/mui.picker.js"></script>
+		<script type="text/javascript" src="../../../statics/public/mui/mui.poppicker.js"></script>
+		<!--公司公共js-->
+		<script type="text/javascript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+		<!--end-->
+		<script type="text/javascript" src="js/sha1.min.js"></script>
+		<script type="text/javascript" src="js/bd_mine_login.js"></script>
+		<script type="text/javascript">
+		function add(obj){
+		$(obj).addClass("bg-color-white");
+		}
+		function rem(obj){
+		$(obj).removeClass("bg-color-white");
+		}
+		function openselectWin(winName){
+			api.openWin({
+			    name: winName,
+			    url: '../../sp_com/com_phonebook/header/'+winName+'.html',
+			 
+			});	
+		}
+
+		</script>
+	</body>
+</html>

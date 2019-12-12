@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>客服电话</title>
+    <!-- aui核心css -->
+    <link rel="stylesheet" type="text/css" href="../../../../statics/plugins/aui/css/aui.css"/>
+    <!-- end -->
+    <!-- 公司公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../../statics/public/css/sp_p5boss_public.css"/>
+    <!-- end -->
+    <!-- 项目公司公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../../statics/public/css/sp_public.css"/>
+    <!-- end -->
+    <style>
+    </style>
+</head>
+<body>
+    <header class="aui-bar aui-bar-nav aui-bar-info pt-25">
+	    <ul>
+	    	<li class="h-45">
+	    		<a class="aui-pull-left" onclick="goBlack()">
+			        <span class="aui-iconfont aui-icon-left"></span>返回
+			    </a>
+	    		<div class="aui-title">客服电话</div>
+			   <!-- <a id="btn_id" class="aui-pull-right" onclick="setDataSave()">
+					<button class="bg-color-tran bor_none p-0">
+						保存
+			    	</button>
+			    </a>-->
+	    	</li>
+	    </ul>
+    </header>
+<script type="text/javascript" src="../../../../statics/public/js/jquery.min.js"></script>
+<!-- 本项目公共js -->
+<script type="text/javascript" src="../../../../statics/public/js/sp_p5boss_public.js"></script>
+<!-- end -->
+<script type="text/javascript" src="../../../../statics/plugins/aui/js/aui-alert.js"></script>
+<script>
+	apiready = function(){
+		changecolor();//根据配置文件改变头部颜色 
+		api.openFrame({
+            name: 'bd_mine_service',
+            url: '../bd_mine_service.html',
+            rect: {
+	            y:($('header').height()/45*70),
+            },
+            bounces: false,
+            pageParam: {}
+        });
+        if(userAgent()){//系统小于4.4修改Y轴高度
+        	api.setFrameAttr({
+			    name: 'mine_service',
+			    rect: {y: 45}
+			});
+        };
+	}
+	//返回
+	function goBlack(){
+		api.closeWin({});
+	}
+</script>
+</body>
+</html>

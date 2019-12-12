@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<title>我的任务详情</title>
+		<!-- aui核心css -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui.css"/>
+		<!-- end -->
+		<!--公用css-->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public.css"/>
+		<!-- end -->
+		<!-- 轮播 -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui-slide.css" />
+		<!-- end -->
+		<!-- 本项目公共css -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_mobile.css"/>
+		<!-- end -->
+		<!--本页面css-->
+		<link rel="stylesheet" type="text/css" href="css/life_problem_myinfo.css" />
+		<style>
+		</style>
+	</head>
+	<body>
+			<div class="mt-8em mb-12em bg-color-whiter">
+				<div class="pt-15em f-15em color-33 m-0 bb-1-dfdfdf pb-15em">
+					<div class="pl-12em pr-12em">
+					联&nbsp;&nbsp;系&nbsp;&nbsp;人   <span id="contacts" class="pl-12em color-99"></span></div>
+					</div>
+				<div class="pt-15em f-15em color-33 m-0 bb-1-dfdfdf pb-15em">
+					<div class="pl-12em pr-12em">
+					联系电话  <span id="contact_tel" class="pl-12em color-99"></span></div>
+					</div>
+				<div class="pt-15em f-15em color-33 m-0 bb-1-dfdfdf pb-15em">
+					<div class="pl-12em pr-12em">
+						地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址   <span id="contact_addr" class="pl-12em color-99"></span></div>
+					</div>
+				<div class="pt-15em f-15em color-33 m-0 pb-15em">
+					<div class="pl-12em pr-12em">
+						指&nbsp;&nbsp;派&nbsp;&nbsp;人   <span id="appoint" class="pl-12em color-99"></span>
+					</div>
+				</div>
+			</div>
+	
+		
+		<!--内容-->
+			<div class="p-12em mb-12em bg-color-whiter">
+				<p class="f-15em lh-15em color-33 pb-12em">问题内容</p>
+				<textarea id="question" class="w-100b h-150em f-15em lh-18em color-b3 b-1-dfdfdf p-12em bor-ra-5" placeholder="" disabled="disabled"></textarea>
+			</div>
+		<!--可用输入框  完成之前加入-->
+		<div class="p-12em mb-12em bg-color-whiter">
+				<p class="more di-n f-15em lh-15em color-33 pb-12em">解决详情</p>
+				 <textarea id="question_can" class="di-n w-100b h-150em f-15em lh-18em color-b3 b-1-dfdfdf p-12em bor-ra-5" name="" placeholder="请输入解决详情"></textarea>
+		</div>
+		
+		<!--不可编辑-->
+		<div class="more1 di-n p-12em mb-12em bg-color-whiter">
+				<p class="f-15em lh-15em color-33 pb-12em">解决详情</p>
+				<textarea id="question_no" class="w-100b h-150em f-15em lh-18em color-b3 b-1-dfdfdf p-12em bor-ra-5" placeholder="" disabled="disabled"></textarea>
+		</div>
+			
+			                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+		<!--附件-->
+			<div class="mb-12em">
+				<div id="missiveAttach" class="pl-12em pr-12em pt-15em pb-15em bg-color-whiter">
+					<p class="f-12em color-99 mb-12em">
+						<i class="pull-left f-14em mr-8em iconfont p-0 lh-22em">&#xe639;</i>
+						<span class="f-15em color-33 mr-12em">附件</span>
+						已添加<span id="missiveAttachQuantity">0</span>份
+						<span class="pull-right" onclick="foreach_file()" id="all">下载全部</span>
+	                    <input id="whole" type="hidden" />
+					</p>
+				</div>
+			</div>
+		<!--结束-->
+		
+		<!--发送-->
+			<div class="w-100b pl-12em pr-12em pb-20em pt-25em ">
+				<div class="m-a mt-8em w-350em h-34em f-14em lh-36em color-white text-align grad bor-ra-7" id="submit" onclick="submit()">接收</div>
+<!--			<div class="m-a mt-8em w-350em h-34em f-14em lh-36em color-ff3032 text-align b-1-ff3032 bor-ra-7" onclick="cancel()">取消</div>-->
+				<div class="m-a mt-8em w-350em h-34em f-14em lh-36em color-white text-align grad bor-ra-7 di-n" id="finish" onclick="finish()">完成</div>
+				<div class="m-a mt-8em w-350em h-34em f-14em lh-36em color-white text-align grad bor-ra-7 di-n" id="completed">已完成</div>
+
+			</div>
+		<!--结束-->
+		
+		
+		<script type="text/jscript" src="../../../statics/public/js/jquery.min.js"></script>
+		<!-- api核心js -->
+		<script type="text/jscript" src="../../../statics/public/js/api.js"></script>
+		<!-- end -->
+		<!-- aui下拉刷新js -->
+		<script type="text/jscript" src="../../../statics/public/aui2/js/aui-pull-refresh.js"></script>
+		<!-- end -->
+		<!-- aui轮播 -->
+		<script type="text/jscript" src="../../../statics/public/aui2/js/aui-slide.js"></script>
+		<!-- end -->
+		<!-- 项目公共js -->
+		<script type="text/jscript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+		<!-- end -->
+		<!-- 本页面js -->
+		<script type="text/jscript" src="js/life_problem_myinfo.js"></script>
+		<!-- end -->
+		<script type="text/javascript">
+			
+		</script>
+		<!--end-->
+	</body>
+</html>

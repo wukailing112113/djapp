@@ -1,0 +1,115 @@
+body {
+
+}
+
+/*width类*/
+.w-14em{width: 0.7rem;}
+.w-38em{width: 1.9rem;}
+.w-52em{width: 2.6rem;}
+.w-220em{width: 11rem !important;}
+.w-100b{width: 100% !important;}
+
+/*height类*/
+.h-12em{height: 0.6rem;}
+.h-15em{height: 0.75rem  !important;}
+.h-16em{height: 0.8rem;}
+.h-35em{height: 1.75rem !important;}
+.h-38em{height: 1.9rem;}
+.h-52em{height: 2.6rem;}
+.h-150em{height: 7.5rem;}
+
+
+/*padding类*/
+.pl-12em{padding-left: 0.6rem !important;}
+.pl-20em{padding-left: 1rem !important;}
+.pr-20em{padding-right: 1rem !important;}
+/*margin类*/
+
+
+/*font类*/
+.f-12em{font-size: 0.6rem !important;}
+.f-15em{font-size: 0.75rem !important;}
+.f-35em{font-size:1.75rem;}
+
+
+
+/*line-height类*/
+.lh-15em{line-height: 0.75rem !important;}
+.lh-18em{line-height: 0.9rem;}
+.lh-35em{line-height: 1.75rem !important;}
+.lh-36em{line-height: 1.8rem;}
+
+
+/*color类*/
+.color-b3{color: #b3b3b3;}
+.color-ff3032{color: #ff3032;}
+.color-33{color: #333333 !important;}
+/*background类*/
+.bg-color-f9{background: #f9f9f9 !important;}
+.bg-color-ff3032{background: #ff3032;}
+.bg-color-fcfdfe{background: #fcfdfe;}
+
+
+/*border类*/
+.b-0{border: 0 !important;}
+.b-1-df{border: 1px solid #dfdfdf;}
+.b-1-ff3032{border: 1px solid #ff3032;}
+.bb-1-dfdfdf{border-bottom: 1px solid #dfdfdf;}
+.bb-1-df{border-bottom: 1px solid #dfdfdf;}
+.bt-1-dfdfdf{border-top: 1px solid #dfdfdf;}
+.bor-ra-35em{border-radius: 1.75rem !important;}
+.di-i{display: inline !important;}
+
+
+
+
+
+/* 背景渐变 */
+.grad {
+  background: -webkit-linear-gradient(left, #ff4d4d , #ff3032 , #ff5a2d); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #ff4d4d , #ff3032 , #ff5a2d); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #ff4d4d , #ff3032 , #ff5a2d); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #ff4d4d , #ff3032 , #ff5a2d); /* 标准的语法 */
+}
+
+
+.select{border: 0;background: #ff3032;color: #fff;line-height: 0.9rem;}
+.daily-active{background: #ff3032!important;color: #fff;border: 0;}
+
+/*-搜索框样式1-*/
+	#search1 input{border-radius: 1.2rem;}
+/*---end---*/
+
+	#tabBox2{
+		height: 1.75rem;
+		background: #fff;
+		overflow: hidden;
+	}
+	#tabBox2 li{
+		float: left;
+		border-right: 1px solid #eeeeee;
+		text-align: center;
+		position: relative;
+	}
+	#tabBox2 li a{
+		padding: 0 1rem;
+		display: block;
+		margin: 0 auto;
+		color: #757575;
+	}
+	#tabBox2 li .active{
+		display: none;
+		width: 2rem;
+		height: 1px;
+		position: absolute;
+		bottom: -0.25rem;
+		left: 50%;
+		background: #ff3032;
+		margin-left: -1rem;
+	}
+	#tabBox2 .tabBox2-active a{
+		color: #ff3032;
+	}
+	#tabBox2 .tabBox2-active .active{
+		display: block;
+	}

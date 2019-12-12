@@ -1,0 +1,72 @@
+/*width类*/
+.w-44em{width: 2.2rem;}
+.w-68em{width: 3.4rem;}
+.w-78em{width: 3.9rem;}
+.w-298em{width: 14.9rem;}
+.w-306em{width: 15.3rem !important;}
+
+/*height类*/
+.h-32em{height: 1.6rem;}
+.h-34em{height: 1.7rem !important;}
+.h-44em{height: 2.2rem;}
+.h-68em{height: 3.4rem;}
+.h-78em{height: 3.9rem;}
+
+/*padding类*/
+.pt-16em{padding-top: 0.8rem;}
+
+.pb-16em{padding-bottom: 0.8rem;}
+
+/*margin类*/
+.mt-4px{margin-top: 0.2rem;}
+
+.mb-4px{margin-bottom: 0.2rem;}
+
+/*line-height类*/
+.lh-34em{line-height: 1.7rem !important;}
+
+/*background类*/
+.bg-color-whiter{background: #ffffff !important;}
+.bg-color-dbd6d6{background: #dbd6d6;}
+.bg-color-ff3032{background: #ff3032;}
+.bg-color-99{background: #999999;}
+
+/*border类*/
+.b-10-ff{border: 10px solid #ffffff;}
+.bt-1-df{border-top: 1px solid #dfdfdf;}
+.bb-1-df{border-bottom: 1px solid #dfdfdf;}
+.bb-6-f9{border-bottom: 0.3rem solid #f9f9f9;}
+
+/*border-radius类*/
+.bor-ra-3{border-radius: 3px;;}
+
+/*box-shadow类*/
+.box-4-df{box-shadow: 0 1px 4px 0 #dfdfdf;}
+
+/*left类*/
+.left-1px{left: 1px;}
+.left-9em{left: 0.45rem;}
+.left-10mem{left: -0.5rem;}
+
+/*right类*/
+.right-1px{right: 1px;}
+.right-9em{right: 0.45rem;}
+.right-10mem{right: -0.5rem;}
+
+/*top类*/
+.top-13em{top: 0.65rem;}
+
+/*z-index类*/
+.z-index1{z-index: 1;}
+.z-index2{z-index: 2;}
+
+/*transform类*/
+.transform-45{transform: rotate(45deg)}
+
+/*渐变类*/
+.grad{
+	background: -webkit-linear-gradient(left, #ff4d4d , #ff3032,#ff5a2d); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(right, #ff4d4d, #ff3032,#ff5a2d); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(right, #ff4d4d, #ff3032,#ff5a2d); /* Firefox 3.6 - 15 */
+	background: linear-gradient(to right, #ff4d4d , #ff3032,#ff5a2d); /* 标准的语法 */
+}

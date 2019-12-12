@@ -1,0 +1,37 @@
+.aui-list-view-cell .aui-img-object {
+    max-width: 38px !important;
+    height: 38px !important;
+    line-height: 38px !important;
+    border-radius: 50%;
+}
+input::-webkit-input-placeholder { /* WebKit browsers */ direction: rtl;}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ direction: rtl;}
+input::-moz-placeholder { /* Mozilla Firefox 19+ but I'm not sure about working */ direction: rtl;}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */ direction: rtl;}
+input{text-align: right}
+.pl-15{padding-left: 15px !important}
+.aui-timeline > li > .aui-timeline-item:after {
+    border: none;
+}
+.aui-timeline:before {
+    top: 20px;
+    bottom: 10px;
+}
+.aui-timeline > li > .aui-iconfont {
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 26px;
+    left: 20px;
+}
+.aui-timeline > li > .aui-timeline-item {
+    margin-left: 45px;
+}
+.aui-timeline > li > .aui-timeline-item > .aui-timeline-body {
+    padding: 5px;
+}
+#file_list:after{border-top: none}
+.lh30{line-height:30px}
+.right-50{right:50px}
+.text-indent2{text-indent:2em}
+.p-timeline{padding:10px 15px 10px 0px!important}

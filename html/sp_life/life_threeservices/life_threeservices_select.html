@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>党支部</title>
+    <!-- aui核心css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/aui/css/aui.css"/>
+    <!-- end -->
+    <!-- aui下拉刷新css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/aui/css/aui-pull-refresh.css"/>
+    <!-- end -->
+    <!-- auiflexcss -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/aui/css/aui-flex.css"/>
+    <!-- end -->
+    <!-- 本页面css -->
+    <!-- end -->
+    <style>
+ 	.aui-load-container{
+ 		height:100%;
+ 	}
+ 	.aui-input-row{
+ 		width: 100% !important;
+ 	}
+ 	label,.aui-input-addon{
+ 		width: 85% !important;
+ 		text-align: left !important;
+ 	}
+    </style>
+</head>
+<body class="aui-load-container">
+<div class="aui-load-wrap">
+			<div class="aui-loading-dot"></div>
+			<div class="aui-loading-circle"></div>
+			<div class="aui-loading-title"></div>
+		</div>
+	<div class="">
+		
+		<div class="aui-searchbar-wrap demo" id="search">
+		    <div class="aui-searchbar aui-border-radius" tapmode onclick="doSearch()">
+		        <i class="aui-iconfont aui-icon-search"></i>
+		        <div class="aui-searchbar-text">请输入搜索内容</div>
+		      
+		        <div class="aui-searchbar-input">
+		        	<form action="javascript:search();">
+		        		<input type="search" placeholder="请输入搜索内容" id="search-input">
+		        	</form>
+		        </div>
+		        <!--<i class="aui-iconfont aui-icon-roundclosefill" tapmode onclick="clearInput()"></i>-->
+		    </div>
+		    <div class="aui-searchbar-cancel aui-text-info" tapmode onclick="cancelSearch()">取消</div>
+		</div>
+		
+
+		<div class="aui-content">
+					<div id="list" class="aui-form">
+				        <!--<div class="aui-input-row">
+				            <label class="aui-input-addon">radio</label>
+				            <input class="aui-pull-right aui-radio aui-radio-info" type="radio" name="demo">
+				        </div>-->
+				        
+				    </div>
+			</div>
+		</div>
+	</div>
+	<!--end-->
+    <script type="text/javascript" src="../../../statics/public/js/jquery.min.js"></script>
+    <!-- api核心 js -->
+	<script type="text/javascript" src="../../../statics/public/js/api.js"></script>
+	<!-- end -->
+	<!-- aui下拉刷新js -->
+	<script type="text/jscript" src="../../../statics/public/aui/js/aui-pull-refresh.js"></script>
+	<!-- end -->
+	<!-- 项目公共js -->
+	<script type="text/javascript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+	<!-- end -->
+	<!-- 本页面 -->
+    <script type="text/javascript" src="js/life_threeservices_select.js"></script>
+</body>
+</html>

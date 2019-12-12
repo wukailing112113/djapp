@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<security>
+	<!-- 接口主链接 -->
+	<item name="mainLink" value="http://bgdj.mailinstory.com"/>
+	<!-- 项目logo -->
+	<item name="logo" value="智慧党建云平台"/>
+	<!-- 简介 -->
+	<item name="introduction" value="智慧党建云平台"/>
+	<item name="model" value="index-dj-a"/>
+	<!--切换项目-->
+	<item name="switching_attern" value="false"/>
+	<!-- 融云 获取token的配置信息-->
+	<item name="appKey" value="e5t4ouvpe6m1a"/>
+	<item name="appSecret" value="qzhyLH64Ip"/>
+	<!--支付配置信息-->
+	<item name="aliPay_partner" value="2088911513954114"/>
+	<item name="aliPay_seller" value="biz@simpro.cn"/>
+	<item name="aliPay_rsaPriKey" value="MIICXAIBAAKBgQDJ5VsE2zZICedWLx+0V3jeKP+wp1ri4klikkxXGwhxL+Wu/f24LKRyqPVwibgROjB6JRwWRhVKqVsVHStR6J0bw/amtL/NnhEk7OEQi/c4juVGgiIKoM6hr3vmIhVlhFjLiTRMzGxRbKilZdg9AsP8mvhs1JU7VHsxgrs7N6jVRQIDAQABAoGAD+PTRBCUtxrAcFIJJsJzqtiDNz4UsyKoL+/fvkNMaMwiQaGP5Hzu/G870f2k1QZFZnehPEeLyXKGzqSbEjlClBb+1roe6w3rZSeTdfRKL4gkdP80QUy2++t7ors4NE56Tl0YpNnR0VrNSlL3Bgz6b2oCiqmAtvPoesH4H3Vh1gECQQDyHwTDnP5ZPEbU6kfeX8IhwVmwxvBnc02FGt0n7qa1F9rI6d8XlYyE30zqt1Dv8eR5lxiNSxKrMijEyKHq15oFAkEA1XgOSjFX0EYsQ87N2idnOQcVCUc5iwlOSSw3Y9H/ftHsHYxXjDUC0KBLRCtLXb2G/EIHJhFCJBomGgUwgKryQQJADEMD48A0pWJHGAtRXnKtCzaWizxX+nU9bMtCff45FRzDKL+nW7NoLWZ9p7lm8O/oKTw8sxMlO+RLakPa52DJ3QJBAIQJy4T2umNYVF7o1wleIAn1KHzhsmUer26xS92RciCmhg7M1QYjcAdNbuDOisKDza/Qw403VZrxFao4lYSwuEECQA2f3UT2NXg5QnADt47OLfW7OTy6JkFrFb1iTO/t97UMHaXsm46ijmNAy1/BbZ6rvsBLoH7xvsIw4ZX+I2O5AwA="/>
+	<item name="aliPay_rsaPubKey" value="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJ5VsE2zZICedWLx+0V3jeKP+wp1ri4klikkxXGwhxL+Wu/f24LKRyqPVwibgROjB6JRwWRhVKqVsVHStR6J0bw/amtL/NnhEk7OEQi/c4juVGgiIKoM6hr3vmIhVlhFjLiTRMzGxRbKilZdg9AsP8mvhs1JU7VHsxgrs7N6jVRQIDAQAB"/>
+	<item name="aliPay_notifyURL" value="http://www.apicloud.com"/>
+	<!-- 应用中的配置信息 -->
+		<!--党务平台-->
+	<item name="partyWork" value="true"/><!-- 党务动态 -->
+	<item name="matrix" value="true"/><!-- 党建矩阵 -->
+	<item name="discover" value="true"/><!-- 党员发展全纪实 -->
+	<item name="transfer" value="true"/><!-- 党员关系转移 -->
+	<item name="moving" value="true"/><!-- 流动党员之家 -->
+	<item name="attmeeting" value="true"/><!-- 三会一课 -->
+	<item name="secretary" value="true"/><!-- 第一书记 -->
+	<item name="integral" value="true"/><!-- 积分排名 -->
+	<item name="fa" value="true"/><!-- 党费缴纳 -->
+		<!--学习平台-->
+	<item name="special" value="true"/><!-- 专题学习 -->
+	<item name="learn" value="true"/><!-- 在线党校 -->
+	<item name="notes" value="true"/><!-- 学习笔记 -->
+	<item name="exam" value="true"/><!-- 考试中心 -->
+		<!--民生平台-->
+	<item name="platform" value="true"/><!-- 便民服务大厅 -->
+	<item name="bbs" value="true"/><!-- 村务论坛 -->
+	<item name="helpwin" value="true"/><!-- 精准扶贫 -->
+	<item name="threeservices" value="true"/><!-- 三务公开 -->
+	<item name="survey" value="true"/><!-- 调查问卷 -->
+	<item name="problem" value="true"/><!-- 民生O2O -->
+	<item name="volunteer" value="true"/><!-- 志愿者 -->
+		<!--党务办公-->
+	<item name="notice" value="true"/><!-- 通知公告 -->
+	<item name="document" value="true"/><!-- 公文收发 -->
+	<item name="instructions" value="true"/><!-- 工作计划 -->
+	<item name="workplan" value="true"/><!-- 日报管理 -->
+		<!--通讯平台-->
+	<item name="phone" value="true"/><!-- 党员通讯录 -->
+	<item name="chat" value="true"/><!-- 沟通中心 -->
+	<!--结束-->
+</security>

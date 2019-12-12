@@ -1,0 +1,11 @@
+body {
+
+}
+
+/*渐变*/
+.grad {
+  background: -webkit-linear-gradient(left, #ff3032 , #ff5a2d ); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #ff3032 , #ff5a2d ); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #ff3032 , #ff5a2d ); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #ff3032 , #ff5a2d ); /* 标准的语法 */
+}

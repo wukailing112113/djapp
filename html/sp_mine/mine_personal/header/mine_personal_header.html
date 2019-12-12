@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>党建个人中心</title>
+    <!-- aui核心css -->
+    <link rel="stylesheet" type="text/css" href="../../../../statics/public/aui2/css/aui.css"/>
+    <!-- end -->
+    <!-- 项目公司公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../../statics/public/css/sp_public_mobile.css"/>
+    <!-- end -->
+    <style>
+    </style>
+</head>
+<body>
+    <header class="aui-bar aui-bar-nav aui-bar-info pt-25em">
+	     <ul>
+	    	<li class="h-45em">
+	    		<a class="aui-pull-left mt-15em" onclick="goBlack()">
+			        <img class="w-9em h-19em" src="../../../../statics/public/images/back.png" alt="返回" />
+			    </a>
+	    		<div class="aui-title f-w">我的资料</div>
+	    		<a id="btn_id" class="pull-right f-12em color-white pr-12em f-w" onclick="save()">保存</a>
+	    	</li>
+	    </ul>
+    </header>
+<script type="text/javascript" src="../../../../statics/public/js/jquery.min.js"></script>
+<!-- 本项目公共js -->
+<script type="text/javascript" src="../../../../statics/public/js/sp_public_p5boss.js"></script>
+<!-- end -->
+<script type="text/javascript" src="../../../../statics/public/aui/js/aui-alert.js"></script>
+<script>
+	apiready = function(){
+		changecolor();//根据配置文件改变头部颜色 
+		api.openFrame({//打开mine_personal
+            name: 'mine_personal',
+            url: '../mine_personal.html',
+            rect: {
+	            y:($('header').height()/45*70),
+            },
+            bounces: false,
+            pageParam: {}
+        });
+        if(userAgent()){//系统小于4.4修改Y轴高度
+        	api.setFrameAttr({
+			    name: 'mine_personal',
+			    rect: {y: 45}
+			});
+        };
+	}
+	
+	//返回----------------------------------------------------------
+	function goBlack(){
+		api.closeWin({});
+	}
+	
+	//保存修改信息----------------------------------------------
+	var isclick = true;
+	function save(){
+		if (isclick){ 
+			api.execScript({
+				frameName:"mine_personal",
+		        script: 'set_hr_communist();'
+		    });       
+		isclick = false;        
+		setTimeout(function() {            
+			isclick = true;        
+		},500);    
+		} else {
+			alert("请不要重复点击");		
+			return false;
+		}
+	  
+//		api.execScript({
+//			frameName:"mine_personal",
+//	        script: 'set_hr_communist();'
+//	    });
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+.fcolor-a9 { color:#a9a9a9!important}
+.right::-webkit-input-placeholder { /* WebKit browsers */ direction: rtl;}
+.right:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ direction: rtl;}
+.right::-moz-placeholder { /* Mozilla Firefox 19+ but I'm not sure about working */ direction: rtl;}
+.right:-ms-input-placeholder { /* Internet Explorer 10+ */ direction: rtl;}
+.b-radius{-moz-box-radius:4px;-webkit-box-radius:4px;box-radius:4px;}
+textarea{border:none;direction: ltr}
+.color-be{color:#BE85F9;}
+.color-6a{color:#6AD8A8;}
+.bg-6a{background:#6AD8A8;}
+.bg-fb{background:#FB7777;}
+.bg-a1{background:#A1A5FA;}
+.color-white{color:white;}
+.border-radius{border-radius:3px;}
+.b-radius{border-radius:50%;}
+.pt-4{padding-top:4px;}
+.pb-4{padding-bottom:4px;}
+.pt-2{padding-top:2px;}
+.pb-2{padding-bottom:2px;}
+.col-999{color:#999999;}
+.text-in{text-indent:2em;}
+.aui-list-view:after{border-top:none;}
+.aui-list-view-cell:last-child:after{border-bottom:none;}
+input[type="number"]{margin-bottom:0px;padding:10px; width:3em;}
+P{color:#333!important}
+.aui-border-t:after{border:none!important;}

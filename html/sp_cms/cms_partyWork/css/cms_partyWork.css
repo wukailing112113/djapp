@@ -1,0 +1,152 @@
+/*width类*/
+.w-7em{width: 0.35rem;}
+.w-12em{width: 0.6rem;}
+.w-22em{width: 1.1rem;}
+.w-38em{width: 1.9rem;}
+.w-228em{width: 11.4rem;}
+.w-334em{width: 16.7rem;}
+
+/*height类*/
+.h-14em{height: 0.7rem;}
+.h-16em{height: 0.8rem;}
+.h-17em{height: 0.85rem;}
+.h-22em{height: 1.1rem;}
+.h-32em{height: 1.6rem !important;}
+.h-34em{height: 1.7rem !important;}
+.h-47em{height: 2.35rem;}
+.h-178em{height: 8.9rem;}
+.h-230em{height: 11.5rem;}
+.h-100b{height: 100% !important;}
+
+/*padding类*/
+.pt-2em{padding-top: 0.1rem !important;}
+.pt-3em{padding-top: 0.15rem !important;}
+.pt-14em{padding-top: 0.7rem !important;}
+
+.pb-13em{padding-bottom: 0.65rem !important;}
+
+.pl-2em{padding-left: 0.1rem;}
+.pl-6em{padding-left: 0.3rem}
+.pl-16em{padding-left: 0.8rem;}
+.pl-30em{padding-left: 1.5rem !important;}
+.pl-34em{padding-left: 1.7rem;}
+
+.pr-2em{padding-right: 0.1rem;}
+.pr-6em{padding-right: 0.3rem;}
+.pr-7em{padding-right: 0.35rem;}
+.pr-16em{padding-right: 0.8rem;}
+.pr-16em{padding-right: 0.8rem;}
+
+/*margin类*/
+.mt-9em{margin-top: 0.45rem !important;}
+
+.mb-14em{margin-bottom: 0.7rem;}
+.mb-74em{margin-bottom: 3.7rem;}
+
+/*font-size类*/
+.f-13em{font-size: 0.65rem !important;}
+.f-22em{font-size: 1.1rem !important;}
+
+/*line-height类*/
+.lh-14em{line-height: 0.7rem;}
+.lh-16em{line-height: 0.8rem;}
+.lh-19em{line-height: 0.95rem !important;}
+.lh-32em{line-height: 1.6rem !important;}
+.lh-34em{line-height: 1.7rem !important;}
+
+/*color类*/
+.color-a4{color: #a4a4a4;}
+.color-75{color: #757575;}
+.color-ff3032{color: #ff3032;}
+.color-ffba66{color: #ffba66;}
+.color-ff2f34{color: #ff2f34 !important;}
+
+/*background类*/
+.bg-fff{background: #fff;}
+
+/*border类*/
+.b-1-df{border: 1px solid #dfdfdf !important;}
+
+.bt-1-d3d3d3{border-top: 1px solid #d3d3d3;}
+
+.br-1-df{border-right: 1px solid #dfdfdf !important;}
+
+/*font-weight类*/
+.fwei-600{font-weight: 600;}
+
+/*border-radius类*/
+.b-ra-16em{border-radius: 0.8rem !important;}
+
+/*bottom类*/
+.bottom-0{bottom: 0;}
+
+/*字体渐变*/
+.shade{
+	background-image: -webkit-gradient(linear, left center, right center, from(rgba(252, 152, 118, 1)), to(rgba(254, 192, 115, 1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*letter-spacing类*/
+.letter-spacing{letter-spacing:2px;}
+
+/*text-indent类*/
+.indent-2{text-indent: 2em !important;}
+
+
+/*列表样式4*/
+#list4{background: #fff;}
+#list4 .h-114em{height: 5.7rem;}
+#list4 .pl-8em{padding-left: 0.4rem;}
+#list4 .pr-8em{padding-right: 0.4rem;}
+#list4 .pt-12em{padding-top: 0.6rem;}
+#list4 .pb-12em{padding-bottom: 0.6rem;}
+#list4 .bg-ff3032{background: #ff3032;}
+#list4 .box{box-shadow: 0px 0px 3px 0px #dfdfdf;}
+#list4 .bor-ra-2em{border-radius: 0.1rem;}
+/*--end--*/
+.color-12{color: #121212;}
+.bb-3em-e6{border-bottom: 0.03rem solid #e6e6e6;}
+
+section{display:none}
+#list{
+	display:none;
+}
+#list1,#list2,#list3,#list44,#list5,#list6,#list7,#list8,#list9,#list10,#list11,#list12{
+	display:none;
+}
+/*骨架屏*/
+.skeleton {
+    padding: 10px;
+}
+ 
+.skeleton .skeleton-head,
+.skeleton .skeleton-title,
+.skeleton .skeleton-content {
+    background: #ececec;
+}
+ 
+.skeleton-head {
+    width: 3rem;
+    height: 2.5rem;
+    float: left;
+}
+ 
+.skeleton-body {
+    margin-left: 4rem;
+}
+ 
+.skeleton-title {
+    width: 12rem;
+    height: 1rem;
+}
+ 
+.skeleton-content {
+    width: 5rem;
+    height: 1rem;
+    margin-top: 10px;
+} 
+
+
+
+

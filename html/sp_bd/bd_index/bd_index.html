@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>首页导航</title>
+    <!-- api核心css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/css/style.css"/>
+    <!-- aui核心css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/aui/css/aui.css"/>
+    <!-- 公司内部公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public.css"/>
+    <!-- 本项目css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_mobile.css"/>
+    <!-- 本页面css -->
+    <link rel="stylesheet" type="text/css" href="css/bd_index.css"/>
+    <style>
+
+    </style>
+</head>
+<body>
+<div id="wrap" class="flex-wrap flex-vertical">
+	<header class="aui-bar aui-bar-nav aui-bar-info">
+	    <ul>
+	    	<li>
+	    		 <!-- 设置按钮 -->
+	    		<img class="open-left pull-left w-20em h-20em ml-17em mt-10em" src="../../../statics/images/images_bd/setUp.png"/>
+	    		<div class="aui-title f-16em" id="logo_name"></div>
+	    		<!-- 消息通知 -->
+	    		<img class="pull-right w-20em h-20em mr-17em mt-10em" src="../../../statics/images/images_bd/notice.png"  onclick="openMessage('oa_message_header')"/>
+
+	    	</li>
+	    	<li>
+	    		<div class="aui-title f-w">
+					书城
+	    		</div>
+	    	</li>
+	    	<li>
+	    		<img class="open-left pull-left w-20em h-20em p-0 ml-17em mt-10em" src="../../../statics/images/images_bd/setUp.png"/>
+	    		<div class="aui-title f-16em">学习</div>
+	    		<img class="pull-right w-20em h-20em mr-17em mt-10em" src="../../../statics/images/images_bd/notice.png"  onclick="openMessage('oa_message_header')"/>
+	    	</li>
+	    	<!--<li>
+	    		<img class="open-left pull-left w-20em h-20em p-0 ml-17em mt-10em" src="../../../statics/images/images_bd/setUp.png"/>
+	    		<div class="aui-title f-16em">服务</div>
+	    		<img class="pull-right w-20em h-20em mr-17em mt-10em" src="../../../statics/images/images_bd/notice.png"  onclick="openMessage('oa_message_header')"/>
+	    	</li>-->
+	    	<li>
+	    	<img class="open-left pull-left w-20em h-20em p-0 ml-17em mt-10em" src="../../../statics/images/images_bd/setUp.png"/>
+	    		<div class="aui-title f-16em">我的</div>
+	    		<img class="pull-right w-20em h-20em mr-17em mt-10em" src="../../../statics/images/images_bd/notice.png"  onclick="openMessage('oa_message_header')"/>
+	    		<!--<div class="aui-title f-w" id="staff_id"></div>-->
+	    	</li>
+	    </ul>
+    </header>
+     <!-- 首页主体内容 -->
+    <div id="main" class="flex-con">
+
+    </div>
+    <!-- 底部导航 -->
+    <footer class="aui-nav h-49em bt-1-f9" id="aui-footer">
+	    <ul class="aui-bar-tab h-49em">
+	    	<li id="tabbar1" class="active-info" onclick="randomSwitchBtn(this)">
+	            <img class="wh-24em mt-5em img1" src="../../../statics/images/images_bd/indexPage1.png" class="fsize-24"/>
+	            <img class="wh-24em mt-5em img2" src="../../../statics/images/images_bd/indexPage2.png" class="iconfont fsize-24"/>
+	            <p class="color-66">首页</p>
+	        </li>
+	        <li id="tabbar2" onclick="randomSwitchBtn(this)">
+	            <img class="wh-24em mt-5em img1" src="../../../statics/images/images_bd/super_market1.png" class="iconfont fsize-24"/>
+	            <img class="wh-24em mt-5em img2" src="../../../statics/images/images_bd/super_market2.png" class="iconfont fsize-24"/>
+	            <p class="color-66">书城</p>
+	        </li>
+	        <li id="tabbar3" onclick="randomSwitchBtn(this)">
+	            <img class="wh-24em mt-5em img1" src="../../../statics/images/images_bd/party_Learn1.png" class="iconfont fsize-24"/>
+	            <img class="wh-24em mt-5em img2" src="../../../statics/images/images_bd/party_Learn2.png" class="iconfont fsize-24"/>
+	            <p class="color-66">学习</p>
+	        </li>
+	       <!-- <li id="tabbar4" onclick="randomSwitchBtn(this)">
+	            <img class="wh-24em mt-5em img1" src="../../../statics/images/images_bd/live_lihood1.png" class="iconfont fsize-24"/>
+	            <img class="wh-24em mt-5em img2" src="../../../statics/images/images_bd/live_lihood2.png" class="iconfont fsize-24"/>
+	            <p class="color-66">服务</p>
+	        </li>-->
+	        <li id="tabbar4" onclick="randomSwitchBtn(this)">
+	            <img class="wh-24em mt-5em img1" src="../../../statics/images/images_bd/party_Member1.png" class="iconfont fsize-24"/>
+	            <img class="wh-24em mt-5em img2" src="../../../statics/images/images_bd/party_Member2.png" class="iconfont fsize-24"/>
+	            <p class="color-66">我的</p>
+	        </li>
+	    </ul>
+	</footer>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="../../../statics/public/js/jquery.min.js"></script>
+<!-- api核心js -->
+<script type="text/javascript" src="../../../statics/public/js/api.js"></script>
+<script type="text/javascript" src="../../../statics/public/aui/js/aui-alert.js"></script>
+<!-- 项目公共js -->
+<script type="text/javascript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+<script type="text/javascript" src="../../../statics/public/js/hashes.js"></script>
+<script type="text/javascript" src="../../../statics/public/js/sp_public_p5boss_rongCloud2.js"></script>
+<script type="text/javascript" src="js/bd_index.js"></script>
+<!-- end -->
+<script type="text/javascript">
+	$('#wrap').css('height',($(window).height()-1))
+	$(window).resize(function () {          //当浏览器大小变化时
+//	    alert($(window).height());          //浏览器时下窗口可视区域高度
+//	    alert($(document).height());        //浏览器时下窗口文档的高度
+//	    alert($(document.body).height());   //浏览器时下窗口文档body的高度
+//	    alert($(document.body).outerHeight(true)); //浏览器时下窗口文档body的总高度 包括border padding margin
+		$('#wrap').css('height',($(window).height()-1))
+	});
+</script>

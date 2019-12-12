@@ -1,0 +1,17 @@
+p {
+	font-size: 12px;
+}
+#aui-slide3 {
+	height: 150px !important;
+}
+.aui-grid-nine:after {
+	border: none !important;
+	border-bottom: none !important;
+}
+.aui-grid-nine li.no-border-b:after {
+	border-bottom: none !important;
+}
+.dis {
+	width: 25%;
+	height: 60px!important;
+}

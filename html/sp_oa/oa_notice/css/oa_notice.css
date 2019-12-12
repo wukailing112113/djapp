@@ -1,0 +1,104 @@
+body {
+
+}
+/*width类*/
+.w-14em{width: 0.7rem;}
+.w-38em{width: 1.9rem;}
+.w-52em{width: 2.6rem;}
+.h-52em{height: 2.6rem;}
+.w-220em{width: 11rem !important;}
+
+/*height类*/
+.h-12em{height: 0.6rem;}
+.h-15em{height: 0.75rem  !important;}
+.h-38em{height: 1.9rem;}
+.h-150em{height: 7.5rem;}
+
+/*line-height类*/
+.lh-15em{line-height: 0.75rem !important;}
+.lh-18em{line-height: 0.9rem;}
+.lh-36em{line-height: 1.8rem;}
+
+/*padding类*/
+.pt-4em{padding-top: 0.2rem;}
+
+.pl-12em{padding-left: 0.6rem !important;}
+
+/*margin类*/
+.mr-6em{margin-right: 0.3rem;}
+
+/*font-size类*/
+.f-12em{font-size: 0.6rem !important;}
+.f-17em{font-size: 0.85rem;}
+
+/*color类*/
+.color-b3{color: #b3b3b3;}
+.color-75{color: #757575;}
+.color-33{color: #333333 !important;}
+.color-ff3032{color: #ff3032;}
+.color-ff9776{color: #ff9776;}
+.color-ffba66{color: #ffba66;}
+
+/*background类*/
+.bg-color-f9{background: #f9f9f9 !important;}
+.bg-color-ff3032{background: #ff3032;}
+.bg-color-fcfdfe{background: #fcfdfe;}
+
+/*border类*/
+.b-0{border: 0 !important;}
+.b-1-dfdfdf{border: 1px solid #dfdfdf;}
+.bt-1-dfdfdf{border-top: 1px solid #dfdfdf;}
+.bb-1-dfdfdf{border-bottom: 1px solid #dfdfdf;}
+
+/*display类*/
+.di-i{display: inline !important;}
+
+/* 背景渐变 */
+.grad {
+  background: -webkit-linear-gradient(left, #ff4d4d , #ff3032 , #ff5a2d); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #ff4d4d , #ff3032 , #ff5a2d); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #ff4d4d , #ff3032 , #ff5a2d); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #ff4d4d , #ff3032 , #ff5a2d); /* 标准的语法 */
+}
+
+
+/*-搜索框样式1-*/
+	#search1 input{border-radius: 1.2rem;}
+/*---end---*/
+
+	#tabBox2{
+		background: #fff;
+		overflow: hidden;
+	}
+	#tabBox2 li{
+		width: 50%;
+		float: left;
+		border-right: 1px solid #eeeeee;
+		text-align: center;
+		position: relative;
+	}
+	#tabBox2 li a{
+		display: block;
+		margin: 0 auto;
+		color: #757575;
+	}
+	#tabBox2 li .active{
+		display: none;
+		width: 2rem;
+		height: 1px;
+		position: absolute;
+		bottom: -0.25rem;
+		left: 50%;
+		background: #ff3032;
+		margin-left: -1rem;
+	}
+	#tabBox2 .tabBox2-active a{
+		color: #ff3032;
+	}
+	#tabBox2 .tabBox2-active .active{
+		display: block;
+	}
+	
+.di-nn ul{
+    display:none;
+}

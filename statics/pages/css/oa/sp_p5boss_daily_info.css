@@ -1,0 +1,116 @@
+
+#button_div{position:fixed;bottom: 0px;width:100%;margin: 0}
+/*input-placeholder居右*/
+.sum-type::-webkit-input-placeholder { /* WebKit browsers */ direction: rtl;}
+.sum-type:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ direction: rtl;}
+.sum-type::-moz-placeholder { /* Mozilla Firefox 19+ but I'm not sure about working */ direction: rtl;}
+.sum-type:-ms-input-placeholder { /* Internet Explorer 10+ */ direction: rtl;}
+.sum-type{text-align: right}
+.pl-5{padding-left: 5px}
+.pl-45{padding-left: 45px}
+.-magin_t10{margin-top: -10px}
+.-mt10{margin-top: -10px}
+.-magin_l14{margin-left: -14px}
+.fots16{font-size: 16px}
+.istyle{padding-top: 0px !important;padding-left: 0px !important;font-size: 14px !important; !important;padding-right: 0px !important;}
+.aui-img-body a{color: #666}
+/* .fcolor-a9 { color:#a9a9a9!important} */
+.fcolor-white{ color:#fff!important}
+.work-icon{width: 23px;height: 23px;}
+.noborder{border:none!important}
+/* .fsize-34{font-size:34px!important} */
+/* .lh-12{line-height:12px!important} */
+/* .pt-6{padding-top:6px} */
+.p2-0{padding:4px 0px!important}
+.fsize-20{font-size:20px!important}
+.pt-9{padding-top:9px}
+.pb-9{padding-bottom:9px}
+#worklog_title::-webkit-input-placeholder { color:#3D9CF9;font-weight:bold }
+#worklog_title:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color:#3D9CF9;font-weight:bold}
+#worklog_title::-moz-placeholder { /* Mozilla Firefox 19+ but I'm not sure about working */ color:#3D9CF9;font-weight:bold}
+#worklog_title:-ms-input-placeholder { /* Internet Explorer 10+ */ color:#3D9CF9;font-weight:bold}
+.fb{font-weight:bold}
+.aui-fold-active .aui-fold-content {display:none;}
+.aui-fold-active {background: #fff; }
+.border-b-none:after{border-bottom:none;}
+.border-t-none:after{border-top:none;}
+.p9-15{padding:9px 15px 9px 15px!important}
+.badge {
+    position: absolute;
+    top: 50%;
+    left: 25%;   
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: inline-block;
+    padding: 3px 6px;
+    font-size: 12px;
+    line-height: 1;
+    color: #333;
+    background-color: #bdc3c7;
+    border-radius: 100px;
+}
+.text-align{text-align:center !important;}
+.ml5{margin-left: 5px}
+.-ml15{margin-left: -15%}
+.ml--15{margin-left: -15px}
+.-mt3{margin-top: -3%}
+.-mt5{margin-top: -5%}
+.-mt4{margin-top: -4%}
+.-mt10{margin-top: -10%}
+.-ml4{margin-left: -4%}
+.ml12{margin-left: 12%}
+.pr-15{padding-right: 15px}
+.ol-au{overflow:auto}
+.di-n{display: none}
+.lh30{line-height: 30px}
+.fo60{font-size: 60px}
+/* 必做任务css */
+.wh15{width: 15%;height: 15%}
+.mt20{margin-top: 20%}
+.mt2{margin-top: 2px}
+.mr85{margin-right: 85%}
+.aui-list-view-cell > .aui-badge{right:auto;left:125px;}
+.color-white{color:white;}
+.aui-timeline > li > .aui-time-label{width:10px;height: 10px; border-radius:50%;position: absolute;left:27px;}
+.aui-timeline > li > .aui-timeline-item > .aui-timeline-time{float:left;padding:0;text-align: left;}
+.aui-timeline > li > .aui-timeline-item{margin-left:40px;}
+.aui-timeline > li > .aui-timeline-item:after{border:none;}
+.pt-24{padding-top:24px!important;}
+.p-0{padding:0;}
+.pb-0{padding-bottom:0px;}
+.pl-10{padding-left:10px!important;}
+.mb-0{margin-bottom:0px;}
+.remove-border:after{border-bottom:none!important;}
+.after:after{content:'';display: block;height:15px;background:#f4f4f4;}
+.aui-timeline:before{background:#f4f4f4;width:1px;}
+.aui-border-b:after {
+	border-bottom: 1px solid #f4f4f4;
+}
+.border-radius{border-radius:3px;}
+.week{background:#98e256;}
+.month{background:#be85f9;}
+.year{background:#fcc058;}
+.lh-1{line-height:1}
+.lh-19{line-height: 19px}
+.bc_gray{color: #d6d6d5}
+.p-li{padding:0 0 5px 0!important}
+.mt-8{margin-top: 8px}
+.aui-timeline > li > .aui-timeline-item:after {border: none;}
+.aui-timeline > li > .aui-timeline-item > .aui-timeline-header:after {border-bottom:none;}
+#wilk{
+    margin-top: -26px;
+    background: #fff;
+    color: #444;
+    margin-left: 32px;
+    padding: 0;
+    position: relative;
+}
+.top-15{top:15px!important}
+.left-30{left:30px!important}
+.right-50{right:50px}
+.lh-15{line-height:15px!important}
+.lh-21{line-height:21px!important}
+
+
+
+

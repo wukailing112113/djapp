@@ -1,0 +1,117 @@
+body {
+
+}
+
+/*width-height类*/
+.wh-24em{width: 1.2rem;height: 1.2rem;}
+
+/*width类*/
+.w-2px{width: 2px;}
+.w-6em{width: 0.3rem;}
+.w-7em{width: 0.35rem;}
+.w-74em{width: 3.7rem;}
+.w-105em{width: 5.25rem;}
+.w-205em{width: 10.25rem !important;}
+.w-236em{width: 11.8rem;}
+.w-239em{width: 11.95rem !important;}
+.w-273em{width: 13.65rem !important;}
+.w-288em{width: 14.4rem !important;}
+.w-300em{width: 15rem !important;}
+
+/*height类*/
+.h-12em{height: 0.6rem;}
+.h-13em{height: 0.65rem;}
+.h-14em{height: 0.7rem;}
+.h-17em{height: 0.85rem;}
+.h-18em{height: 0.9rem;}
+.h-22em{height: 1.1rem;}
+.h-30em{height: 1.5rem !important;}
+.h-32em{height: 1.6rem !important;}
+.h-104em{height: 5.2rem;}
+.h-130em{height: 6.5rem !important;}
+.h-100b{height: 100%;}
+
+/*padding类*/
+.pb-8em{padding-bottom: 0.4rem;}
+
+/*margin类*/
+.ml-3em{margin-left: 0.15rem;}
+.ml-14em{margin-left: 0.7rem;}
+.ml-1mpx{margin-left: -1px;}
+
+.mr-3em{margin-right: 0.15rem;}
+
+.mt-4em{margin-top: 0.2rem;}
+.mt-9em{margin-top: 0.45rem !important;}
+.mt-14em{margin-top: 0.7rem;}
+.mt-10em{margin-top: 0.5rem !important;}
+
+.mb-8em{margin-bottom: 0.4rem !important;}
+
+/*font-size类*/
+.f-16em{font-size: 0.8rem !important;}
+
+/*line-height类*/
+.lh-12em{line-height: 0.6rem;}
+.lh-20em{line-height: 1rem !important;}
+.lh-22em{line-height: 1.1rem !important;}
+.lh-34em{line-height: 1.7rem !important;}
+
+/*color类*/
+.color-75{color: #757575;}
+.color-b3{color: #b3b3b3;}
+.color-df{color: #dfdfdf !important;}
+.color-f1{color: #f1f1f1;}
+.color-ff3032{color: #ff3032;}
+.color-ff5a2d{color: #ff5a2d;}
+.color-ffb767{color: #ffb767;}
+
+/*background类*/
+.bg-color-f9{background-color: #f9f9f9 !important;}
+.bg-color-f1{background-color: #f1f1f1 !important;}
+.bg-color-ffb767{background: #ffb767;}
+
+/*border类*/
+.bb-1-df{border-bottom: 1px solid #dfdfdf;}
+.bor-ra-7{border-radius: 7px !important;}
+.bor-ra-3{border-radius: 3px !important;}
+.bor-0{border: 0 !important;}
+
+/*left类*/
+.left-12mem{left: -0.6rem;}
+.left-50b{left: 50%;}
+
+/*right类*/
+.right-12mem{right: -0.6rem;}
+
+/*box-shadow类*/
+.box-4-df{box-shadow: 0 0 4px 0 #dfdfdf;}
+
+.box-inset{
+	box-shadow: 0 0 3px 0 #dfdfdf inset !important;
+}
+
+.text-justify{text-align: justify !important;}
+
+.grad{
+  background: -webkit-linear-gradient(#ff9776, #ffba66); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#ff9776, #ffba66); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#ff9776, #ffba66); /* Firefox 3.6 - 15 */
+  background: linear-gradient(#ff9776, #ffba66); /* 标准的语法 */
+}
+
+.shade{/*字体渐变*/
+	background-image: -webkit-gradient(linear, left center, right center, from(rgba(252, 152, 118, 1)), to(rgba(254, 192, 115, 1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.letter-spacing{letter-spacing:2px;}
+
+
+
+
+
+
+
+

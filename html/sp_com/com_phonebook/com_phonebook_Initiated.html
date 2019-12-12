@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>通讯录</title>
+    <!-- aui核心css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/aui/css/aui.css"/>
+    <!-- end -->
+    <!-- 公司公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public.css"/>
+    <!-- end -->
+    <!-- 本项目公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_mobile.css"/>
+    <!-- end -->
+    <!-- aui索引列表css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/aui/css/aui-indexed-list.css"/>
+    <!-- end -->
+    <!-- 本页面css -->
+    <link rel="stylesheet" type="text/css" href="css/com_phoneBook.css"/>
+    <!-- end -->
+    <style>
+    </style>
+</head>
+<body class="bg-color-whiter">
+	<!--搜素框-->
+		<div class="pl-12em pr-12em pt-5em pb-5em bg-color-f9 po-fix w-100b">
+			<input class="p-0 m-0 pl-20em w-100b h-34em f-15em lh-34em color-33 bor-0 bor-ra-34 box-inset" placeholder="搜索" type="text" />
+		</div>
+	<!--结束-->
+		
+	<!--人员列表-->
+		<div class="pt-44em">
+			<div class="f-18em color-33 pt-12em pb-12em lh-18em pl-12em pr-12em" onclick="openChatList('com_chat_list_header')">选择群聊<i class="iconfont pull-right f-14em lh-20em p-0 color-75 mr-12em">&#xe613;</i></div>
+			<div>
+				<div class="f-16em color-ff4545 f-w h-28em lh-28em bg-color-f9 pl-12em pr-12em">A</div>
+				<ul class="pl-12em pr-12em pt-10em">
+					<li class="over-h">
+						<img class="pull-left w-40em h-40em bor-ra-100b mr-12em mb-10em" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+						<div class="pull-left w-270em">
+							<p class="f-16em lh-16em color-33 f-w pt-5em pb-8em">阿三</p>
+							<p class="f-16em lh-16em color-75 pb-12em">济南党工委</p>
+						</div>
+						<div class="pull-right w-16em h-16em mt-20em mr-12em">
+							<div class="pull-left w-16em h-16em b-1-df bor-ra-3 di-n"></div>
+							<img class="pull-left w-16em h-16em bor-ra-3" src="../../../statics/images/images_com/com_yes.png" alt="" />
+						</div>
+					</li>
+					<li class="over-h">
+						<img class="pull-left w-40em h-40em bor-ra-100b mr-12em mb-10em" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+						<div class="pull-left w-270em">
+							<p class="f-16em lh-16em color-33 f-w pt-5em pb-8em">阿四</p>
+							<p class="f-16em lh-16em color-75 pb-12em">济南党工委</p>
+						</div>
+						<div class="pull-right w-16em h-16em mt-20em mr-12em">
+							<div class="pull-left w-16em h-16em b-1-df bor-ra-3"></div>
+							<img class="pull-left w-16em h-16em bor-ra-3 di-n" src="../../../statics/images/images_com/com_yes.png" alt="" />
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<div class="f-16em color-ff4545 f-w h-28em lh-28em bg-color-f9 pl-12em pr-12em">B</div>
+				<ul class="pl-12em pr-12em pt-10em">
+					<li class="over-h">
+						<img class="pull-left w-40em h-40em bor-ra-100b mr-12em mb-10em" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+						<div class="pull-left w-270em">
+							<p class="f-16em lh-16em color-33 f-w pt-5em pb-8em">白一</p>
+							<p class="f-16em lh-16em color-75 pb-12em">济南党工委</p>
+						</div>
+						<div class="pull-right w-16em h-16em mt-20em mr-12em">
+							<div class="pull-left w-16em h-16em b-1-df bor-ra-3 di-n"></div>
+							<img class="pull-left w-16em h-16em bor-ra-3" src="../../../statics/images/images_com/com_yes.png" alt="" />
+						</div>
+					</li>
+					<li class="over-h">
+						<img class="pull-left w-40em h-40em bor-ra-100b mr-12em mb-10em" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+						<div class="pull-left w-270em">
+							<p class="f-16em lh-16em color-33 f-w pt-5em pb-8em">白一</p>
+							<p class="f-16em lh-16em color-75 pb-12em">济南党工委</p>
+						</div>
+						<div class="pull-right w-16em h-16em mt-20em mr-12em">
+							<div class="pull-left w-16em h-16em b-1-df bor-ra-3"></div>
+							<img class="pull-left w-16em h-16em bor-ra-3 di-n" src="../../../statics/images/images_com/com_yes.png" alt="" />
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<div class="f-16em color-ff4545 f-w h-28em lh-28em bg-color-f9 pl-12em pr-12em">C</div>
+				<ul class="pl-12em pr-12em pt-10em">
+					<li class="over-h">
+						<img class="pull-left w-40em h-40em bor-ra-100b mr-12em mb-10em" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+						<div class="pull-left w-270em">
+							<p class="f-16em lh-16em color-33 f-w pt-5em pb-8em">崔五</p>
+							<p class="f-16em lh-16em color-75 pb-12em">济南党工委</p>
+						</div>
+						<div class="pull-right w-16em h-16em mt-20em mr-12em">
+							<div class="pull-left w-16em h-16em b-1-df bor-ra-3 di-n"></div>
+							<img class="pull-left w-16em h-16em bor-ra-3" src="../../../statics/images/images_com/com_yes.png" alt="" />
+						</div>
+					</li>
+					<li class="over-h">
+						<img class="pull-left w-40em h-40em bor-ra-100b mr-12em mb-10em" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+						<div class="pull-left w-270em">
+							<p class="f-16em lh-16em color-33 f-w pt-5em pb-8em">崔六</p>
+							<p class="f-16em lh-16em color-75 pb-12em">济南党工委</p>
+						</div>
+						<div class="pull-right w-16em h-16em mt-20em mr-12em">
+							<div class="pull-left w-16em h-16em b-1-df bor-ra-3"></div>
+							<img class="pull-left w-16em h-16em bor-ra-3 di-n" src="../../../statics/images/images_com/com_yes.png" alt="" />
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<div class="f-16em color-ff4545 f-w h-28em lh-28em bg-color-f9 pl-12em pr-12em">D</div>
+				<ul class="pl-12em pr-12em pt-10em">
+					<li class="over-h">
+						<img class="pull-left w-40em h-40em bor-ra-100b mr-12em mb-10em" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+						<div class="pull-left w-270em">
+							<p class="f-16em lh-16em color-33 f-w pt-5em pb-8em">杜七</p>
+							<p class="f-16em lh-16em color-75 pb-12em">济南党工委</p>
+						</div>
+						<div class="pull-right w-16em h-16em mt-20em mr-12em">
+							<div class="pull-left w-16em h-16em b-1-df bor-ra-3 di-n"></div>
+							<img class="pull-left w-16em h-16em bor-ra-3" src="../../../statics/images/images_com/com_yes.png" alt="" />
+						</div>
+					</li>
+					<li class="over-h">
+						<img class="pull-left w-40em h-40em bor-ra-100b mr-12em mb-10em" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+						<div class="pull-left w-270em">
+							<p class="f-16em lh-16em color-33 f-w pt-5em pb-8em">杜八</p>
+							<p class="f-16em lh-16em color-75 pb-12em">济南党工委</p>
+						</div>
+						<div class="pull-right w-16em h-16em mt-20em mr-12em">
+							<div class="pull-left w-16em h-16em b-1-df bor-ra-3"></div>
+							<img class="pull-left w-16em h-16em bor-ra-3 di-n" src="../../../statics/images/images_com/com_yes.png" alt="" />
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	<!--结束-->
+	
+
+    <input type="hidden" id="pinyin" />
+    <!-- apijs -->
+	<script type="text/javascript" src="../../../statics/public/js/api.js"></script>
+	<!-- end -->
+	<!-- jquery js -->
+	<script type="text/javascript" src="../../../statics/public/js/jquery.min.js"></script>
+	<!-- end -->
+	<!-- aui aui-tap.js -->
+	<script type="text/javascript" src="../../../statics/public/aui/js/aui-tap.js"></script>
+	<!-- end -->
+	<!-- aui indexed-list.js -->
+	<script type="text/javascript" src="../../../statics/public/aui/js/aui-indexed-list.js"></script>
+	<!-- end -->
+	<!-- 汉语转拼音 -->
+	<script type="text/javascript" src="../../../statics/public/js/jQuery.Hz2Py-min.js"></script>
+	<!-- end -->
+    <!-- alertjs -->
+    <script type="text/jscript" src="../../../statics/public/aui/js/aui-alert.js"></script>
+    <!--end-->
+    <!--项目公共js!-->
+	<script type="text/javascript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+	<!--end!-->
+	<!-- 本页面.js -->
+	<script type="text/javascript" src="js/com_phonebook_Initiated.js"></script>
+	<!-- end -->
+	<script type="text/javascript">
+	</script>
+</body>
+</html>

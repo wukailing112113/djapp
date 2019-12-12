@@ -1,0 +1,52 @@
+body {
+
+}
+
+.w-15em{width: 0.75rem;}
+
+.h-42em{height: 2.1rem;}
+.h-91em{height: 4.55rem;}
+
+.p-3em-10em{padding: 0.15rem 0.5rem;}
+
+.pt-12em{padding-top: 0.6rem;}
+
+.pl-12em{padding-left: 0.6rem;}
+
+.pr-12em{padding-right: 0.6rem;}
+
+.mt-8em{margin-top: 0.4rem;}
+
+.mb-2em{margin-bottom: 0.1rem;}
+
+.ml-1em{margin-left: 0.05rem;}
+
+.lh-18em{line-height: 0.9rem;}
+.lh-24em{line-height: 1.2rem;}
+.lh-42em{line-height: 2.1rem;}
+
+.color-999292{color: #999292;}
+.color-137ff9{color: #137ff9;}
+.color-f44848{color: #f44848;}
+
+.bg-color-ff4844{background: #ff4844;}
+.bg-color-ff926f{background: #ff926f;}
+.bg-color-f9{background: #f9f9f9;}
+
+.bg-img{
+	background: url('../../../../statics/images/images_bd/bd_home_left_bg.png') no-repeat top center;
+	background-size: 100% 100%;
+}
+
+.b-0{border: 0 !important;}
+
+.bt-1-dfdfdf{border-top: 1px solid #dfdfdf;}
+
+.bb-1-dfdfdf{border-bottom: 1px solid #dfdfdf;}
+
+.b-ra-4em{border-radius: 0.2rem;}
+
+.box-4-00{box-shadow: 0px 5px 40px -15px #000000;}
+
+/*.text-2-ff{text-shadow: 0 1px 2px #ffffff;}*/
+

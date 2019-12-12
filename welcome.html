@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>欢迎页</title>
+<meta charset="utf-8">
+<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+<meta name="copyright" content="www.apicloud.com" />
+<!-- aui核心css -->
+<link rel="stylesheet" type="text/css" href="statics/public/aui/css/aui.css" />
+<!-- aui flex容器css -->
+<link rel="stylesheet" type="text/css" href="statics/public/aui/css/aui-flex.css" />
+<!-- aui全屏滑动组件 -->
+<link rel="stylesheet" href="statics/public/aui/css/aui-slide.css" />
+<style> 
+	.close {
+		background: rgba(0,0,0,0.6);
+		padding: 4px 10px;
+		border-radius: 30px;
+		color: #fff;
+		font-size: 0.75em;
+		position: absolute;
+		right: 10px;
+		top: 30px;
+		z-index: 999;
+	}
+	.fadeInTop {
+		-webkit-animation: fadeInTop 1s;
+		        animation: fadeInTop 1s;
+	}
+	.fadeInBottom {
+		-webkit-animation: fadeInBottom 1s;
+		        animation: fadeInBottom 1s;
+		       position: absolute;
+		       bottom: 50px;
+		       width: 100%;
+		       color:#fff;
+	}
+	@-webkit-keyframes fadeInTop {
+	    from {
+	        opacity: 0.2;
+	        -webkit-transform: translate3d(0, -50px, 0);
+	        transform: translate3d(0, -50px, 0);
+	    }
+	    to {
+	        opacity: 1;
+	        -webkit-transform: none;
+	        transform: none;
+	    }
+	}
+	
+	@-webkit-keyframes fadeInBottom {
+	    from {
+	        opacity: 0;
+	        -webkit-transform: translate3d(0, 50px, 0);
+	        transform: translate3d(0, 50px, 0);
+	    }
+	    to {
+	        opacity: 1;
+	        -webkit-transform: none;
+	        transform: none;
+	    }
+	}
+	.di-n{
+		display: none;
+	}
+	html,body{height: 100%;}
+</style>
+</head>
+<body>
+	<div class="close" tapmode onclick="openNewWin()">关闭</div>
+	
+	<div name="index-dj" class="" id="aui-slide">
+		<div class="aui-slide-wrap" >
+			<!--<div class="aui-slide-node aui-slide-node-middle aui-slide-node-center">
+				<div class="aui-content aui-text-center aui-hide">
+					<img src="launch/launch_2.jpg" />
+					<div class="desc"></div>
+				</div>
+				<div class="aui-content aui-text-center aui-hide">
+					<img src="launch/launch_1.jpg" />
+					<div class="desc"></div>
+				</div>
+			</div>
+			<div class="aui-slide-node aui-slide-node-middle aui-slide-node-center">
+				<div class="aui-content aui-text-center aui-hide">
+					<img src="launch/launch_3.jpg" />
+					<div class="desc">
+						<p class="aui-padded-15">
+							<div class="aui-btn aui-btn-outlined" tapmode onclick="openNewWin()">立即体验</div>
+						</p>
+					</div>
+				</div>
+			</div>-->
+			<div class="aui-slide-node aui-slide-node-middle aui-slide-node-center">
+				<div class="aui-content aui-text-center aui-hide">
+					<img src="launch/launch-1.jpg" />
+					<div class="desc"></div>
+				</div>
+			</div>
+			<div class="aui-slide-node aui-slide-node-middle aui-slide-node-center">
+				<div class="aui-content aui-text-center aui-hide">
+					<img src="launch/launch-2.jpg" />
+					<div class="desc"></div>
+				</div>
+			</div>
+			<div class="aui-slide-node aui-slide-node-middle aui-slide-node-center">
+				<div class="aui-content aui-text-center aui-hide">
+					<img src="launch/launch-3.jpg" />
+					<div class="desc"></div>
+				</div>
+			</div>
+			<div class="aui-slide-node aui-slide-node-middle aui-slide-node-center">
+				<div class="aui-content aui-text-center aui-hide">
+					<img src="launch/launch-4.jpg" />
+					<div class="desc"></div>
+				</div>
+			</div>
+			<div class="aui-slide-node aui-slide-node-middle aui-slide-node-center">
+				<div class="aui-content aui-text-center aui-hide">
+					<img src="launch/launch-5.jpg" />
+					<div class="desc"></div>
+				</div>
+			</div>
+			<div class="aui-slide-node aui-slide-node-middle aui-slide-node-center">
+				<div class="aui-content aui-text-center aui-hide">
+					<img src="launch/launch-6.jpg" />
+					<div class="desc"></div>
+				</div>
+			</div>
+		</div>
+		<div class="aui-slide-page-wrap"><!--分页容器--></div>
+	</div>
+
+<script type="text/javascript" src="statics/public/js/api.js"></script>
+<script type="text/javascript" src="statics/public/js/jquery.min.js"></script>
+<!-- aui全屏滑动组件 -->
+<script type="text/javascript" src="statics/public/aui/js/aui-slide.js"></script>
+<script type="text/javascript" src="statics/public/js/sp_public_p5boss.js"></script>
+<script type="text/javascript" src="statics/public/aui/js/aui-alert.js"></script>
+<!-- 本页面js -->
+<script type="text/javascript" src="statics/pages/js/sp_p5boss_welcome.js"></script>
+<script type="text/javascript">
+	$('.aui-hide img').css('height',$(window).height());
+	$(window).resize(function () {          //当浏览器大小变化时
+//		alert($(window).height());          //浏览器时下窗口可视区域高度
+//		alert($(document).height());        //浏览器时下窗口文档的高度
+//		alert($(document.body).height());   //浏览器时下窗口文档body的高度
+//		alert($(document.body).outerHeight(true)); //浏览器时下窗口文档body的总高度 包括border padding margin
+		$('.aui-hide img').css('height',$(window).height());
+	});
+</script>
+</body>
+</html>

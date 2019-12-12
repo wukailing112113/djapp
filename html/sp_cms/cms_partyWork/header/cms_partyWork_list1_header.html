@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>党务动态</title>
+    <!-- aui核心css -->
+    <link rel="stylesheet" type="text/css" href="../../../../statics/public/aui2/css/aui.css"/>
+    <!-- end -->
+    <!-- 公司公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../../statics/public/css/sp_public_mobile.css"/>
+    <!-- end -->
+    <style>
+    	.w-9em{width: 0.45rem !important;}
+    	.h-19em{height: 0.95rem !important;}
+    </style>
+</head>
+<body>
+    <header class="aui-bar aui-bar-nav aui-bar-info pt-25em">
+	    <ul>
+	    	<li class="h-45em">
+	    		<a class="aui-pull-left mt-15em" onclick="goBlack()">
+			        <img class="w-9em h-19em" src="../../../../statics/public/images/back.png" alt="返回" />
+			    </a>
+	    		<div class="aui-title f-w" id="titleName">工作通知</div>
+	    	</li>
+	    </ul>
+    </header>
+<script type="text/javascript" src="../../../../statics/public/js/jquery.min.js"></script>
+<!-- 本项目公共js -->
+<script type="text/javascript" src="../../../../statics/public/js/sp_public_p5boss.js"></script>
+<!-- end -->
+<script type="text/javascript" src="../../../../statics/plugins/aui/js/aui-alert.js"></script>
+<script>
+	var type='';
+	apiready = function(){
+	//alert(api.pageParam.type);
+		changecolor();//根据配置文件改变头部颜色 
+		if(api.pageParam.type=='新闻动态'){
+			$('#titleName').html('新闻动态')
+			type=30;
+		}else if(api.pageParam.type=='党建要闻'){
+			$('#titleName').html('党建要闻')
+			type=36;
+		}else if(api.pageParam.type=='党建论坛'){
+			$('#titleName').html('党建论坛')
+			type=37;
+		}else if(api.pageParam.type=='共产党风采'){
+			$('#titleName').html('共产党风采')
+			type=38;
+		}else if(api.pageParam.type=='先锋风采'){
+			$('#titleName').html('先锋风采')
+			type=39;
+		}else if(api.pageParam.type=='党务工作风采'){
+			$('#titleName').html('党务工作风采')
+			type=40;
+		}else if(api.pageParam.type=='红色文艺'){
+			$('#titleName').html('红色文艺')
+			type=41;
+		}else if(api.pageParam.type=='党纪党规'){
+			$('#titleName').html('党纪党规')
+			type=42;
+		}else if(api.pageParam.type=='精选热文'){
+			$('#titleName').html('精选热文')
+			type=44;
+		}else if(api.pageParam.type=='经典回顾'){
+			$('#titleName').html('经典回顾')
+			type=45;
+		}else if(api.pageParam.type=='党员声音'){
+			$('#titleName').html('党员声音')
+			type=46;
+		}else if(api.pageParam.type=='新闻快讯'){
+			$('#titleName').html('新闻快讯')
+			type=47;
+		}else if(api.pageParam.type=='办事流程'){
+			$('#titleName').html('办事流程')
+			type=1401;
+		}else if(api.pageParam.type=='服务窗口'){
+			$('#titleName').html('服务窗口')
+			type=1402;
+		}else if(api.pageParam.type=='学习实况'){
+			$('#titleName').html('学习实况')
+			type=19;
+		}else if(api.pageParam.type=='联系我们'){
+			$('#titleName').html('联系我们')
+			type=22;
+		}
+		
+		api.openFrame({
+            name: 'cms_partyWork_list1',
+            url: '../cms_partyWork_list1.html',
+            rect: {
+				y:($('header').height()/45*70),
+            },
+            bounces: false,
+            pageParam: {
+            	type:type,
+            }
+        });
+        if(userAgent()){//系统小于4.4修改Y轴高度
+        	api.setFrameAttr({
+			    name: 'cms_partyWork_list1',
+			    rect: {y: 45}
+			});
+        };
+	}
+	//返回
+	function goBlack(){
+		api.closeWin({name:api.winName});
+	}
+//	function openHistory(winName){
+//		api.openWin({
+//	        name: winName,
+//	        url: winName+'.html'
+//      });
+//	}
+</script>
+</body>
+</html>

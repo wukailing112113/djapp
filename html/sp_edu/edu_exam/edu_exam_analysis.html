@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+	<title>考试中心</title>
+	<!-- aui核心css -->
+	<link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui.css" />
+	<!-- end -->
+	<!-- aui下拉 -->
+	<link rel="stylesheet" type="text/css" href="../../../statics/public/aui/css/aui-pull-refresh.css" />
+	<!-- end -->
+	<!--aui轮播-->
+	<link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui-slide.css" />
+	<!--end-->
+	<!--公用css-->
+	<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public.css" />
+	<!-- end -->
+	<!-- 本项目公共css -->
+	<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_mobile.css" />
+	<!-- end -->
+	<!--本页面css-->
+	<link rel="stylesheet" type="text/css" href="css/edu_exam_analysis.css" />
+	<!--end-->
+	<style>
+		.z-index-max {
+			z-index: 1000;
+		}
+	</style>
+
+	
+</head>
+<body class="bg-color-f9">
+	<section>
+		<div>
+			<div class="w-100b"><img src="../../../statics/images/images_edu/edu_tu2.png"></div>
+			<div class="po-ab top-30em left-10em">
+				<p class="color-ff4242 f-32em">恭喜您！</p>
+				<p class="f-18em color-fff" id="analysis_con"></p>
+				<p class="f-18em color-fff" id="integral_con"></p>
+			</div>
+		</div>	
+	</section>
+	<!--专题完成率-->
+	<section class="edu_con mt-100mem z-index-max po-ab">
+		<div class="f-16em color-21 pt-12em pl-10em">专题完成率</div>
+		<div class="mt-20em pb-12em">
+			<li class="clearfix w-100b po-re">
+				<div class="pull-left f-12em color-9e pl-12em">文章</div>
+				<div class="pull-left ml-12em w-80b">
+					<!--进度条-->
+					<div class="aui-content-padded po-re">
+					    <div class="aui-progress aui-progress-xs aui-progress-bg">
+					      <div class="aui-progress-bar aui-progress-bar-bg article_progress"></div>
+					    </div>
+					</div>
+					<!--文字-->
+					<div class="clearfix mt-33mem">
+						<div class="pull-left f-10em color-9e article_rate"></div>
+						<div class="pull-right f-10em color-9e article_num"></div>
+					</div>
+				</div>
+			</li>
+			<li class="clearfix w-100b po-re mt-20em">
+				<div class="pull-left f-12em color-9e pl-12em">视频</div>
+				<div class="pull-left ml-12em w-80b">
+					<!--进度条-->
+					<div class="aui-content-padded po-re">
+					    <div class="aui-progress aui-progress-xs aui-progress-bg">
+					        <div class="aui-progress-bar aui-progress-bar-bg video_progress"></div>
+					    </div>
+					</div>
+					<!--文字-->
+					<div class="clearfix mt-33mem">
+						<div class="pull-left f-10em color-9e video_rate"></div>
+						<div class="pull-right f-10em color-9e video_num"></div>
+					</div>
+				</div>
+			</li>
+			<li class="clearfix w-100b po-re mt-20em">
+				<div class="pull-left f-12em color-9e pl-12em">笔记</div>
+				<div class="pull-left ml-12em w-80b">
+					<!--进度条-->
+					<div class="aui-content-padded po-re">
+					    <div class="aui-progress aui-progress-xs aui-progress-bg">
+					        <div class="aui-progress-bar aui-progress-bar-bg notes_progress"></div>
+					    </div>
+					</div>
+					<!--文字-->
+					<div class="clearfix mt-33mem">
+						<div class="pull-left f-10em color-9e notes_rate"></div>
+						<div class="pull-right f-10em color-9e notes_num"></div>
+					</div>
+				</div>
+			</li>
+			<li class="clearfix w-100b po-re mt-20em">
+				<div class="pull-left f-12em color-9e pl-12em">考试</div>
+				<div class="pull-left ml-12em w-80b">
+					<!--进度条-->
+					<div class="aui-content-padded po-re">
+					    <div class="aui-progress aui-progress-xs aui-progress-bg">
+					        <div class="aui-progress-bar aui-progress-bar-bg exam_progress"></div>
+					    </div>
+					</div>
+					<!--文字-->
+					<div class="clearfix mt-33mem">
+						<div class="pull-left f-10em color-9e exam_rate"></div>
+						<div class="pull-right f-10em color-9e exam_num"></div>
+					</div>
+				</div>
+			</li>
+		</div>
+	
+	</section>
+	<!--积分获取-->
+	<section class="edu_con mt-110em">
+		<div class="f-16em color-21 pt-12em pl-10em">积分获取</div>
+		<div class="clearfix w-100b mt-20em pb-20em">
+			<li class="pull-left w-25b text-align">
+				<div class="f-12em color-9e">
+					<span class="f-28em color-21" id="article_score"></span>
+				</div>
+				<div class="f-10em color-9e">文章积分</div>
+			</li>
+			<li class="pull-left w-25b text-align">
+				<div class="f-12em color-9e">
+					<span class="f-28em color-21" id="video_score"></span>
+				</div>
+				<div class="f-10em color-9e">视频积分</div>
+			</li>
+			<li class="pull-left w-25b text-align">
+				<div class="f-12em color-9e">
+					<span class="f-28em color-21" id="notes_score"></span>
+				</div>
+				<div class="f-10em color-9e">笔记积分</div>
+			</li>
+			<li class="pull-left w-25b text-align">
+				<div class="f-12em color-9e">
+					<span class="f-28em color-21" id="exam_score"></span>
+				</div>
+				<div class="f-10em color-9e">考试积分</div>
+			</li>
+		</div>
+	
+	</section>
+	<!--积分排行-->
+	<section class="edu_con mt-12em mb-12em pb-10em">
+		<div class="f-16em color-21 pt-12em pb-8em pl-10em border-de-3em">积分排行</div>
+		<div id="list">
+			<!--<li class="clearfix w-100b h-50em lh-50em va-jz pl-12em pr-12em border-de-3em">
+				<div class="pull-left w-7em h-7em lh-22em mr-12em ranking_bg text-align">
+					<div class="f-7em">1</div>
+				</div>
+				<div class="pull-left w-30em h-30em mr-8em">
+				<img src="../../../statics/images/images_edu/ranking_tx.png">
+				</div>
+				<div class="pull-left h-50em lh-20em w-75b va-jz">
+					<div class="f-12em color-21 pl-8em">张建国</div>					
+				</div>
+				<div class="pull-right f-16em color-21">67</div>
+			</li>-->
+		</div>
+		
+	</section>
+	
+	
+	
+	<!--结束-->
+	<script type="text/jscript" src="../../../statics/public/js/jquery.min.js"></script>
+	<!-- api核心js -->
+	<script type="text/jscript" src="../../../statics/public/js/api.js"></script>
+	<!-- end -->
+	<!-- aui下拉刷新js -->
+	<script type="text/jscript" src="../../../statics/public/aui/js/aui-pull-refresh.js"></script>
+	<!-- end -->
+	<!--aui轮播-->
+	<script type="text/javascript" src="../../../statics/public/aui2/js/aui-slide.js"></script>
+	<!--end-->
+	<!-- 项目公共js -->
+	<script type="text/jscript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+	<!-- end -->
+	<!-- 本页面js -->
+	<script type="text/jscript" src="js/edu_exam_analysis.js"></script>
+	<!--<script src="http://cdn.jsdelivr.net/npm/eruda"></script>-->
+
+	<script type="text/javascript">
+		
+	</script>
+	<!--end-->
+</body>
+
+</html>

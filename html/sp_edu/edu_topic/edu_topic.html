@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name = "format-detection" content = "telephone=no">
+    <title>党员学习列表</title>
+    <!-- aui核心css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui.css"/>
+    <!-- end -->
+    <!--aui轮播-->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui-slide.css"/>
+     <!--刷新-->
+   <link rel="stylesheet" type="text/css" href="../../../statics/public/aui/css/aui-pull-refresh1.css" />
+    <!-- 公司公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_mobile.css"/>
+    <!-- end -->
+    <!-- 本项目公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_p5boss.css"/>
+    <!--轮播图-->
+	<link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/swiper.min.css"/>    
+    <link rel="stylesheet" type="text/css" href="css/edu_topic.css"/>
+</head>
+<body class="bg-color-f5 aui-load-container">
+ <!--下拉刷新-->
+	<div class="aui-load-wrap">
+		<div class="aui-loading-dot"></div>
+		<div class="aui-loading-circle"></div>
+		<div class="aui-loading-title"></div>
+	</div>
+			
+			
+	<section class="po-ab">
+		<img class="w-100b h-178em" src="../../../statics/images/images_edu/edu_bg1.png">
+	</section>
+<!-- 学习页面红色背景 -->
+	<!--<section>
+		<div class="w-100b h-98em bg-color-fb4747 po-ab top-0em"></div>
+	<section>-->
+ 	<!-- 专题课件 -->
+	<section class="po-re pt-5em">
+		<div class="clearfix pl-12em pr-12em">
+			<div class="pull-left color-fffc00 f-16em">专题列表</div>
+			<div class="pull-right topic_in color-fffc00 f-12em" onclick="openSpecial('edu_special_header')">进入列表  
+				<i class="iconfont color-fffc00 f-12em lh-22em ml-5mem">&#xe613;</i>
+			</div>
+		</div>
+	<!-- 专题课件轮播 -->					
+	<div class="swiper-container">
+		<div class="swiper-wrapper">	
+			<!-- 骨架屏 -->	
+			<div class="swiper-slide gjp ml-110em">
+				<div class="shyk mt-20em over-h" onclick="">	
+				<div class="w-100b h-180em over-h pl-5em pr-5em pt-5em bor-ra-5em bg-color-ed"></div>
+				<div class="clearfix pl-15em pr-15em pt-10em pb-15em">
+				<div class="pull-left f-16em color-212121 bg-color-ed w-100em h-20em"></div>
+				<div class="pull-right">
+						<div class="pull-left">
+							<div class="pt-4em" id="circle1"></div>
+						</div>
+						<div class="pull-right f-12em color-9e pl-5em">
+							<div class="bg-color-ed w-50em h-8em"></div>
+							<div class="bg-color-ed w-50em h-8em mt-5em"></div>
+					</div>							
+				</div>		
+				</div>
+				</div>
+			 </div>
+			<div class="swiper-slide gjp">
+				<div class="shyk mt-20em over-h" onclick="">	
+				<div class="w-100b h-180em over-h pl-5em pr-5em pt-5em bor-ra-5em bg-color-ed"></div>
+				<div class="clearfix pl-15em pr-15em pt-10em pb-15em">
+				<div class="pull-left f-16em color-212121 bg-color-ed w-100em h-20em"></div>
+				<div class="pull-right">
+						<div class="pull-left">
+							<div class="pt-4em" id="circle1"></div>
+						</div>
+						<div class="pull-right f-12em color-9e pl-5em">
+							<div class="bg-color-ed w-50em h-8em"></div>
+							<div class="bg-color-ed w-50em h-8em mt-5em"></div>
+					</div>							
+				</div>		
+				</div>
+				</div>
+			 </div>
+			<div class="swiper-slide gjp">
+				<div class="shyk mt-20em over-h" onclick="">	
+				<div class="w-100b h-180em over-h pl-5em pr-5em pt-5em bor-ra-5em bg-color-ed"></div>
+				<div class="clearfix pl-15em pr-15em pt-10em pb-15em">
+				<div class="pull-left f-16em color-212121 bg-color-ed w-100em h-20em"></div>
+				<div class="pull-right">
+						<div class="pull-left">
+							<div class="pt-4em" id="circle1"></div>
+						</div>
+						<div class="pull-right f-12em color-9e pl-5em">
+							<div class="bg-color-ed w-50em h-8em"></div>
+							<div class="bg-color-ed w-50em h-8em mt-5em"></div>
+					</div>							
+				</div>		
+				</div>
+				</div>
+			 </div>
+						 
+			<!-- 骨架屏结束 -->	
+			
+		</div>
+	</div>
+	</section>
+	<!-- 沟通群 -->
+	<section class="edu_con_ql mb-12em po-re" onclick="group_chat('sp_chat_header')">
+		<img src="../../../statics/images/images_edu/qunliao.png">
+		<div class="color-212121 f-16em po-ab top-50em left-40em">点击进入沟通群！！！</div>
+	</section>
+	
+	<!-- 学习任务 -->
+	<section class="edu_con mb-12em bg-color-whiter">
+		<div class="clearfix bg-color-fa bb-1-f0 h-44em lh-44em pl-13em pr-13em" id="tabBox2">
+			<li class="pull-left f-16em color-e84044 w-50b text-align f-w" num='1'>个人任务</li>
+			<div class="pull-left line1"></div>
+			<li class="pull-right f-16em color-212121 w-45b text-align f-w" num='2'>部门任务</li>
+		</div>
+		<ul id="list_obj" class="">
+			<!--<li class="clearfix h-40em lh-40em bb-3em-e6 pl-12em pr-12em">
+				<div class="pull-left f-14em h-55em over-h color-12 w-75b over-h">第一次添加的支部学习任务第一次添加的支部学习任务第一次添加的支部学习任务第一次添加的支部学习任务第一次添加的支部学习任务</div>
+				<div class="color-a4 f-12em pull-right">2019-11-15</div>
+			</li>-->
+			
+		</ul>
+	</section>
+	<!-- 个性化定制 -->
+	<section class="edu_con mb-12em edu_made_first">
+		<div class="f-16em color-212121 pt-16em pl-11em f-w">个性化定制</div>
+		
+		<div class="clearfix">
+			<div class="pull-left mt-30em mb-31em ml-25em color-212121">
+				<p class="f-16em">只需要简单的几个选项</p>
+				<p class="f-12em pt-5em">为你量身定制一份自己的学习计划</p>
+			</div>
+			<div class="pull-right">
+				<img class="w-120em h-100em mr-12em mb-5em" src="../../../statics/images/images_edu/made.png">
+			</div>
+		</div>
+		<div onclick="openMask('edu_mask_header')" class="h-44em lh-44em f-15em color-ff404d w-90b m-a text-center bt-1-dfdfdf">
+			开启学习计划 
+		</div>
+	</section>
+	<!-- 个性化定制end -->
+	
+	<!-- 个性化定制展示 -->
+	<section class="edu_con edu_made mb-12em pl-12em pr-12em di-n">
+		<div class="clearfix pt-16em">
+			<div class="pull-left f-16em color-212121 f-w">个性化定制</div>
+			<div class="pull-left edu_fresh w-20em h-20em color-66 ml-10em pt-1em">
+				<img src="../../../statics/images/images_edu/frull_icon1.png">
+			</div>
+			<div class="pull-right color-ff3332 f-12em border-1-ff3332 pl-6em pr-6em" onclick="openTwostudiesWin('edu_special_twostudies_header','','',1)">进入学习
+				<i class="iconfont color-ff3332 f-12em lh-22em ml-5mem">&#xe613;</i>
+			</div>
+		</div>
+		
+		<div class="edu_made_progress mt-20em">
+			<!-- 文章 -->	
+			<div class="clearfix">
+				<div class="pull-left color-212121 f-14em">文章</div>
+				<div class="pull-right color-9e f-10em">
+				共<span class="article_num"></span>篇、
+				已学<span class="article_learn"></span>篇
+				</div>
+			</div>			
+			<div class="aui-content-padded pb-20em po-re">
+			     <div class="aui-progress aui-progress-xs aui-progress-bg">
+			        <div class="aui-progress-bar aui-progress-bar-bg article_progress"></div>
+			    </div>
+			    <div class="po-ab top-0em z-index-max w-100b">
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			 </div>
+			</div>
+			<!-- 视频 -->	
+			<div class="clearfix">
+				<div class="pull-left color-212121 f-14em">视频</div>
+				<div class="pull-right color-9e f-10em">
+				共<span class="video_num"></span>部、
+				已学<span class="video_learn"></span>部</div>
+			</div>			
+			<div class="aui-content-padded pb-20em po-re">
+			     <div class="aui-progress aui-progress-xs aui-progress-bg">
+			        <div class="aui-progress-bar aui-progress-bar-bg video_progress"></div>
+			    </div>
+			    <div class="po-ab top-0em w-100b">
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			 </div>
+			</div>
+			<!-- 考试 -->	
+			<div class="clearfix">
+				<div class="pull-left color-212121 f-14em">考试</div>
+				<div class="pull-right color-9e f-10em">
+				共<span class="exam_num"></span>次、
+				已考<span class="exam_learn"></span>次
+				</div>
+			</div>			
+			<div class="aui-content-padded pb-20em po-re">
+			     <div class="aui-progress aui-progress-xs aui-progress-bg">
+			        <div class="aui-progress-bar aui-progress-bar-bg exam_progress"></div>
+			    </div>
+			    <div class="po-ab top-0em w-100b">
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			 </div>
+			</div>
+			<!-- 笔记 -->	
+			<div class="clearfix">
+				<div class="pull-left color-212121 f-14em">笔记</div>
+				<div class="pull-right color-9e f-10em">
+				<!--共<span class="notes_num"></span>部、-->
+				共写<span class="notes_learn"></span>部
+				</div>
+			</div>			
+			<div class="aui-content-padded pb-20em po-re">
+			     <div class="aui-progress aui-progress-xs aui-progress-bg">
+			        <div class="aui-progress-bar aui-progress-bar-bg notes_progress"></div>
+			    </div>
+			    <div class="po-ab top-0em w-100b">
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			 </div>
+			</div>
+			
+			
+		</div>
+	</section>
+	<!-- 个性化定制展示end -->
+	
+	
+	<!-- 学习笔记 -->
+	<section class="edu_con mb-12em">
+		<div class="clearfix pt-15em pl-12em">
+			<div class="pull-left f-16em color-212121 f-w">学习心得</div>
+			<div class="pull-right color-9e f-12em pr-15em" onclick="openNotes('edu_notes_header',2)">更多
+				<i class="iconfont color-de f-12em lh-22em ml-5mem">&#xe613;</i>
+			</div>
+		</div>
+		<!-- 日历组件 -->
+		<div id="test2" class="pl-5em w-100b over-h mt-8em"></div>
+		<div id="testView" class="h-100b">
+		</div>	
+		<!--骨架屏-->
+			<div class="ske">
+				<div class="skeleton">
+				    <div class="skeleton-head"></div>
+				    <div class="skeleton-body">
+				        <div class="skeleton-title"></div>
+				        <div class="skeleton-content"></div>
+				    </div>
+				</div>
+				<div class="skeleton">
+				    <div class="skeleton-head"></div>
+				    <div class="skeleton-body">
+				        <div class="skeleton-title"></div>
+				        <div class="skeleton-content"></div>
+				    </div>
+				</div>
+				<div class="skeleton">
+				    <div class="skeleton-head"></div>
+				    <div class="skeleton-body">
+				        <div class="skeleton-title"></div>
+				        <div class="skeleton-content"></div>
+				    </div>
+				</div>
+				<div class="skeleton">
+				    <div class="skeleton-head"></div>
+				    <div class="skeleton-body">
+				        <div class="skeleton-title"></div>
+				        <div class="skeleton-content"></div>
+				    </div>
+				</div>
+				<div class="skeleton">
+				    <div class="skeleton-head"></div>
+				    <div class="skeleton-body">
+				        <div class="skeleton-title"></div>
+				        <div class="skeleton-content"></div>
+				    </div>
+				</div>
+				<div class="skeleton">
+				    <div class="skeleton-head"></div>
+				    <div class="skeleton-body">
+				        <div class="skeleton-title"></div>
+				        <div class="skeleton-content"></div>
+				    </div>
+				</div>
+				<div class="skeleton">
+				    <div class="skeleton-head"></div>
+				    <div class="skeleton-body">
+				        <div class="skeleton-title"></div>
+				        <div class="skeleton-content"></div>
+				    </div>
+				</div>
+				<div class="skeleton">
+				    <div class="skeleton-head"></div>
+				    <div class="skeleton-body">
+				        <div class="skeleton-title"></div>
+				        <div class="skeleton-content"></div>
+				    </div>
+				</div>
+				
+			</div>
+		<!--骨架屏结束-->
+		
+	</section>
+	<!-- 学习笔记end -->
+	
+	<!-- 学习实况 -->
+	<!--<section class="edu_con mb-12em pl-12em pr-12em">
+		<div class="clearfix over-h h-30em lh-44em">		
+			<span class="pull-left color-212121 f-16em f-w">学习实况</span>
+			<span class="pull-right f-12em color-9e" onclick="openPartyWork('cms_partyWork_list1_header','学习实况')">更多
+				<i class="iconfont color-de f-12em lh-44em ml-5mem">&#xe613;</i>
+			</span>
+		</div>
+		<div>
+			<ul id="notes_list">
+				
+			</ul>
+		</div>		
+	</section>-->
+	<!-- 学习实况 end-->
+    <!-- jquery js -->
+	<script type="text/javascript" src="../../../statics/public/js/jquery.min.js"></script>
+	<script src="laydate/laydate.js"></script> 
+	<script type="text/javascript" src="../../../statics/public/aui2/js/swiper-3.4.2.min.js"></script>
+    <!-- 公司公共apijs -->
+	<script type="text/javascript" src="../../../statics/public/js/api.js"></script>
+	<!-- end -->
+    <!--aui轮播-->
+    <script type="text/javascript" src="../../../statics/public/aui2/js/aui-slide.js"></script>
+    <!--圆形进度条插件-->
+    <script type="text/javascript" src="../../../statics/public/js/circleChart.min.js"></script>
+    <!-- 本项目公共js -->
+	<script type="text/javascript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+	<!-- aui下拉刷新js -->
+	<script type="text/jscript" src="../../../statics/public/aui/js/aui-pull-refresh.js"></script>
+	<!-- 主要js配置文件 -->
+	<script type="text/javascript" src="../../../statics/public/js/config.js"></script>
+	<!-- end -->
+	<!-- 页面 js -->
+	<script type="text/javascript" src="js/eud_topic.js"></script>
+	<!-- end -->
+	<script type="text/javascript">
+	
+	</script>
+</body>
+</html>

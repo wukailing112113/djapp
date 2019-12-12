@@ -1,0 +1,82 @@
+body {
+
+}
+/*width-height类*/
+.wh-24em{width: 1.2rem;height: 1.2rem;}
+
+/*width类*/
+.w-2px{width: 2px;}
+.w-6em{width: 0.3rem;}
+.w-7em{width: 0.35rem;}
+.w-52em{width: 2.6rem;}
+.w-74em{width: 3.7rem;}
+.w-105em{width: 5.25rem;}
+.w-236em{width: 11.8rem;}
+
+/*height类*/
+.h-12em{height: 0.6rem;}
+.h-14em{height: 0.7rem;}
+.h-17em{height: 0.85rem;}
+.h-18em{height: 0.9rem;}
+.h-22em{height: 1.1rem;}
+.h-52em{height: 2.6rem;}
+.h-100b{height: 100%;}
+.h-104em{height: 5.2rem;}
+
+/*line-height类*/
+.lh-22em{line-height: 1.1rem !important;}
+
+/*padding类*/
+.pt-6em{padding-top: 0.3rem;}
+
+/*margin类*/
+.ml-3em{margin-left: 0.15rem;}
+.ml-1mpx{margin-left: -1px;}
+
+.mt-4em{margin-top: 0.2rem;}
+.mt-14em{margin-top: 0.7rem;}
+
+/*color类*/
+.color-ff5a2d{color: #ff5a2d;}
+.color-ffb767{color: #ffb767;}
+
+/*background类*/
+.bg-color-f9{background: #f9f9f9}
+.bg-color-ff562d{background: #ff562d;}
+.bg-color-fda906{background: #fda906;}
+.bg-color-2da4ff{background: #2da4ff;}
+.bg-color-757575{background: #757575;}
+.bg-color-ffb767{background: #ffb767;}
+
+/*border类*/
+.bb-1-df{border-bottom: 1px solid #dfdfdf;}
+.br-1-df{border-right: 1px solid #dfdfdf !important;}
+/*left类*/
+.left-12mem{left: -0.6rem;}
+.left-50b{left: 50%;}
+
+/*right类*/
+.right-12mem{right: -0.6rem;}
+
+/*text-align类*/
+.text-justify{text-align: justify !important;}
+
+/*box-shadow类*/
+.box-4-df{box-shadow: 0 0 4px 0 #dfdfdf;}
+
+/*渐变类*/
+.grad{
+  background: -webkit-linear-gradient(#ff9776, #ffba66); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#ff9776, #ffba66); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#ff9776, #ffba66); /* Firefox 3.6 - 15 */
+  background: linear-gradient(#ff9776, #ffba66); /* 标准的语法 */
+}
+
+
+.shade{/*字体渐变*/
+	background-image: -webkit-gradient(linear, left center, right center, from(rgba(252, 152, 118, 1)), to(rgba(254, 192, 115, 1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.letter-spacing{letter-spacing:2px;}

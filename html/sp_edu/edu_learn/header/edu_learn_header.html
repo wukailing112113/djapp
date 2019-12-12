@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>在线党校</title>
+    <!-- aui核心css -->
+    <link rel="stylesheet" type="text/css" href="../../../../statics/public/aui2/css/aui.css"/>
+    <!-- end -->
+    <!-- 公司公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../../statics/public/css/sp_public.css"/>
+    <link rel="stylesheet" type="text/css" href="../../../../statics/public/css/sp_public_mobile.css"/>
+    <!-- end -->
+    <style>
+    </style>
+</head>
+<body>
+    <header class="aui-bar aui-bar-nav aui-bar-info pt-25em">
+	    <ul>
+           <li class="h-45em">
+	    		<a class="pull-left mt-15em pl-12em" onclick="goBlack()">
+			        <img class="w-9em h-19em" src="../../../../statics/public/images/back.png" alt="返回" />
+			    </a>
+	    		<div class="aui-title f-w">在线党校</div>
+	    		<!--<a class="pull-right f-12em f-w pr-12em" onclick="openMyexam('edu_exam_my_header')">
+			       我的考试
+			    </a>-->
+	    	</li>
+        </ul>
+    </header>
+<script type="text/jscript" src="../../../../statics/public/js/jquery.min.js"></script>
+<!-- 本项目公共js -->
+<script type="text/javascript" src="../../../../statics/public/js/sp_public_p5boss.js"></script>
+<!-- end -->
+<script type="text/javascript" src="../../../../statics/public/aui/js/aui-alert.js"></script>
+<script>
+	apiready = function(){
+		changecolor();//根据配置文件改变头部颜色 
+		api.openFrame({
+            name: 'edu_learn',
+            url: '../edu_learn.html',
+            rect: {
+	            y:($('header').height()/45*70),
+            },
+            bounces: false,
+            pageParam: {
+            	id:api.pageParam.id
+            }
+        });
+        if(userAgent()){//系统小于4.4修改Y轴高度
+        	api.setFrameAttr({
+			    name: 'edu_learn',
+			    rect: {y: 45}
+			});
+        };
+	}
+	//返回
+	function goBlack(){
+		api.closeWin({});
+	}
+</script>
+</body>
+</html>

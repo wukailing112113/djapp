@@ -1,0 +1,63 @@
+.color-w{color:white;}
+.color-999{color:#999!important;}
+.pl-5{padding-left:5px;}
+.pr-5{padding-right:5px;}
+.bor-ra-50b{border-radius:50%;}
+.top-65{top:65px;}
+.aui-grid-sixteen p{color:#3498db!important;}
+.aui-grid-sixteen li:after{border:none!important;}
+.w-12{width:12px; height:12px;}
+.w-10{width:10px; height:10px;}
+.w-8{width:8px; height:8px;}
+.w-6{width:6px; height:6px;}
+.left-24{left:24px;}
+.left-33{left:33px;}
+.left-37{left:37px;}
+.top-86{top:86px;}
+.top-87{top:87px;}
+.top-88{top:88px;}
+.top-90{top:90px;}
+.top-92{top:92px;}
+.top-121{top:121px;}
+.h-1{height:2px; width:82%;}
+.w-42{width:42px;height:42px;}
+.border{border:2px solid #3498db;}
+.left-88b{left:88%;}
+.border1{border-bottom:2px solid #3498db; }
+.w-25{width:18px;height:40px;}
+.bg-w{background:white;}
+.left-90b{left:90%;}
+.left-87b{left:87%;}
+.fw{font-weight:bold;}
+.pl-10{padding-left:10px;}
+.pr-10{padding-right:10px;}
+.pl-3{padding-left:2px;}
+.pr-3{padding-right:2px;}
+.bg-pic{background-image:url('../../images/project.png');background-repeat:no-repeat;background-size:contain;background-position:0% 55%;}
+.bg-pic:before{margin-left:15px;}
+.aui-grid-sixteen:after{border:none!important;}
+.aui-user-view-cell .aui-img-object{border-radius:5px;}
+.for .aui-user-view-cell .aui-img-object{max-width: 30px !important;
+		height: 30px !important;
+		line-height: 30px !important;}
+.border-radisu{border-radius:50%!important;}
+.bg-51{background:#51A5FA;}
+.w-18{width:15px;}
+.h-18{height:15px;}
+.color-33{color:#333333;}
+.lh-21{line-height:21px;}
+.w-60b{width:60%!important;}
+.w-50b{width:50%!important;}
+.bottom-12{bottom:12px;}
+.aui-grid-sixteen li{padding:15px 5px;}
+.fsize-10{font-size:10px;}
+.aui-user-view-cell .aui-img-body span{width:auto!important;}
+.bg-1{background-image:url('../../images/cust_project1.png');background-repeat:no-repeat;background-size:100% 100%;}
+.bg-2{background-image:url('../../images/cust_project2.png');background-repeat:no-repeat;background-size:100% 100%;}
+.bg-3{background-image:url('../../images/cust_project3.png');background-repeat:no-repeat;background-size:100% 100%;}
+.bg-4{background-image:url('../../images/cust_project4.png');background-repeat:no-repeat;background-size:100% 100%;}
+.bg-5{background-image:url('../../images/cust_project5.png');background-repeat:no-repeat;background-size:100% 100%;}
+.bg-6{background-image:url('../../images/cust_project6.png');background-repeat:no-repeat;background-size:100% 100%;}
+.bg-7{background-image:url('../../images/cust_project7.png');background-repeat:no-repeat;background-size:100% 100%;}
+.bg-8{background-image:url('../../images/cust_project8.png');background-repeat:no-repeat;background-size:100% 100%;}
+.bg-9{background-image:url('../../images/cust_project9.png');background-repeat:no-repeat;background-size:100% 100%;}

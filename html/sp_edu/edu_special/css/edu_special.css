@@ -1,0 +1,18 @@
+.bg-color-f9{
+	background-color:#F9F9F9!important;
+}
+.b-s{
+	box-shadow: 0px 1px 3px 0px #dedede;
+}
+.h-200em{
+	height: 10rem;
+}
+.w-347em{
+	width:17.35rem;
+}
+.ct-lr{
+	margin-left:calc(50% - 8.67rem);
+}
+.h-149em{
+	height:7.45rem;
+}

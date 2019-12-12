@@ -1,0 +1,10 @@
+.noselect{background:#f2f2f2;padding: 7px 10px;}
+.select{background:#fff;padding: 5px 2px;border:1px solid #3498DB}
+.color-lan{color:#3498DB}
+.mr-2{margin-right:2px;}
+.pl-10{padding-left:10px!important}
+::-webkit-input-placeholder { /* WebKit browsers */ direction: rtl;}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ direction: rtl;}
+::-moz-placeholder { /* Mozilla Firefox 19+ but I'm not sure about working */ direction: rtl;}
+:-ms-input-placeholder { /* Internet Explorer 10+ */ direction: rtl;}
+.color-cc{color:#cccccc;}

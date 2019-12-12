@@ -1,0 +1,26 @@
+body {
+
+}
+
+.h-34em{height: 1.7rem;}
+.pt-8em{padding-top: 0.4rem;}
+.pb-8em{padding-bottom: 0.4rem;}
+.mt-6em{margin-top: 0.3rem;}
+.mb-8em{margin-bottom: 0.4rem;}
+.lh-14em{line-height: 0.7rem;}
+.lh-17em{line-height: 0.85rem;}
+.lh-44em{line-height: 2.2rem;}
+.color-75{color: #757575;}
+.color-ff1b1e{color: #ff1b1e;}
+.bg-color-f9{background: #f9f9f9}
+.b-1-df{border: 1px solid #dfdfdf;}
+.b-1-ff1b1e{border: 1px solid #ff1b1e;}
+
+
+
+.grad {
+  background: -webkit-linear-gradient(left, #ff4d4d , #ff3032 , #ff5a2d); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #ff4d4d , #ff3032 , #ff5a2d); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #ff4d4d , #ff3032 , #ff5a2d); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #ff4d4d , #ff3032 , #ff5a2d); /* 标准的语法 */
+}

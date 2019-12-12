@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<title>书记信箱</title>
+		<!-- aui核心css -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui.css"/>
+		<!-- end -->
+		<!--公用css-->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public.css"/>
+		<!-- end -->
+		<!-- 轮播 -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui-slide.css" />
+		<!-- end -->
+		<!-- 本项目公共css -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_mobile.css"/>
+		<!-- end -->
+		<!--本页面css-->
+		<link rel="stylesheet" type="text/css" href="css/com_mailbox.css" />
+		<style>
+		</style>
+	</head>
+	<body>
+		<!--选择人与标题-->
+			<div class="mt-8em mb-12em pl-12em pr-12em bg-color-whiter">
+				<pre class="pt-15em pb-15em f-12em lh-15em color-99 m-0 bb-1-df">标     题    <input id="imail_title" class="di-i w-220em pl-12em f-12em lh-15em h-15em color-33 b-0" type="text" /><i class="pull-right iconfont f-15em lh-15em color-ff3032 p-0"></i></pre>
+				<pre id="imail_receivers" class="pt-15em pb-15em f-12em lh-15em color-99 m-0 memberList" onclick="openPerson('0','com_mailbox_edit')">收件人    <span class="pl-12em f-12em lh-15em h-15em color-33"></span><i class="pull-right iconfont f-15em lh-15em color-ff3032 p-0">&#xe613;</i></pre>
+			</div>
+		<!--结束-->
+		
+		<!--内容-->
+			<div class="p-12em mb-12em bg-color-whiter">
+				<textarea id="imail_content" class="w-100b h-150em f-15em lh-18em" name="" id="" placeholder="编辑你的公文内容"></textarea>
+			</div>
+		<!--结束-->
+		
+		<!--发送-->
+			<div class="w-100b h-100em po-fix bottom-0 bg-color-whiter">
+				<div class="m-a mt-8em w-350em h-34em f-14em lh-36em color-white text-align grad bor-ra-7" onclick="comImailSave()">提交</div>
+				<div class="m-a mt-8em w-350em h-34em f-14em lh-36em color-ff3032 text-align b-1-ff3032 bor-ra-7" onclick="goBlack()">取消</div>
+			</div>
+		<!--结束-->
+		
+		
+		<script type="text/jscript" src="../../../statics/public/js/jquery.min.js"></script>
+		<!-- api核心js -->
+		<script type="text/jscript" src="../../../statics/public/js/api.js"></script>
+		<!-- end -->
+		<!-- aui下拉刷新js -->
+		<script type="text/jscript" src="../../../statics/public/aui2/js/aui-pull-refresh.js"></script>
+		<!-- end -->
+		<!-- aui轮播 -->
+		<script type="text/jscript" src="../../../statics/public/aui2/js/aui-slide.js"></script>
+		<!-- end -->
+		<!-- 项目公共js -->
+		<script type="text/jscript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+		<!-- end -->
+		<!-- 本页面js -->
+		<script type="text/jscript" src="js/com_mailbox_edit.js"></script>
+		<!-- end -->
+		<script type="text/javascript">
+			
+		</script>
+		<!--end-->
+	</body>
+</html>

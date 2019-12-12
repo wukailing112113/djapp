@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>党务超市</title>
+    <!-- aui核心css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui.css"/>
+    <!--刷新-->
+   <link rel="stylesheet" type="text/css" href="../../../statics/public/aui/css/aui-pull-refresh1.css" />
+    <!-- 公司公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public.css"/>
+    <!-- end -->
+    <!-- 本项目公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_mobile.css"/>
+    <!-- end -->
+    <link rel="stylesheet" type="text/css" href="css/bd_appstore.css"/>
+</head>
+<body class="aui-load-container">
+ <!--下拉刷新-->
+<div class="aui-load-wrap">
+	<div class="aui-loading-dot"></div>
+	<div class="aui-loading-circle"></div>
+	<div class="aui-loading-title"></div>
+</div>
+	
+	<div class="aui-content m-0 bg-f5f5f5">    
+		<!--党务平台-->    
+        <section class="aui-grid index_con mt-12em mb-12em">
+        	<div class="aui-row pl-10em pr-10em pt-20em">
+        		<div class="aui-col-xs-4 p-0 ml-5em text-l f-16em color-21 icon_medium f-w">
+        			党务平台
+        		</div>
+        	</div>
+		    <div class="aui-row pl-10em pr-10em">
+		        <div id="partyWork" class="aui-col-xs-3 p-0 mb-0em">
+		        	<div class="over-h " onclick="openPartyWork('cms_partyWork_list_header','党务动态')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png1"></div>
+						<p class="text-align pt-5em f-10em color-66">党务动态</p>
+			        </div>    
+		        </div>
+		        <div id="matrix" class="aui-col-xs-3 p-0 mb-0em">
+		        	<div class="over-h" onclick="openMatrix('hr_matrix_header')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png2"></div>
+						<p class="text-align pt-5em f-10em color-66">党建矩阵</p>
+			        </div>       
+		        </div>
+		        <div id="discover" class="aui-col-xs-3 p-0 mb-0em">
+		        	<div class="over-h" onclick="openDiscover('hr_discover_header')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png3"></div>
+						<p class="text-align pt-5em f-10em color-66">党员发展全纪实</p>
+			        </div>      
+		        </div>
+		        <!--<div id="transfer" class="aui-col-xs-3 p-0 mb-0em">
+		        	<div class="over-h" onclick="openTransfer('hr_transfer_header')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png4"></div>
+						<p class="text-align pt-5em f-10em color-66">党员关系转移</p>
+			        </div>      
+		        </div>-->
+		       <!-- <div id="moving" class="aui-col-xs-3 p-0 mb-23em">
+		        	<div class="over-h" onclick="openMoving('hr_moving_header')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png5"></div>
+						<p class="text-align pt-5em f-10em color-66">流动党员之家</p>
+			        </div>    
+		        </div>-->
+		       <!-- <div id="secretary" class="aui-col-xs-3 p-0 mb-23em">
+		        	<div class="over-h" onclick="openSecretary('oa_secretary_header')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png7"></div>
+						<p class="text-align pt-5em f-10em color-66">第一书记</p>
+			        </div>    
+		        </div>-->
+		        <div id="integral" class="aui-col-xs-3 p-0 mb-0em">
+		        	<div class="over-h" onclick="openIntegral('hr_integral_header')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png8"></div>
+						<p class="text-align pt-5em f-10em color-66">积分排名</p>
+			        </div>    
+		        </div>
+		        <div id="fa" class="aui-col-xs-3 p-0 mb-23em">
+		        	<div class="over-h" onclick="openFa('sp_fa_header')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png9"></div>
+						<p class="text-align pt-5em f-10em color-66">党费缴纳</p>
+			        </div>    
+		        </div>
+		        <!--沟通群-->
+		       <!-- <div id="" class="aui-col-xs-3 p-0 mb-23em">
+		        	<div class="over-h" onclick="group_chat('sp_chat_header')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png31"></div>
+						<p class="text-align pt-5em f-10em color-66">沟通群</p>
+			        </div>    
+		        </div>-->
+				<!--<div id="" class="aui-col-xs-4 p-0 mb-5em">
+		        	<div class="m-5em box-sha-6-fff b-ra-4em bg-color-f7 over-h b-1-e6">
+		        		<div class="w-40em h-40em center-block mt-20em mb-20em bg-png10"></div>
+						<p class="mb-20em text-align f-12em color-33">民生评议</p>
+			        </div>    
+		        </div>-->
+		    </div>
+		</section>
+		<!--结束-->
+		<!--学习平台-->
+		<section class="aui-grid index_con mt-12em mb-12em">
+        	<div class="aui-row pl-10em pr-10em pt-20em">
+        		<div class="aui-col-xs-4 p-0 ml-5em text-l f-16em color-21 icon_medium f-w">
+        			学习平台
+        		</div>
+        	</div>
+		    <div class="aui-row pl-10em pr-10em">
+		        <div id="special" class="aui-col-xs-3 p-0 mb-0em">
+		        	<div class="over-h" onclick="openSpecial('edu_special_header')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png11"></div>
+						<p class="text-align pt-5em f-10em color-66">专题学习</p>
+			        </div>    
+		        </div>
+		        <div id="learn" class="aui-col-xs-3 p-0 mb-0em">
+		        	<div class="over-h" onclick="openLearn('edu_learn_header')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png12"></div>
+						<p class="text-align pt-5em f-10em color-66">在线党校</p>
+			        </div>    
+		        </div>
+		        <div id="notes" class="aui-col-xs-3 p-0 mb-0em">
+		        	<div class="over-h" onclick="openNotes('edu_notes_header',1)">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png13"></div>
+						<p class="text-align pt-5em f-10em color-66">学习笔记</p>
+			        </div>    
+		        </div>
+		        <div id="exam" class="aui-col-xs-3 p-0 mb-0em">
+		        	<div class="over-h" onclick="openExam('edu_exam')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png14"></div>
+						<p class="text-align pt-5em f-10em color-66">考试中心</p>
+			        </div>    
+		        </div>
+		        <!--新增党员投稿-->
+		        <div id="exam" class="aui-col-xs-3 p-0 mb-23em">
+		        	<div class="over-h" onclick="openWriting('edu_writing_header')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png31"></div>
+						<p class="text-align pt-5em f-10em color-66">党员投稿</p>
+			        </div>    
+		        </div>
+		    </div>
+		</section>
+		<!--结束-->
+		<!--民生平台-->
+		<!--<section class="aui-grid index_con mt-12em mb-12em">
+        	<div class="aui-row pl-10em pr-10em pt-20em">
+        		<div class="aui-col-xs-4 p-0 ml-5em text-l f-16em color-21 icon_medium f-w">
+        			民生平台
+        		</div>
+        	</div>
+		    <div class="aui-row pl-10em pr-10em">
+		        <div id="platform" class="aui-col-xs-3 p-0 mb-0em">
+		        	<div class="over-h" onclick="openPlatform('life_platform_header')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png15"></div>
+						<p class="text-align pt-5em f-10em color-66">办事指南</p>
+			        </div>    
+		        </div>
+		        <div id="bbs" class="aui-col-xs-3 p-0 mb-0em">
+		        	<div class="over-h" onclick="openBbs('life_bbs_header')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png16"></div>
+						<p class="text-align pt-5em f-10em color-66">村务论坛</p>
+			        </div>    
+		        </div>
+		        <div id="helpwin" class="aui-col-xs-3 p-0 mb-0em">
+		        	<div class="over-h" onclick="openHelpwin('hr_poorhelp_header')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png17"></div>
+						<p class="text-align pt-5em f-10em color-66">精准扶贫</p>
+			        </div>    
+		        </div>
+		        <div id="threeservices" class="aui-col-xs-3 p-0 mb-0em">
+		        	<div class="over-h" onclick="openThreeservices('life_threeservices_header')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png18"></div>
+						<p class="text-align pt-5em f-10em color-66">三务公开</p>
+			        </div>    
+		        </div>
+		        <div id="survey" class="aui-col-xs-3 p-0 mb-23em">
+		        	<div class="over-h" onclick="openSurvey('life_survey_header')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png19"></div>
+						<p class="text-align pt-5em f-10em color-66">调查问卷</p>
+			        </div>    
+		        </div>
+		        <div id="problem" class="aui-col-xs-3 p-0 mb-23em">
+		        	<div class="over-h" onclick="openProblem('life_problem_header')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png32"></div>
+						<p class="text-align pt-5em f-10em color-66">随手拍</p>
+			        </div>    
+		        </div>
+		        <div id="volunteer" class="aui-col-xs-3 p-0 mb-23em">
+		        	<div class="over-h" onclick="openVote('life_vote_header')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png30"></div>
+						<p class="text-align pt-5em f-10em color-66">投票</p>
+			        </div>    
+		        </div>
+		        <div id="message" class="aui-col-xs-3 p-0 mb-23em">
+		        	<div class="over-h" onclick="openMessage('life_message_header')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png31"></div>
+						<p class="text-align pt-5em f-10em color-66">留言建议</p>
+			        </div>    
+		        </div>
+		    </div>
+		</section>-->
+		<!--结束-->
+		<!--党务办公-->
+		<section class="aui-grid index_con mt-12em mb-12em">
+        	<div class="aui-row pl-10em pr-10em pt-20em">
+        		<div class="aui-col-xs-4 p-0 ml-5em text-l f-16em color-21 icon_medium f-w">
+        			办公平台
+        		</div>
+        	</div>
+		    <div class="aui-row pl-10em pr-10em">
+		       <!-- <div id="notice" class="aui-col-xs-3 p-0 mb-0em">
+		        	<div class="over-h" onclick="openNotice('oa_notice_header')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png22"></div>
+						<p class="text-align pt-5em f-10em color-66">通知公告</p>
+			        </div>    
+		        </div>-->
+		        <div id="document" class="aui-col-xs-3 p-0 mb-23em">
+		        	<div class="over-h" onclick="openDocument('oa_document_header')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png23"></div>
+						<p class="text-align pt-5em f-10em color-66">公文收发</p>
+			        </div>    
+		        </div>
+		        <div id="attmeeting" class="aui-col-xs-3 p-0 mb-23em">
+		        	<div class="over-h" onclick="openAttmeeting('oa_attmeeting_header')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png6"></div>
+						<p class="text-align pt-5em f-10em color-66">三会一课</p>
+			        </div>    
+		        </div>
+		        <!--<div id="phone" class="aui-col-xs-3 p-0 mb-23em">
+		        	<div class="over-h" onclick="openPhone()">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png27"></div>
+						<p class="text-align pt-5em f-10em color-66">党员通讯录</p>
+			        </div>    
+		        </div>-->
+		        <!--<div id="instructions" class="aui-col-xs-3 p-0 mb-0em">
+		        	<div class="over-h" onclick="openInstructions('oa_instructions_header')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png24"></div>
+						<p class="text-align icon_regular f-10em color-66">工作计划</p>
+			        </div>    
+		        </div>-->
+		        <!--<div id="workplan" class="aui-col-xs-3 p-0 mb-0em">
+		        	<div class="over-h" onclick="openWorkplan('oa_workplan_header')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png25"></div>
+						<p class="text-align pt-5em f-10em color-66">日报管理</p>
+			        </div>    
+		        </div>-->
+				<!--<div id="" class="aui-col-xs-3 p-0 mb-23em">
+		        	<div class="over-h" onclick="openPerformance('oa_performance_header')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png26"></div>
+						<p class="text-align pt-5em f-10em color-66">绩效管理</p>
+			        </div>    
+		        </div>-->
+		    </div>
+		</section>
+		<!--结束-->
+		<!--活动平台-->
+		
+		<!--结束-->
+		<!--通讯平台-->
+		<section class="aui-grid index_con mt-12em mb-12em" id="is_shuji">
+        	<div class="aui-row pl-10em pr-10em pt-20em">
+        		<div class="aui-col-xs-4 p-0 ml-5em text-l f-16em color-21 icon_medium f-w">
+        			通讯平台
+        		</div>
+        	</div>
+		    <div class="aui-row pl-10em pr-10em">
+				<div id="phone" class="aui-col-xs-3 p-0 mb-23em">
+		        	<div class="over-h" onclick="openPhone('com_phonebook_right_header')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png27"></div>
+						<p class="text-align pt-5em f-10em color-66">党员通讯录</p>
+			        </div>    
+		        </div>
+		       
+		        <!--<div id="chat" class="aui-col-xs-4 p-0 mb-5em">
+		        	<div class="m-5em box-sha-6-fff b-ra-4em bg-color-f7 over-h b-1-e6" onclick="openChat('com_chat_list_header')">
+		        		<div class="w-40em h-40em center-block mt-20em mb-20em bg-png28"></div>
+						<p class="mb-20em text-align f-12em color-33">沟通中心</p>
+			        </div>    
+		        </div>-->
+		        <!--<div class="aui-col-xs-3 p-0 mb-23em">
+		        	<div class="over-h" onclick="openMailbox('com_mailbox_header')">
+		        		<div class="w-30em h-30em center-block mt-20em mb-10em bg-png29"></div>
+						<p class="text-align pt-5em f-10em color-66">书记信箱</p>
+			        </div>    
+		        </div>-->
+		    </div>
+		</section>
+		<!--结束-->
+    </div>
+    <!-- 公司公共apijs -->
+	<script type="text/javascript" src="../../../statics/public/js/api.js"></script>
+	<!-- end -->
+	<!-- jquery js -->
+	<script type="text/javascript" src="../../../statics/public/js/jquery.min.js"></script>
+	<!-- end -->
+	<!-- alertjs -->
+    <script type="text/jscript" src="../../../statics/public/aui/js/aui-alert.js"></script>
+   <!-- aui下拉刷新js -->
+	<script type="text/jscript" src="../../../statics/public/aui/js/aui-pull-refresh.js"></script>
+    <!-- 本项目公共js -->
+	<script type="text/jscript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+	<!-- end -->
+	<!-- 主要js配置文件 -->
+	<script type="text/jscript" src="../../../statics/public/js/config.js"></script>
+	<!-- end -->
+	<!-- 页面 js -->
+	<script type="text/javascript" src="js/bd_appstore_edit.js"></script>
+	<script type="text/javascript" src="js/bd_appstore.js"></script>
+	
+	
+	<!-- end -->
+	<script type="text/javascript">
+	
+	
+	</script>
+</body>
+</html>

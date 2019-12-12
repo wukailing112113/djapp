@@ -1,0 +1,76 @@
+body {
+
+}
+/*width 类*/
+.w-6{width: 6px;}
+.w-124em{width: 6.2rem;}
+.w-33b{width: 33.33%;}
+
+/*height 类*/
+.h-6{height: 6px;}
+.h-28em{height: 1.4rem;}
+.h-40em{height: 2rem;}
+.h-52em{height: 2.6rem;}
+.h-235em{height: 11.75rem;}
+
+/*line-height 类*/
+.lh-30em{line-height: 1.5rem;}
+.lh-40em{line-height: 2rem;}
+
+/*font-size 类*/
+.f-40em{font-size: 2rem;}
+
+/*color 类*/
+.color-ffd4cc{color: #ffd4cc;}
+.color-fff600{color: #fff600;}
+.color-ffd9d6{color: #ffd9d6;}
+.color-fd483d{color: #fd483d;}
+
+/*padding 类*/
+.pt-22em{padding-top: 1.1rem;}
+.pt-24em{padding-top: 1.2rem;}
+.pt-265em{padding-top: 13.25rem;}
+
+/*margin 类*/
+.ml-62mem{margin-left: -3.1rem;}
+
+.mt-7{margin-top: 0.35rem;}
+
+.mb-8em{margin-bottom: 0.4rem;}
+
+/*background 类*/
+.bg-color-99{background: #999999;}
+.bg-color-ff6669{background: #ff6669;}
+
+/*border 类*/
+.bb-1-df{border-bottom: 1px solid #dfdfdf;}
+
+/*border-radius 类*/
+.bor-ra-28em{border-radius: 1.4rem;}
+
+/*left 类*/
+.left-50b{left: 50%;}
+
+/*bottom 类*/
+.bottom-14mem{bottom: -0.7rem;}
+
+/*背景图*/
+.bg-img{
+	background: url('../../../../statics/images/images_oa/oa_performance.png') no-repeat center;
+	background-size: cover;
+}
+
+/*box-shadow 类*/
+.box-sha-3{box-shadow: 0 2px 3px 0 #e7b8b8;}
+/*text-shadow 类*/
+.text-sha-6{
+	text-shadow: 0 2px 6px #eb4c2d
+}
+
+/*背景渐变色*/
+.gradient{
+	background: -webkit-linear-gradient(left, #ff4d4d , #ff3032 , #ff5a2d); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(right, #ff4d4d , #ff3032 , #ff5a2d); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(right, #ff4d4d , #ff3032 , #ff5a2d); /* Firefox 3.6 - 15 */
+	background: linear-gradient(to right, #ff4d4d , #ff3032 , #ff5a2d); /* 标准的语法 */
+}

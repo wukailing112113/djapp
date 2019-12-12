@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name = "format-detection" content = "telephone=no">
+    <title>党员学习列表</title>
+    <!-- aui核心css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui.css"/>
+    <!-- end -->
+    <!--aui轮播-->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui-slide.css"/>
+     <!--刷新-->
+   <link rel="stylesheet" type="text/css" href="../../../statics/public/aui/css/aui-pull-refresh1.css" />
+    <!-- 公司公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_mobile.css"/>
+    <!-- end -->
+    <!-- 本项目公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_p5boss.css"/>
+    <!--轮播图-->
+	<link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/swiper.min.css"/>    
+    <link rel="stylesheet" type="text/css" href="css/edu_topic_list1.css"/>
+</head>
+<body class="bg-color-f5 aui-load-container">
+ <!--下拉刷新-->
+	<div class="aui-load-wrap">
+		<div class="aui-loading-dot"></div>
+		<div class="aui-loading-circle"></div>
+		<div class="aui-loading-title"></div>
+	</div>
+			
+
+	
+	<!-- 个性化定制展示 -->
+	<section class="edu_con edu_made mb-12em pl-12em pr-12em mt-20em">
+		<div class="clearfix pt-16em">
+			<div class="pull-left f-16em color-212121 f-w">学习进度</div>
+			<!--<div class="pull-left edu_fresh w-20em h-20em color-66 ml-10em pt-1em">
+				<img src="../../../statics/images/images_edu/frull_icon1.png">
+			</div>-->
+			<div class="pull-right color-ff3332 f-12em border-1-ff3332 pl-6em pr-6em" onclick="openedu_obj_list2('edu_topic_list2_header')">查看更多
+				<i class="iconfont color-ff3332 f-12em lh-22em ml-5mem">&#xe613;</i>
+			</div>
+		</div>
+		
+		<div class="edu_made_progress mt-20em">
+			<!-- 文章 -->	
+			<div class="clearfix">
+				<div class="pull-left color-212121 f-14em">文章</div>
+				<div class="pull-right color-9e f-10em mr-10em">
+				<span class="article_num"></span>
+				</div>
+			</div>			
+			<div class="aui-content-padded pb-20em po-re">
+			     <div class="aui-progress aui-progress-xs aui-progress-bg">
+			        <div class="aui-progress-bar aui-progress-bar-bg article_progress"></div>
+			    </div>
+			    <div class="po-ab top-0em z-index-max w-100b">
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			 </div>
+			</div>
+			<!-- 视频 -->	
+			<div class="clearfix">
+				<div class="pull-left color-212121 f-14em">视频</div>
+				<div class="pull-right color-9e f-10em mr-10em">
+				<span class="video_num"></span>
+			</div>			
+			<div class="aui-content-padded pb-20em po-re">
+			     <div class="aui-progress aui-progress-xs aui-progress-bg">
+			        <div class="aui-progress-bar aui-progress-bar-bg video_progress"></div>
+			    </div>
+			    <div class="po-ab top-0em w-100b">
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			 </div>
+			</div>
+			<!-- 考试 -->	
+			<div class="clearfix">
+				<div class="pull-left color-212121 f-14em">考试</div>
+				<div class="pull-right color-9e f-10em mr-10em">
+				<span class="exam_num"></span>
+				</div>
+			</div>			
+			<div class="aui-content-padded pb-20em po-re">
+			     <div class="aui-progress aui-progress-xs aui-progress-bg">
+			        <div class="aui-progress-bar aui-progress-bar-bg exam_progress"></div>
+			    </div>
+			    <div class="po-ab top-0em w-100b">
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			 </div>
+			</div>
+			<!-- 调查问卷 -->	
+			<div class="clearfix">
+				<div class="pull-left color-212121 f-14em">调查问卷</div>
+				<div class="pull-right color-9e f-10em mr-10em">
+				<span class="notes_num"></span>
+				
+				</div>
+			</div>			
+			<div class="aui-content-padded pb-20em po-re">
+			     <div class="aui-progress aui-progress-xs aui-progress-bg">
+			        <div class="aui-progress-bar aui-progress-bar-bg notes_progress"></div>
+			    </div>
+			    <div class="po-ab top-0em w-100b">
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			 </div>
+			</div>
+			<!-- 电子书 -->	
+			<div class="clearfix">
+				<div class="pull-left color-212121 f-14em">电子书</div>
+				<div class="pull-right color-9e f-10em mr-10em">
+				<span class="book_num">5/10</span>
+				
+				</div>
+			</div>			
+			<div class="aui-content-padded pb-20em po-re">
+			     <div class="aui-progress aui-progress-xs aui-progress-bg">
+			        <div class="aui-progress-bar aui-progress-bar-bg book_progress" style="width: 50%"></div>
+			    </div>
+			    <div class="po-ab top-0em w-100b">
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			    	<li class="w-40em hr-sr-white h-8em lh-8em pull-left">&nbsp;</li>
+			 </div>
+			</div>
+			
+			
+		</div>
+	</section>
+
+	
+	
+	<div class="obj_hide di-n"></div>
+    <!-- jquery js -->
+	<script type="text/javascript" src="../../../statics/public/js/jquery.min.js"></script>
+	<script src="laydate/laydate.js"></script> 
+	<script type="text/javascript" src="../../../statics/public/aui2/js/swiper-3.4.2.min.js"></script>
+    <!-- 公司公共apijs -->
+	<script type="text/javascript" src="../../../statics/public/js/api.js"></script>
+	<!-- end -->
+    <!--aui轮播-->
+    <script type="text/javascript" src="../../../statics/public/aui2/js/aui-slide.js"></script>
+    <!--圆形进度条插件-->
+    <script type="text/javascript" src="../../../statics/public/js/circleChart.min.js"></script>
+    <!-- 本项目公共js -->
+	<script type="text/javascript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+	<!-- aui下拉刷新js -->
+	<script type="text/jscript" src="../../../statics/public/aui/js/aui-pull-refresh.js"></script>
+	<!-- 主要js配置文件 -->
+	<script type="text/javascript" src="../../../statics/public/js/config.js"></script>
+	<!-- end -->
+	<!-- 页面 js -->
+	<script type="text/javascript" src="js/eud_topic_list1.js"></script>
+	<!-- end -->
+	<script type="text/javascript">
+	
+	</script>
+</body>
+</html>

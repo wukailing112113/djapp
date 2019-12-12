@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+		<title>精准扶贫</title>
+		<link rel="stylesheet" href="../../../statics/public/css/jquery.mobile-1.4.5.min.css" />
+		<!-- aui核心css -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui.css" />
+		<!-- end -->
+		<!--aui幻灯片组建-->
+    	<link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui-slide.css"/>   
+		<!-- 本项目公共css -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public.css" />
+		<!--<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_zhdj.css" />-->
+		<!-- end -->
+		<!-- 公司公共css -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_mobile.css" />
+		<!-- end -->
+		<link rel="stylesheet" type="text/css" href="css/hr_poorhelp_list.css" />
+	</head>
+	<style></style>
+	<body>
+	<!--banenr开始-->
+	<section class="">
+		<div id="aui-slide">
+		    <div class="aui-slide-wrap" id="bannerList">
+		        <!--<div class="aui-slide-node bg-dark">
+		            <img src="../../../statics/images/images_bd/bg-img_2.jpg" / height="6rem" width="100%">
+		        </div>
+		        <div class="aui-slide-node bg-dark">
+		            <img src="../../../statics/images/images_bd/bg-img_3.jpg" / height="6rem" width="100%">
+		        </div>
+		        <div class="aui-slide-node bg-dark">
+		            <img src="../../../statics/images/images_bd/bg-img_4.jpg" / height="6rem" width="100%">
+		        </div>-->
+		    </div>
+		    <div class="aui-slide-page-wrap"><!--分页容器--></div>
+		</div>
+	
+	</section>
+	<!--banner结束-->	
+		<!--扶贫政策-->
+		<div id="policy" class="bg-color-white pb-16em di-n">
+			<!--标题部分-->
+			<section class="aui-content-padded moving" id="title1">
+				<div class="aui-content">
+					<div class="aui-list-item-title f-17 lh-47em mt-5em">
+						<img class="w-5em w-10em pull-left mr-12em" src="../../../statics/public/aui2/img/dl-icon.png"><span class="fwei-600 shade"> 扶贫政策</span>
+						<span class="pull-right f-12em lh-17em color-99 pr-12em" onclick="openList('hr_poorhelp_list_header','0')">更多<i class="iconfont f-12em lh-17em color-99 p-0">&#xe613;</i></span>
+					</div>
+				</div>
+			</section>
+			<!--标题部分 end-->
+			<!--列表-->
+			<div id="list" class="list h-130em over-h">
+				<ul id="list1" class="h-130em list_ul clearfix">
+					<!--<li class="w-110em h-130em pull-left border-df b-r-4 box-s mb-5em mr-5em" onclick="open_info('hr_poorhelp_info_header')">
+						<div class="w-100b h-105em bb-df pt-5em pb-5em"><img class="w-100b h-100b" src="../../../statics/images/images_hr/hr_arr_1.png"/></div>
+						<div class="f-10em text-align w-100b lh-24em f-w">中国标准扶贫政策</div>
+					</li>-->
+				</ul>
+			</div>
+			<!--列表 end-->
+		</div>
+		<!--扶贫政策 end-->
+		
+		<!--扶贫活动动态-->
+		<div id="dynamic" class="bg-color-white pb-16em mt-8em di-n">
+			<!--标题部分-->
+			<section class="aui-content-padded moving" id="title1">
+				<div class="aui-content">
+					<div class="aui-list-item-title f-17 lh-47em ">
+						<img class="w-5em w-10em pull-left mr-12em" src="../../../statics/public/aui2/img/dl-icon.png"><span class="fwei-600 shade"> 扶贫活动动态</span>
+						<span class="pull-right f-12em lh-17em color-99 pr-12em" onclick="openList('hr_poorhelp_list_header','1')">更多<i class="iconfont f-12em lh-17em color-99 p-0">&#xe613;</i></span>
+					</div>
+				</div>
+			</section>
+			<!--标题部分 end-->
+			<!--列表-->
+			<div id="list2" class="bg-color-white">
+				<!--<div class="w-100b h-114em pt-12em pb-12em bb-df pl-12em pr-12em clearfix">
+					<img class="w-113em h-90em pull-left" src="../../../statics/images/images_edu/edu_special_learn1.png" />
+					<div class="pull-left">
+						<div class="clearfix pl-5em w-233em">
+							<div class="f-16em pull-left">李村帮扶活动</div>
+							<div class="f-16em pull-right f-11em color-ff9776">2017-10-30</div>
+							<div class="clearfix color-99 f-12em pt-10em lh-18em">
+								为切实做好“就业扶持脱贫一批”工作，柞水县人社局认真落实市、县要求，快速行动、精准施策、狠抓落实。
+							</div>
+						</div>
+					</div>
+				</div>-->
+			</div>
+	
+			<!--列表 end-->
+		</div>
+		<!--扶贫活动动态 end-->
+		
+		<!--帮扶一对一-->
+		<div id="oneOnOne" class="bg-color-white pb-16em di-n">
+			<!--标题部分-->
+			<section class="aui-content-padded moving" id="title1">
+				<div class="aui-content">
+					<div class="aui-list-item-title f-17 lh-47em ">
+						<img class="w-5em w-10em pull-left mr-12em" src="../../../statics/public/aui2/img/dl-icon.png"><span class="fwei-600 shade"> 帮扶一对一</span>
+						<span class="pull-right f-12em lh-17em color-99 pr-12em" onclick="openList('hr_poorhelp_list_header','2')">更多<i class="iconfont f-12em lh-17em color-99 p-0">&#xe613;</i></span>
+					</div>
+				</div>
+			</section>
+			<!--标题部分 end-->
+			<!--列表-->
+			<div id="list3" class="bg-color-white">
+				<!--<div class="w-100b h-114em pt-12em pb-12em bb-df pl-12em pr-12em" onclick="open_info('hr_poorhelp_oto_info_header')">
+					<img class="w-113em h-90em di-ib" src="../../../statics/images/images_edu/edu_special_learn5.png" />
+					<div class="di-ib">
+						<div class="clearfix pl-5em w-233em">
+							<div class="f-16em pull-left">赵四帮扶了李三</div>
+							<div class="f-16em pull-right f-11em color-ff9776">2017-10-30</div>
+							<div class="clearfix color-99 f-12em pt-10em lh-18em">
+								为切实做好“就业扶持脱贫一批”工作，柞水县人社局认真落实市、县要求，快速行动、精准施策、狠抓落实。
+							</div>
+						</div>
+					</div>
+				</div>-->
+				
+				
+			</div>
+	
+			<!--列表 end-->
+		</div>
+		<!--帮扶一对一 end-->
+
+	</body>
+	<!-- jquery js -->
+	<script type="text/javascript" src="../../../statics/public/js/jquery.min.js"></script>
+	<!-- end -->
+	<!-- jquery js -->
+	<script type="text/javascript" src="../../../statics/public/js/jquery.mobile-1.4.5.min.js"></script>
+	<!-- end -->
+	<!-- 公司公共apijs -->
+	<script type="text/javascript" src="../../../statics/public/js/api.js"></script>
+	<!-- end -->
+	<script type="text/javascript" src="../../../statics/public/aui2/js/aui-slide.js"></script>
+	<!-- 本项目公共js -->
+	<script type="text/jscript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+	<!-- end -->
+	<!-- end -->
+	<!-- 页面 js -->
+	<script type="text/javascript" src="js/hr_poorhelp.js"></script>
+	<!-- end -->
+	<script type="text/javascript">
+	</script>
+
+</html>

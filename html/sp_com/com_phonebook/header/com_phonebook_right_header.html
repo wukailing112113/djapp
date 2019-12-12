@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>党建矩阵-党组织详情-人员列表</title>
+    <!-- aui核心css -->
+    <link rel="stylesheet" type="text/css" href="../../../../statics/public/aui2/css/aui.css"/>
+    <!-- end -->
+    <link rel="stylesheet" type="text/css" href="../../../../statics/public/css/sp_public_mobile.css"/>
+</head>
+<body>
+	<header class="aui-bar aui-bar-nav aui-bar-info pt-25em">
+	    <ul>
+	    	<li class="h-45em">
+	    		<a class="pull-left mt-15em pl-12em" onclick="goBlack()">
+			        <img class="w-9em h-19em" src="../../../../statics/public/images/back.png" alt="返回" />
+			    </a>
+	    		<div class="aui-title f-w">人员列表</div>
+	    		<!--<a id="groupChat" class="pull-right f-12em f-w pr-12em" onclick="groupChat()">
+			       发起群聊
+			    </a>-->
+			    <a id="AddTo" class="pull-right f-12em f-w pr-12em di-n" onclick="AddToGroup()">
+			       确定
+			    </a>
+	    	</li>
+	    </ul>
+    </header>
+    <script type="text/javascript" src="../../../../statics/public/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../../statics/public/js/api.js"></script>
+    <!-- 本项目公共js -->
+	<script type="text/javascript" src="../../../../statics/public/js/sp_public_p5boss.js"></script>
+    <!-- alertjs -->
+    <script type="text/jscript" src="../../../../statics/public/aui/js/aui-alert.js"></script>
+    <!--end-->
+	<!-- end -->
+	<script type="text/javascript">
+		apiready = function(){
+		//alert(api.pageParam.chatql)
+			api.addEventListener({
+			    name:'keyback'
+			},function(ret,err){
+			  // alert('您按了返回键');
+			   api.closeWin();
+			});
+			changecolor();//根据配置文件改变头部颜色 
+//			listenKeyGoBack();
+			if(api.pageParam.nochat == "nochat"){
+				$('#groupChat').addClass('di-n');
+			}
+			if(api.pageParam.AddTo == "AddTo"){
+				$('#AddTo').removeClass('di-n');
+				$('#groupChat').addClass('di-n');
+			}
+			api.openFrame({//打开oa_person
+	            name: 'com_phonebook_right',
+	            url: '../com_phonebook_right.html',
+	            rect: {
+		            y:($('header').height()/45*70),
+	            },
+	            bounces:false,
+	            pageParam: {
+					id: api.pageParam.id,
+					type: api.pageParam.type,
+					nochat: api.pageParam.nochat,
+					AddTo: api.pageParam.AddTo,
+					discussionId: api.pageParam.discussionId,
+					type:api.pageParam.type,
+					chatql:api.pageParam.chatql,
+	            }
+	        });
+	        if(userAgent()){//系统小于4.4修改Y轴高度
+	        	api.setFrameAttr({
+				    name: 'com_phonebook_right',
+				    rect: {y: 45}
+				});
+	        };
+		}
+		
+		//返回------------------------------------------------
+		function goBlack(){
+			api.closeWin({name:api.winName});
+		}
+		
+		//发起群聊 --------------------------------------------
+		function groupChat(){
+			api.execScript({
+				frameName: "com_phonebook_right",
+	            script: 'groupChat();'
+            });
+		}
+		
+		//确认群聊人员添加  ----------------------------------------
+		function AddToGroup(){
+			api.execScript({
+				frameName: "com_phonebook_right",
+	            script: 'AddToGroup();'
+            });
+		}
+		//监听返回键退出程序
+		function listenKeyGoBack(){
+			api.addEventListener({
+			    name: 'keyback'
+			}, function(ret, err){
+				api.closeWin({}); //关闭当前页面
+			});
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+/*顶部标题*/
+header{ background-color: #E43A45;height:50px !important; padding:0 !important; border-bottom: 1px solid #f5f5f5}
+header ul li { height: 50px; line-height: 50px; text-align: center; display: none; color: #fff; position: relative;font-size: 18px;  }
+header ul li.active{ display: block; }
+
+/*底部导航*/
+#footer{background-color: rgba(171,8,9,1); border-top: 1px solid rgba(171,8,9,1)}
+#footer ul li{padding-top:4px;font-size:12px;padding-bottom: 4px; background: url() no-repeat center 2px; background-size: auto 30px; text-align: center; color: #BDBDBD}
+#footer ul li.active{color: #fff;}
+#footer ul li.active i{color: #fff; }
+#footer ul li i{ color:#BDBDBD;font-size:24px }
+
+/*个人中心背景*/
+.mine-bg{background: url(../../image/res/mine-bg-red.png) no-repeat;background-size: 100% 100%;height: 100px}
+
+/*默认头像背景样式*/
+.head-img{
+	background: #e84044;
+}
+
+/*右侧箭头*/
+.arrow{color:#C9C9C9}
+
+/*按钮颜色及样式,红色为默认*/
+.mui-btn-danger{}
+/*分页器字体颜色*/
+.mui-slider-indicator .mui-active{color: #e84044 !important}
+/*分页器下标线*/
+.mui-slider-progress-bar{background: #e84044 !important}
+/*新闻列表样式*/
+.mui-slider-item a{height:200px;overflow: hidden;} /*banner*/
+/*列表分类*/
+.title {
+	margin: 20px 15px 10px;
+	color: #333;
+	font-size: 20px;
+}
+/*列表内容*/
+.ellipsis-two,marquee{
+	font-size:16px !important;
+	color: #666;
+}
+.mui-table-view-cell > a:not(.mui-btn){
+    white-space: normal;
+}
+.mui-media-body,.ellipsis-one,label,.mui-table-view-cell{font-size: 16px}

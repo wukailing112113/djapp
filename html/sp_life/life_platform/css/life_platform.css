@@ -1,0 +1,181 @@
+/*——————————————————————————————本页面公用—————————————————————————————————————————*/
+/*宽度类*/
+.w-33b{width: 33.33%;}
+.w-168em{width: 8.4rem;}
+.w-7em{width: 0.35rem;}
+.w-157em{width:7.88rem;}
+.w-07em{width: 1.075rem;}
+/*高度类*/
+.h-17em{height: 0.85rem;}
+.h-145em{height: 7.25rem;}
+.lh-22em{line-height: 1.1rem;}
+.h-180em{height:7.48rem;}
+.h-17em{height:0.85rem;}
+.h-49em{height:2.45rem;}
+.w-49em{width:2.45rem;}
+/*padding类*/
+.pr-6em{padding-right:0.38rem;}
+.pt-4em{padding-top:0.2rem;}
+.pt-6em{padding-top:0.3rem;}
+/*margin类*/
+.m-d25em{margin: 0.25rem;}
+.m-d5em{margin: 0.5rem;}
+.ml-d6em{margin-left: 0.6rem;}
+.mr-d6em{margin-right: 0.6rem;}
+.m-3em{margin: 0.15rem;}
+.mb-8em{margin-bottom: 0.4rem;}
+.mt-7-6em{margin-top:0.38rem;}
+/*top类*/
+.top-19em{top:0.95rem;}
+.top-51em{top:2.58rem;}
+/*left类*/
+.left-14em{left:0.7rem;}
+
+/*颜色类*/
+.color-21{color:#212121 !important;}
+.color-9e{color:#9e9e9e;}
+.color-de{ color:#dedede } 
+.color-1f{color:#1f1f1f;}
+.color-b3{color: #b3b3b3;}
+
+/*背景类*/
+.bg-f4f4f4{background: #f4f4f4 !important;}
+.life_con{
+	width:94%;
+	margin-left:3%;
+	background-color: #ffffff;
+	box-shadow: 0rem 0rem 0.4rem 0rem rgba(0, 0, 0, 0.08);
+	border-radius: 0.25rem;
+}
+/*——————————————————————————————办事指南—————————————————————————————————————————*/
+
+/*——————————————————————————————热门文章—————————————————————————————————————————*/
+.swiper-container{
+	-webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    -ms-perspective: 1200px;
+    perspective: 1200px;
+    margin-top:0rem;
+    margin-left:-9rem;
+   
+}
+.swiper-wrapper{
+	/*margin-top:10px;*/
+	}
+.swiper-slide{
+	width: 7.45rem;
+	margin-right:0.5rem;
+	 -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.swiper-slide-active {
+
+}
+.swiper-slide .main-img{
+padding-top:0.3rem;
+	width:95%;
+	margin:0 auto;
+	display:block;
+	overflow:hidden;
+}
+@media screen and (min-height: 481px) {
+	.swiper-wrapper{
+		/*margin-top:20px;*/
+	}
+	
+}
+@media screen and (min-height: 569px) {
+	.swiper-wrapper{
+		/*margin-top:40px;*/
+	}
+	#pagination{
+	bottom:120px;
+}
+
+}
+.s_line{
+	width: 0.15rem;
+	height: 0.65rem;
+	background-color: #ff4040;
+}
+.shyk{
+	width: 7.45rem;
+	height: 4.5rem;
+	border-radius: 0.25rem;
+	border: 0.05rem solid #f0f2f5;
+}
+
+/*——————————————————————————————党民互通—————————————————————————————————————————*/
+
+/*——————————————————————————————村务论坛—————————————————————————————————————————*/
+
+.life_cw{
+	width: 5.05rem;
+	height: 2.6rem;
+	background-color: #f5f0f0;
+	border-radius: 0.25rem;
+}
+.life_flex{
+ 	display: -webkit-flex; /* Safari */
+	display: flex;
+	flex-direction: row;/*主轴为水平方向，起点在左端*/
+	 flex-wrap: wrap;/*如果一条轴线排不下，如何换行*/
+	 justify-content: space-between;/*项目在主轴上的对齐方式*/
+	
+	
+}
+/*——————————————————————————————精准扶贫—————————————————————————————————————————*/
+.poor_flex{
+ 	display: -webkit-flex; /* Safari */
+	display: flex;
+	flex-direction: row;/*主轴为水平方向，起点在左端*/
+	 flex-wrap: wrap;/*如果一条轴线排不下，如何换行*/
+	 justify-content: space-between;/*项目在主轴上的对齐方式*/
+		
+}
+.poor_item{
+	
+}
+
+
+/*——————————————————————————————其他样式—————————————————————————————————————————*/
+.life_flex{display:flex}
+.flex-1{flex:1}
+/*------banner-------*/
+.aui-slide-page-wrap{bottom: -8px !important;height: 6px !important;line-height: 6px !important;}
+.aui-slide-page-dot{width: 6px !important;height: 6px !important;background: #dfdfdf !important;margin-top: 0 !important;transition: all 0.3s !important;}
+.aui-slide-page-active{width: 10px !important;border-radius: 6px !important;
+background: -webkit-linear-gradient(#ff5a2d, #ff3032) !important; /* Safari 5.1 - 6.0 */
+background: -o-linear-gradient(#ff5a2d, #ff3032) !important; /* Opera 11.1 - 12.0 */
+background: -moz-linear-gradient(#ff5a2d, #ff3032) !important; /* Firefox 3.6 - 15 */
+background: linear-gradient(#ff5a2d, #ff3032) !important; /* 标准的语法 */
+box-shadow: 0 0 1px 0 #ff5a2d !important;
+}
+.box-sha-5-dadada{box-shadow: 0 0 0.5rem 0 #dadada;}
+.bb-1-f0{border-bottom: 1px solid #f0f0f0;}
+.ct-lr{
+	margin-left:calc(50% - 4.2rem);
+}
+.box-3-df{box-shadow: 0 0 3px 0 #dfdfdf;}
+.letter-spacing{letter-spacing: 2px;}
+.shade{/*字体渐变*/
+	background-image: -webkit-gradient(linear, left center, right center, from(rgba(252, 152, 118, 1)), to(rgba(254, 192, 115, 1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.f-13em{font-size:0.66rem !important;}
+
+
+
+
+
+
+
+
+
+
+
+
+

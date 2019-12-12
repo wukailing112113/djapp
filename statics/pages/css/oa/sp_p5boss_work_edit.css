@@ -1,0 +1,23 @@
+/*input-placeholder居右*/
+.sum-type::-webkit-input-placeholder { /* WebKit browsers */ direction: rtl;}
+.sum-type:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ direction: rtl;}
+.sum-type::-moz-placeholder { /* Mozilla Firefox 19+ but I'm not sure about working */ direction: rtl;}
+.sum-type:-ms-input-placeholder { /* Internet Explorer 10+ */ direction: rtl;}
+.sum-type{text-align: right}
+.p12-0{padding:12px 0}
+.mb-65{margin-bottom:65px!important}
+#title::-webkit-input-placeholder { color:#3D9CF9;font-weight:bold }
+#title:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color:#3D9CF9;font-weight:bold}
+#title::-moz-placeholder { /* Mozilla Firefox 19+ but I'm not sure about working */ color:#3D9CF9;font-weight:bold}
+#title:-ms-input-placeholder { /* Internet Explorer 10+ */ color:#3D9CF9;font-weight:bold}
+.fb{font-weight:bold}
+.border-b-none:after{border-bottom:none;}
+.ol-au{overflow:auto}
+.noborder{border:none!important}
+.p2-0{padding:4px 0px!important}
+.fsize-20{font-size:20px!important}
+.pt-9{padding-top:9px}
+.pb-9{padding-bottom:9px}
+.colorlan{color:#3D9CF9;}
+.fo60{font-size: 60px}
+.bc_gray{color: #d6d6d5}

@@ -1,0 +1,387 @@
+/*——————————————————————————————本页面公用—————————————————————————————————————————*/
+.w-12em{width:0.6rem;}
+.h-7em{height:0.35rem;}
+
+.f-24px{font-size:24px;}
+.mt-18em{margin-top:9rem;}
+.color-21{color:#212121}
+.color-9e{color:#9e9e9e}
+.b-0{border: 0 !important;}
+.top-145em{top:7.2rem;}
+.top-10mem{top:-1rem;}
+.mt-210em{margin-top:11rem;}
+.pl-31em{padding-left:1.9rem;}
+.top-178em{top:8.7rem;}
+.pl-1em{padding-left:0.1rem;}
+.pr-1em{padding-right:0.1rem;}
+.right-5{right:-0.5rem;}
+/*——————————————————————————————背景—————————————————————————————————————————*/
+html{height:100%;width: 100%}
+.login_bg{	
+	background: url('../../../../statics/public/images/login_bg.jpg') no-repeat;
+	background-size:cover !important;	
+		
+}
+/*——————————————————————————————input框样式—————————————————————————————————————————*/
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #dfdfdf; opacity:1; 
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #dfdfdf;opacity:1;
+}
+input:-ms-input-placeholder{
+    color: #dfdfdf;opacity:1;
+}
+input::-webkit-input-placeholder{
+    color: #dfdfdf;opacity:1;
+}
+#branch:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #dfdfdf; opacity:1; 
+}
+#branch::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #dfdfdf;opacity:1;
+}
+#branch:-ms-input-placeholder{
+    color: #dfdfdf;opacity:1;
+}
+#branch::-webkit-input-placeholder{
+    color: #dfdfdf;opacity:1;
+}
+input {
+	outline:none;
+	  background:transparent !important;
+	  border:none;
+	  outline:medium;
+}
+/*input{border-radius: 0 !important;background-color: #fff !important;}*/
+#branch {
+	outline:none;
+	background:transparent;
+	border:none;
+	outline:medium;
+	color:#fff;
+	font-size:16px !important;
+	line-height: 1.7rem !important;
+	color: #dfdfdf;
+	
+	}
+#branch::-webkit-input-placeholder {
+	color: #fff;
+	font-size: 18px;
+}
+
+
+/*——————————————————————————————其它样式—————————————————————————————————————————*/
+
+
+#login-form {
+	background-color: transparent !important;
+}
+.p_r0 {
+	padding-right: 0px !important;
+	font-size: 14px;
+}
+
+.mui-input-group:before {
+	background-color: transparent !important;
+}
+.mui-input-group .mui-input-row:after {
+	background-color: transparent !important;
+}
+.mui-input-group:after {
+	background-color: transparent !important;
+}
+.mui-input-row {
+	margin: 14px 13px;height: 45px!important;
+}
+.dis-vis {
+	visibility: hidden;
+}
+.logo {
+	width: 100%;
+}
+.logo img {
+	display: block;
+	width: 12rem;
+	height: 7.5rem;
+	margin: 1.5rem auto;
+}
+input::-webkit-input-placeholder {
+	color: #ccc;
+	font-size: 14px;
+}
+button.color671 {
+	
+}
+.mt-26 {
+	margin-top: 26px;
+}
+.color-671 {
+	background-color: #e71f19;
+	color: #fff;
+	margin: 2rem 16%!important;
+	width: 72% !important;
+	padding: 8px !important;
+	border-radius: 20px !important;
+	font-size: 18px !important;
+}
+.mui-input-group label{
+    width:26%!important;
+}
+
+
+
+.ml-15b{margin-left:15%;}
+
+
+
+
+
+
+.mui-content{background: rgba(0,0,0,0)}
+.area {
+	margin: 20px auto 0px auto;
+}
+.mui-input-group {
+	margin-top: 10px;
+}
+.mui-input-group:first-child {
+	margin-top: 20px;
+}
+.mui-input-group label {
+	width: 25%;
+}
+.mui-input-row label~input,
+.mui-input-row label~select,
+.mui-input-row label~textarea {
+	width: 75%;
+}
+.mui-checkbox input[type=checkbox],
+.mui-radio input[type=radio] {
+	top: 6px;
+}
+.mui-content-padded {
+	margin-top: 25px;
+}
+.mui-btn {
+	padding: 10px;
+}
+.link-area {
+	display: block;
+	margin-top: 25px;
+	text-align: center;
+}
+.spliter {
+	color: #bbb;
+	padding: 0px 8px;
+}
+.height{
+    height: 100%;
+}
+.oauth-area {
+	left: 0px;
+	text-align: center;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+.oauth-area .oauth-btn {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-size: 30px 30px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin: 0px 20px;
+	/*-webkit-filter: grayscale(100%); */
+	
+	border: solid 1px #ddd;
+	border-radius: 25px;
+}
+.oauth-area .oauth-btn:active {
+	border: solid 1px #aaa;
+}
+
+
+
+
+
+
+.w-103em{
+	width:5.15rem;
+}
+.w-162em{
+	width:8.1rem;
+}
+.w-50b{
+	width: 50% !important;
+}
+.h-144em{
+	height:7.2rem;
+}
+.color-75{
+	color: #757575;
+}
+.color-ff3032{
+	color: #ff3032;
+}
+.color-ff4530{
+	color: #ff4530;
+}
+.h-19em{
+	height:0.95rem;
+}
+.f-11em{
+	font-size: 0.55rem;
+}
+.border-ff3032{
+	border:1px solid #ff3032;
+}
+.color-ff3032{
+	color:#ff3032;
+}
+.color-2aa2ff{
+	color: #2aa2ff;
+}
+.lh-19em{
+	line-height: 0.95rem;
+}
+.lh-48em{
+	line-height: 2.4rem;
+}
+.bb-df{
+	border-bottom:1px solid #dfdfdf;
+}
+.b-1-ff3032{
+	border: 1px solid #ff3032;
+}
+.f-13em{
+	font-size: 0.65rem;
+}
+
+
+
+
+/*         新版样式                                  */
+
+
+.w-15em{width: 0.75rem !important;}
+.w-280em{width: 14rem !important;}
+
+.h-20em{height: 1rem !important;}
+.h-32em{height: 1.6rem !important;}
+.h-42em{height: 2.1rem !important;}
+.h-46em{height: 2.3rem !important;}
+
+.lh-20em{line-height: 1rem !important;}
+.lh-32em{line-height: 1.6rem !important;}
+.lh-44em{line-height: 2.2rem !important;}
+
+.p-0{padding: 0 !important;}
+.pl-65em{padding-left: 3.25rem !important;}
+
+.mb-0{margin-bottom: 0 !important;}
+.mb-8em{margin-bottom: 0.4rem;}
+
+.mt-16em{margin-top: 0.8rem;}
+.mt-18em{margin-top: 0.9rem;}
+
+.color-df{color: #dfdfdf !important;}
+.color-33{color: #333333 !important;}
+
+.f-16em{font-size: 0.8rem !important;}
+
+.bg-color-b3{background: #b3b3b3;}
+
+
+.pl-35em{padding-left: 1.75rem !important;}
+.bb-1-df{border-bottom: 1px solid #dfdfdf !important;}
+.bor-ra-3{border-radius: 34px !important;}
+
+
+
+
+
+
+
+
+.grad {
+background:linear-gradient(90deg,rgba(255,66,66,1),rgba(255,48,50,1),rgba(255,90,45,1));
+box-shadow:0px 12px 18px 0px rgba(255,53,48,0.36);
+}
+
+#tabBox2{
+	background: #f9f9f9;
+	overflow: hidden;
+}
+#tabBox2 li{
+	width: 50%;
+	float: left;
+	border-right: 1px solid #eeeeee;
+	text-align: center;
+	position: relative;
+	list-style: none;
+}
+#tabBox2 li a{
+	display: block;
+	margin: 0 auto;
+	color: #333333;
+}
+#tabBox2 li .active{
+	display: none;
+	width: 2rem;
+	height: 1px;
+	position: absolute;
+	bottom: -0.25rem;
+	left: 50%;
+	background: #ff3032;
+	margin-left: -1rem;
+}
+#tabBox2 .tabBox2-active a{
+	color: #ff3032;
+}
+#tabBox2 .tabBox2-active .active{
+	display: block;
+}
+
+.po-fix{
+    bottom:15px;
+}
+
+/* 登录密码小眼开关 */
+.show{display:show}
+.hide{display:none}
+/* 适配ipd */
+@media only screen  and (min-device-width : 768px)  and (max-device-width : 1024px)  and (orientation : portrait){
+   /* .top-145em {
+	    top:7.9rem !important;
+	}
+	.top-178em {
+    top: 9rem !important;
+	}*/
+	
+}
+.fieldset{
+	width: 15rem;
+	height: 3rem;
+	margin: 0 auto;
+	border:1px solid rgba(235,235,235,1);
+	border-radius:10px;
+	
+}
+.top-25em{top:1.1rem;}
+.top-23em{top:1.25rem;}
+.fieldset input{
+
+}  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+

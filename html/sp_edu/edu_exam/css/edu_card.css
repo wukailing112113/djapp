@@ -1,0 +1,149 @@
+/*个性化定制> 遮罩层*********************************/
+.top-0em {
+	top: 0;
+}
+
+.left-0em {
+	left: 0;
+}
+
+.bg-color-000 {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.z-index-mask {
+	z-index: 2000 !important;
+}
+
+.edu_mask_radius {
+	border-radius: 0.25rem 0.25rem 0 0
+}
+
+.h-200em {
+	height: 32.35rem;
+}
+
+.bottom-0em {
+	bottom: 0;
+}
+
+.h-97b {
+	height: 97%;
+}
+
+.pt-16em {
+	padding-top: 0.83rem;
+}
+
+.pl-16em {
+	padding-left: 0.8rem;
+}
+
+.pr-16em {
+	padding-right: 0.8rem;
+}
+
+.mt-16em {
+	margin-top: 0.8rem;
+}
+
+.color-21 {
+	color: #212121;
+}
+
+.color-9e {
+	color: #9e9e9e;
+}
+
+.pt-32em {
+	padding-top: 1.68rem;
+}
+
+.w-8em {
+	width: 0.4rem;
+}
+
+.h-8em {
+	height: 0.4rem;
+}
+
+.background-d4a500 {
+	background-color: #d4a500;
+}
+
+.box-mask-sha {
+	box-shadow: 0rem 0.1rem 0.3rem 0rem rgba(255, 71, 51, 0.62);
+}
+
+.bor-ra-7em {
+	border-radius: 0.7rem
+}
+
+.border-666 {
+	border: solid 0.03rem #666666;
+}
+.active {
+	background-color: #d4a500;
+	color: #fff !important;
+	border: solid 0.03rem #d4a500 !important;
+}
+
+.question {
+	margin-bottom: 1.5rem;
+}
+
+.list {
+	padding: 0 0.75rem 0 1.02rem;
+}
+
+.list li {
+	width: 1.7rem;
+	height: 1.7rem;
+	border: solid 0.03rem #dedede;
+	margin-right: 1.3rem;
+	margin-top: 1.3rem;
+	border-radius: 50%;
+}
+.list li a{
+	display: block;
+	width: 1.7rem;
+	height: 1.7rem;
+	font-family: SourceHanSansSC-Regular;
+	font-size: 0.8rem;
+	color: #d4a500;
+	line-height: 1.6rem;
+	text-align: center;
+	border-radius: 50%;
+}
+
+.list li:nth-child(6n) {
+	margin-right: 0;
+}
+
+.submit_test {
+	position: fixed;
+	bottom: 0;
+}
+
+.submit_test .btns {
+	width: 18.75rem;
+	height: 2.4rem;
+	display: block;
+	background-image: linear-gradient(90deg,
+			#ff4242 1%,
+			#ff3032 49%,
+			#ff4530 69%,
+			#ff5a2d 100%),
+		linear-gradient(#818181,
+			#818181);
+	background-blend-mode: normal,
+		normal;
+	font-family: MyriadPro-Regular;
+	font-size: 0.75rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0.06rem;
+	color: #ffffff;
+	line-height: 2.4rem;
+	text-align: center;
+}

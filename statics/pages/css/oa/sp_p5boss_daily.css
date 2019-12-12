@@ -1,0 +1,31 @@
+.aui-user-view.aui-in .aui-user-view-cell:last-child:after {
+    left:80px;
+}
+.aui-user-view.aui-in .aui-user-view-cell:after {
+    left: 80px;
+}
+.aui-tab-nav {
+    background-color: #F5F5F5!important
+}
+.fsize-35{font-size: 35px !important}
+.p_color{color:#8f8f94 !important}	
+.emsize{font-size: 14px!important;padding-top: 2px !important}
+.istyle{padding-top: 6px!important;font-size: 12px !important;}
+.pt-3{padding-top:3px}
+.fb{font-weight:bold!important}
+.fcolor-99 { color:#999!important}
+.w-75b{width:75%!important}
+.w-60b{width:60%!important}
+.red{color:#d80000}
+.green{color:#43c089}
+.aui-user-view-cell {padding: 8px 15px;}
+.aui-tab-nav li a{
+    color: #666;
+}
+.aui-tab-info .aui-tab-nav li.active a{
+    color: #3498db;
+}
+.aui-user-view{
+    display: none
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+.pt-7{padding-top:7px}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>通讯录</title>
+    <!-- aui核心css -->
+    <link rel="stylesheet" type="text/css" href="../../../../statics/public/aui2/css/aui.css"/>
+    <!-- end -->
+    <!-- 公司公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../../statics/public/css/sp_public.css"/>
+    <!-- end -->
+    <link rel="stylesheet" type="text/css" href="../../../../statics/public/css/sp_public_mobile.css"/>
+</head>
+<body>
+	<header class="aui-bar aui-bar-nav aui-bar-info pt-25em">
+	    <ul>
+	    	<li class="h-45em">
+	    		<a class="pull-left mt-15em pl-12em" onclick="goBlack()">
+			        <img class="w-9em h-19em" src="../../../../statics/public/images/back.png" alt="返回" />
+			    </a>
+	    		<div id="title" class="aui-title f-w">通讯录</div>
+	    		<!--<a id="nochat" class="pull-right f-12em f-w pr-12em" onclick="openInitiated('com_phonebook_Initiated_header')">
+			       发起群聊
+			    </a>-->
+	    	</li>
+	    </ul>
+    </header>
+    <script type="text/javascript" src="../../../../statics/public/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../../statics/public/js/api.js"></script>
+    <!-- alertjs -->
+    <script type="text/jscript" src="../../../../statics/public/aui/js/aui-alert.js"></script>
+    <!--end-->
+    <!-- 本项目公共js -->
+	<script type="text/javascript" src="../../../../statics/public/js/sp_public_p5boss.js"></script>
+	<!-- end -->
+	<script type="text/javascript">
+		apiready = function(){
+			changecolor();//根据配置文件改变头部颜色 
+			if(api.pageParam.nochat=='nochat'){
+				$('#nochat').hide();//关闭聊天
+				$('#title').html('党员列表');
+			}else{
+				$('#nochat').show();//开启聊天
+				$('#title').html('通讯录');
+			}
+			api.openFrame({//打开com_phonebook
+	            name: 'com_phonebook',
+	            url: '../com_phonebook.html',
+	            rect: {
+		            y:($('header').height()/45*70),
+	            },
+	            bounces:false,
+	            pageParam: {
+					type:api.pageParam.type,
+					dd:api.pageParam.dd
+	            }
+	        });
+	        if(userAgent()){//系统小于4.4修改Y轴高度
+	        	api.setFrameAttr({
+				    name: 'com_phonebook',
+				    rect: {y: 45}
+				});
+	        };
+		}
+		
+		//返回---------------------------------
+		function goBlack(){
+			api.closeWin({});
+		}
+		//打开群聊页面-----------------------------
+		function openInitiated(winName){
+			api.openWin({
+	            name: winName,
+	            url: winName+'.html',
+	            pageParam:{
+	            	
+	            }
+            });
+		}
+	</script>
+</body>
+</html>

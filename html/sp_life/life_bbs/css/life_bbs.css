@@ -1,0 +1,94 @@
+body {
+
+}
+/*windth类*/
+.w-33b{width: 33.33%;}
+.w-22em{width: 1.1rem;}
+.w-52em{width: 2.6rem;}
+.w-112em{width: 5.6rem;}
+.w-239em{width: 11.95rem !important;}
+.w-243em{width: 12.15rem !important;}
+.w-273em{width: 13.65rem !important;}
+.w-288em{width: 14.4rem !important;}
+.w-293em{width: 14.65rem !important;}
+
+
+/*height类*/
+.h-22em{height: 1.1rem;}
+.h-30em{height: 1.5rem !important;}
+.h-32em{height: 1.6rem !important;}
+.h-52em{height: 2.6rem;}
+.h-112em{height: 5.6rem;}
+.h-130em{height: 6.5rem !important;}
+
+/*padding类*/
+.pl-2em{padding-left: 0.1rem;}
+.pl-4em{padding-left: 0.2rem;}
+.pl-8em{padding-left: 0.4rem;}
+.pl-10em{padding-left: 0.5rem !important;}
+.pl-20em{padding-left: 1rem !important;}
+.pl-30em{padding-left: 1.5rem !important;}
+
+.pr-2em{padding-right: 0.1rem;}
+
+.pb-4em{padding-bottom: 0.2rem;}
+
+/*margin类*/
+.m-6em{margin: 0.3rem;}
+.m-f50b{margin-top: -0.4rem;margin-left: -0.4rem;}
+
+.ml-12em{margin-left: 0.6rem !important;}
+
+.mt-4em{margin-top: 0.2rem;}
+.mt-10em{margin-top: 0.5rem !important;}
+
+.mb-4em{margin-bottom: 0.2rem;}
+.mb-8em{margin-bottom: 0.4rem !important;}
+
+/*font-size类*/
+.f-14em{font-size: 0.7rem !important;}
+.f-16em{font-size: 0.8rem !important;}
+
+/*line-height类*/
+.lh-12em{line-height: 0.6rem;}
+.lh-14em{line-height: 0.7rem;}
+.lh-20em{line-height: 1rem !important;}
+.lh-18em{line-height: 0.9rem;}
+.lh-24em{line-height: 1.2rem;}
+
+/*color类*/
+.color-75{color: #757575;}
+.color-b3{color: #b3b3b3;}
+.color-df{color: #dfdfdf !important;}
+.color-ff3032{color: #ff3032;}
+.color-ffba66{color: #ffba66;}
+.color-ff1b1e{color: #ff1b1e;}
+
+/*background类*/
+.bg-color-f1{background: #f1f1f1;}
+.bg-color-fc{background: #fcfcfc;}
+.bg-color-f9{background-color: #f9f9f9 !important;}
+.w-78b{width:78%;}
+/*border类*/
+.bor-0{border: 0 !important;}
+.b-1-df{border: 1px solid #dfdfdf !important;}
+
+.bb-1-df{border-bottom: 1px solid #dfdfdf !important;}
+.br-1-df{border-right: 1px solid #dfdfdf !important;}
+
+.bb-1-dashed-df{border-bottom: 1px dashed #dfdfdf !important;}
+
+/*border-radius类*/
+.bor-ra-7{border-radius: 7px !important;}
+.bor-ra-32{border-radius: 1.6rem !important;}
+.bor-ra-36em{border-radius: 1.8rem !important;}
+
+/*类*//*类*//*类*/
+.opt{
+	background: #ff1b1c;
+	color: #ffffff;
+}
+.more{
+	background: #b3b3b3;
+	color: #ffffff;
+}

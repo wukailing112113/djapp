@@ -1,0 +1,41 @@
+body {
+
+}
+
+
+
+
+
+.h-150em{height: 7.5rem;}
+
+.lh-18em{line-height: 0.9rem;}
+.lh-36em{line-height: 1.8rem;}
+
+.mt-8em{margin-top: 0.4rem;}
+
+.color-b3{color: #b3b3b3;}
+.color-ff3032{color: #ff3032;}
+
+.bg-color-f9{background: #f9f9f9}
+
+.bb-1-df{border-bottom: 1px solid #dfdfdf;}
+
+/* input框 */
+.di-i{display: inline !important;}
+.w-220em{width: 11rem !important;}
+.pl-12em{padding-left: 0.6rem !important;}
+.f-12em{font-size: 0.6rem !important;}
+.h-15em{height: 0.75rem  !important;}
+.lh-15em{line-height: 0.75rem !important;}
+.color-33{color: #333333 !important;}
+.b-0{border: 0 !important;}
+
+
+
+/* 背景渐变 */
+.grad {
+  background: -webkit-linear-gradient(left, #ff4d4d , #ff3032 , #ff5a2d); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #ff4d4d , #ff3032 , #ff5a2d); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #ff4d4d , #ff3032 , #ff5a2d); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #ff4d4d , #ff3032 , #ff5a2d); /* 标准的语法 */
+}

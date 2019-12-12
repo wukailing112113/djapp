@@ -1,0 +1,47 @@
+body {
+
+}
+
+.h-32em{height: 1.6rem;}
+
+.lh-34em{line-height: 1.7rem;}
+
+.bg-color-f8c807{background: #f8c807;}
+
+.bg-color-bfbfbf{background: #bfbfbf;}
+
+.box-4-df{box-shadow: 0 0 4px 0 #dfdfdf;}
+
+
+	#tabBox2{
+		background: #fff;
+		overflow: hidden;
+	}
+	#tabBox2 li{
+		width: 50%;
+		float: left;
+		border-right: 1px solid #eeeeee;
+		text-align: center;
+		position: relative;
+	}
+	#tabBox2 li a{
+		display: block;
+		margin: 0 auto;
+		color: #757575;
+	}
+	#tabBox2 li .active{
+		display: none;
+		width: 2rem;
+		height: 1px;
+		position: absolute;
+		bottom: -0.25rem;
+		left: 50%;
+		background: #ff3032;
+		margin-left: -1rem;
+	}
+	#tabBox2 .tabBox2-active a{
+		color: #ff3032;
+	}
+	#tabBox2 .tabBox2-active .active{
+		display: block;
+	}

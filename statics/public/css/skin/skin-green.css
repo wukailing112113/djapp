@@ -1,0 +1,33 @@
+/*顶部标题*/
+header{ background-color: #fff;height:50px; border-bottom: 1px solid #f5f5f5}
+header ul li { height: 50px; line-height: 50px; text-align: center; display: none; color: #323237; position: relative;font-size: 18px;  }
+header ul li.active{ display: block; }
+
+/*底部导航*/
+#footer{background-color: #fff; border-top: 1px solid #f5f5f5}
+#footer ul li{padding-top:4px;font-size:12px;padding-bottom: 4px; background: url() no-repeat center 2px; background-size: auto 30px; text-align: center; color: #999}
+#footer ul li.active{color: #88ba24;}
+#footer ul li.active i{color: #88ba24; }
+#footer ul li i{ color:#999;font-size:24px }
+/*个人中心背景*/
+.mine-bg{background: url(../../image/res/mine-bg-green.png) no-repeat;background-size: 100% 100%;height: 100px}
+
+/*默认头像背景样式*/
+.head-img{
+	background: #88ba24;
+}
+
+/*右侧箭头*/
+.arrow{color:#C9C9C9}
+
+/*按钮颜色及样式,红色为默认*/
+.mui-btn-danger,.mui-btn-danger:enabled:active{background-color: #88ba24;border: #88ba24 solid 1px;color: #fff;}
+.mui-btn-danger:enabled:active{opacity: 0.6}
+/*分页器字体颜色*/
+.mui-active{color: #88ba24 !important}
+/*分页器下标线*/
+.mui-slider-progress-bar{background: #88ba24 !important}
+
+/*注册账号和忘记密码字体颜色*/
+.link-area a{
+}

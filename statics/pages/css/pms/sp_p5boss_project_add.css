@@ -1,0 +1,15 @@
+
+.fcolor-a9 { color:#a9a9a9!important}
+.pr::-webkit-input-placeholder { /* WebKit browsers */ direction: rtl;}
+.pr:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ direction: rtl;}
+.pr::-moz-placeholder { /* Mozilla Firefox 19+ but I'm not sure about working */ direction: rtl;}
+.pr:-ms-input-placeholder { /* Internet Explorer 10+ */ direction: rtl;}
+.color-white{color:white;}
+.color-33{color:#333333!important;}
+.w-40{width:40px;}
+.h-40{height:40px;}
+.border-radius-100b{border-radius:50%;}
+.p8-15{padding:8px 15px!important}
+.fsize-40{font-size:40px;}
+.pr-15{padding-right:15px!important;}
+.top-4{top:4px!important;}

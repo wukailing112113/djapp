@@ -1,0 +1,131 @@
+body {
+
+}
+/*width-height类*/
+.wh-24em{width: 1.2rem;height: 1.2rem;}
+.wh-32em{width: 1.6rem;height: 1.6rem;}
+
+/*wdth类*/
+.w-7em{width: 0.35rem;}
+.w-239em{width: 11.95rem !important;}
+.w-273em{width: 13.65rem !important;}
+.w-288em{width: 14.4rem !important;}
+
+/*height类*/
+.h-32em{height: 1.6rem !important;}
+.h-30em{height: 1.5rem !important;}
+.h-130em{height: 6.5rem !important;}
+.h-212em{height: 10.6rem;}
+
+/*line-height类*/
+.lh-12em{line-height: 0.6rem;}
+.lh-14em{line-height: 0.7rem;}
+.lh-20em{line-height: 1rem !important;}
+.lh-24{line-height: 1.2rem;}
+.lh-32em{line-height: 1.6rem !important;}
+
+/*padding类*/
+.pt-6em{padding-top: 0.3rem !important;}
+
+.pb-6em{padding-bottom: 0.3rem !important;}
+
+.pl-5em{padding-left: 0.25rem !important;}
+.pl-20em{padding-left: 1rem !important;}
+
+/*margin类*/
+
+
+/*color类*/
+.color-b3{color: #b3b3b3 !important;}
+.color-4e{color: #4e4e4e;}
+.color-75{color: #757575;}
+.color-df{color: #dfdfdf !important;}
+.color-ff3032{color: #ff3032;}
+.color-ff1b1e{color: #ff1b1e;}
+
+/*font-size类*/
+.f-16em{font-size: 0.8rem !important;}
+
+/*background类*/
+.bg-color-f1{background: #f1f1f1 !important;}
+.bg-color-f9{background: #f9f9f9 !important;}
+
+/*border类*/
+.bor-0{border: 0 !important;}
+.b-1-ff1b1e{border: 1px solid #ff1b1e;}
+
+.bl-1-ff9033{border-left: 1px solid #ff9033;}
+
+.bb-1-df{border-bottom: 1px solid #dfdfdf;}
+
+.bor-ra-7{border-radius: 7px !important;}
+.bor-ra-32em{border-radius: 1.6rem !important;}
+
+/*top类*/
+.top-f12em{top: -0.6rem;}
+
+/*right类*/
+.right-f13em{right: -0.65rem;}
+
+/*box-shadow类*/
+.box-4-df{box-shadow: 0 0 4px 0 #dfdfdf;}
+
+.shade {
+    background-image: -webkit-gradient(linear, left center, right center, from(rgba(252, 152, 118, 1)), to(rgba(254, 192, 115, 1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.opt{
+	color: #ffffff;
+	background: -webkit-linear-gradient(left, #ff4d4d , #ff3032 ,#ff5a2d); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(right, #ff4d4d, #ff3032 ,#ff5a2d); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(right, #ff4d4d, #ff3032 ,#ff5a2d); /* Firefox 3.6 - 15 */
+	background: linear-gradient(to right, #ff4d4d , #ff3032 ,#ff5a2d); /* 标准的语法 */
+}
+
+.box-inset{
+	box-shadow: 0 0 3px 0 #dfdfdf inset !important;
+}
+
+.grad {
+  background: -webkit-linear-gradient(left, #ff4d4d , #ff3032 , #ff5a2d); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #ff4d4d , #ff3032 , #ff5a2d); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #ff4d4d , #ff3032 , #ff5a2d); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #ff4d4d , #ff3032 , #ff5a2d); /* 标准的语法 */
+}
+
+/*本页面自定义样式*/
+
+.edu_notes_daily{
+min-height: 2.25rem;
+	position: absolute;
+	margin: 0;
+	text-align: center;
+	white-space: nowrap;
+	right: 4rem;
+	left: 4rem;
+	width: auto;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	z-index: 2;
+}
+.color-9e{color:#9e9e9e}
+.color-21{color:#212121}
+.top-0em{top:0}
+.left-0em{left:0}
+.color-ff3032{color: #ff3032;}
+.border-3em-de{border-bottom:0.03rem solid #dedede}
+
+
+
+
+
+
+
+
+
+
+
+
+

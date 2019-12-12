@@ -1,0 +1,232 @@
+body {
+	
+}
+.dis-flex{display:flex;    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.col-999{
+	color: #999999;
+}
+/*banner公共样式*/
+/*-----end-----*/
+
+/*导航公共样式*/
+.col-blcok{height:;padding:1.5rem 0.5rem 0rem 0.5rem;}
+.col-blcok .col-pa{;margin-bottom:0.6rem;padding:0px;border:blue;text-align:center;}
+.col-blcok .col-pa>i>img{max-width:2.5rem;height:2.5rem;margin: 0 auto;}
+.col-blcok .col-pa .aui-grid-label{font-size:0.6rem;color:#606060;}
+/*-----end-----*/
+
+/*标题公共样式*/
+	/*标题样式1*/
+	#title1 .bb-1-dfdfdf{border-bottom: 1px solid #dfdfdf !important;}
+	#title1 .f-17{font-size: 0.85rem !important;}
+	#title1 .fwei-600{font-weight: 600 !important;}
+	#title1 .lh-47em{line-height: 2.35rem;}
+	#title1 .shade{/*字体渐变*/
+		background-image: -webkit-gradient(linear, left center, right center, from(rgba(252, 152, 118, 1)), to(rgba(254, 192, 115, 1)));
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+	}
+	#title1 .w-7em{width: 0.35rem;}
+	#title1 .h-17em{height: 0.85rem;}
+	#title1 .mr-12em{margin-right: 0.6rem;}
+	/*--end--*/
+	
+	/*标题样式2*/
+	.w-6em{width: 0.3rem;}
+	.h-12em{height: 0.6rem;}
+	.pt-12em{padding-top: 0.6rem;}
+	.pl-12em{padding-left: 0.6rem;}
+	.pr-12em{padding-right: 0.6rem;}
+	.pb-12em{padding-bottom: 0.6rem;}
+	.mt-8em{margin-top: 0.4rem;}
+	.color-4e{color: #4e4e4e;}
+	/*--end--*/
+	
+	/*标题样式3*/
+	/*--end--*/
+/*-----end-----*/
+
+/*简介公共样式*/
+	/*简介样式1*/
+	
+	/*--end--*/
+	
+	/*简介样式2*/
+	.bb-1-dfdfdf{border-bottom: 1px solid #dfdfdf !important;}
+	.mb-14em{margin-bottom: 0.7rem;}
+	/*--end--*/
+	
+	/*简介样式3*/
+	/*--end--*/
+/*-----end-----*/
+
+/*列表公共样式*/
+	/*列表样式1*/
+	#list1 .mb-12em{margin-bottom:0.6rem;}
+	#list1 .fco-54{color:#545454;}
+	#list1 .fco-a4{color:#a4a4a4;}
+	#list1 .moving .move-list{}
+	#list1 .mov-img{}
+	#list1 .movimg-wh>img{width:100%;height:4.6rem;border-radius:0.5rem;border: 0;}
+	#list1 .txt-line>i>img{max-width:1.5rem;height:0.7rem;margin-top:1.6rem;}
+	#list1 .aui-slide-page-wrap{bottom: -1.2rem !important;}
+	#list1 .aui-slide-page-dot{width: 6px !important;height: 6px !important;}
+	#list1 .aui-slide-page-active{background: #ff383b !important;}
+	/*--end--*/
+	
+	/*列表样式2*/
+	#list2 .mt-16em{margin-top: 0.8rem !important;}
+	#list2 .mr-12em{margin-right: 0.6rem;}
+	#list2 .w-110em{width: 5.5rem !important;}
+	#list2 .h-100b{height: 100% !important;}
+	#list2 .lh-24em{line-height: 1.2rem;}
+	#list2 .w-44em{width: 2.2rem;}
+	#list2 .h-16em{height: 0.8rem;}
+	#list2 .lh-16em{line-height: 0.8rem;}
+	#list2 .bg-ff4844{background: #ff4844}
+	#list2 .bor-ra-10em{border-radius: 0.5rem;}
+	#list2 .color-fe9776{color: #fe9776 !important;}
+	#list2 .aui-list .aui-list-item{border: 0 !important;background-size: 100% 0 !important;}
+	/*--end--*/
+	
+	/*列表样式3*/
+	.mt-16em{margin-top: 0.8rem !important;}
+	.w-110em{width: 5.5rem !important;}
+	.br-1-dfdfdf{border-right: 1px solid #dfdfdf !important;}
+	.lh-24em{line-height: 1.2rem;}
+	/*--end--*/
+	
+	/*列表样式4*/
+	#list4{background: #fff;}
+	#list4 .h-114em{height: 5.7rem;}
+	#list4 .pl-8em{padding-left: 0.4rem;}
+	#list4 .pr-8em{padding-right: 0.4rem;}
+	#list4 .pt-12em{padding-top: 0.6rem;}
+	#list4 .pb-12em{padding-bottom: 0.6rem;}
+	#list4 .bg-ff3032{background: #ff3032;}
+	#list4 .box{box-shadow: 0px 0px 3px 0px #dfdfdf;}
+	#list4 .bor-ra-2em{border-radius: 0.1rem;}
+	/*--end--*/
+/*-----end-----*/
+
+/*tab切换样式*/
+	/*tab切换样式1*/
+	#tab{
+		background:url("../images/headerBg.png") no-repeat center !important;
+		background-size: 100% 100% !important;
+	}
+	#tab li a{
+		display: block;
+		width: auto;
+		line-height: 0.8rem;
+		color: #fff !important;
+		font-weight: 600 !important;
+		margin-top: 0.7rem !important;
+		border-right: 1px solid rgba(250,250,250,.5);
+	}
+	.aui-tab-item.aui-active{
+		border: 0;
+		color: #fff;
+		background-image: url('../../images/images_oa/oa-border.png');
+		background-repeat: no-repeat;
+		background-position: center 2rem;
+		background-size: 40% 2px;
+	}
+	/*--end--*/
+	
+	/*tab切换样式2*/
+		#tabBox2{
+			background: #fff;
+			overflow: hidden;
+		}
+		#tabBox2 li{
+			width: 33.33%;
+			float: left;
+			border-right: 1px solid #eeeeee;
+			text-align: center;
+			position: relative;
+		}
+		#tabBox2 li a{
+			display: block;
+			margin: 0 auto;
+			color: #757575;
+		}
+		#tabBox2 li .active{
+			display: none;
+			width: 2rem;
+			height: 1px;
+			position: absolute;
+			bottom: -0.25rem;
+			left: 50%;
+			background: #ff3032;
+			margin-left: -1rem;
+		}
+		#tabBox2 .tabBox2-active a{
+			color: #ff3032;
+		}
+		#tabBox2 .tabBox2-active .active{
+			display: block;
+		}
+	/*--end--*/
+	
+	/*tab切换样式3*/
+	
+	/*--end--*/
+/*-----end-----*/
+
+/*时间轴样式*/
+	/*时间轴样式1*/
+	#time1 .aui-timeline:before {top:0px;left:50%;width: 2px;background: #ffb667;margin-left: -1px;}
+	#time1 .p-12em{padding: 0.6rem;}
+	#time1 .h-17em{height: 0.85rem;}
+	#time1 .pr-6em{padding-right: 0.3rem;}
+	#time1 .mt-2em{margin: 0.1rem;}
+	#time1 .w-24em{width: 1.2rem;}
+	#time1 .h-24em{height: 1.2rem;}
+	#time1 .bor-ra-50b{border-radius: 50%;}
+	#time1 .bg-fea271{background: #fea271;}
+	#time1 .r-f12em{right: -0.6rem;}
+	#time1 .l-f12em{left: -0.6rem;}
+	#time1 .w-22em{width: 1.1rem;}
+	#time1 .h-22em{height: 1.1rem;}
+	#time1 .bor-3d5em{border: 0.175rem solid #fff;}
+	#time1 .l-d1em{left: 0.05rem;}
+	#time1 .t-d1em{top: 0.05rem;}
+	#time1 .color-8c{color: #8c8c8c;}
+	#time1 .color-4d{color: #4d4d4d;}
+	#time1 .lh-17em{line-height: 0.85rem;}
+	#time1 .lh-22em{line-height: 1.1rem;}
+	#time1 .lh-27em{line-height: 1.35rem;}
+	/*--end--*/
+	
+	/*时间轴样式2*/
+	#time2 .aui-timeline:before {top:0px;left:20%;width: 2px;background: #d4d4d4;margin-left: -1px;}
+	#time2 .p-12em{padding: 0.6rem;}
+	#time2 .h-17em{height: 0.85rem;}
+	#time2 .pr-6em{padding-right: 0.3rem;}
+	#time2 .mt-2em{margin-top: 0.1rem;}
+	#time2 .pt-4em{padding-top: 0.2rem;}
+	#time2 .w-24em{width: 1.2rem;}
+	#time2 .h-24em{height: 1.2rem;}
+	#time2 .bor-ra-50b{border-radius: 50%;}
+	#time2 .bg-ff9776{background: #ff9776;}
+	#time2 .r-f3em{right: -0.15rem;}
+	#time2 .t-f4em{top: -0.2rem;}
+	#time2 .w-22em{width: 1.1rem;}
+	#time2 .h-22em{height: 1.1rem;}
+	#time2 .bor-3d5em{border: 0.175rem solid #fff;}
+	#time2 .color-8c{color: #8c8c8c;}
+	#time2 .color-ff9776{color: #ff9776;}
+	#time2 .lh-17em{line-height: 0.85rem;}
+	#time2 .lh-22em{line-height: 1.1rem;}
+	#time2 .lh-28em{line-height: 1.4rem;}
+	/*--end--*/
+	
+	/*时间轴样式3*/
+	
+	/*--end--*/
+/*-----end-----*/

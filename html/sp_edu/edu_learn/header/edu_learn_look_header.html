@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>党建矩阵-党组织详情-人员列表</title>
+    <!-- aui核心css -->
+    <link rel="stylesheet" type="text/css" href="../../../../statics/public/aui2/css/aui.css"/>
+    <!-- end -->
+    <link rel="stylesheet" type="text/css" href="../../../../statics/public/css/sp_public_mobile.css"/>
+    <style>
+     header{background-image: none !important;}
+	.color-21{color:#212121}
+	.border-3em-de{border-bottom:0.03rem solid #dedede}
+    </style>
+</head>
+<body>
+	<header class="aui-bar aui-bar-nav aui-bar-info pt-25em border-3em-de">
+	    <ul>
+	    	<li class="h-45em">
+	    		<a class="pull-left mt-15em pl-12em" onclick="goBlack()">
+			        <img class="w-9em h-19em" src="../../../../statics/public/images/back_info.png" alt="返回" />
+			    </a>
+	    		<div class="aui-title f-w f-16em color-21">共<span id="people_number"></span>人浏览</div>
+	    		<!--<a id="groupChat" class="pull-right f-12em f-w pr-12em" onclick="groupChat()">
+			       发起群聊
+			    </a>-->
+			    <!--<a id="AddTo" class="pull-right f-12em f-w pr-12em di-n" onclick="AddToGroup()">
+			       确定
+			    </a>-->
+	    	</li>
+	    </ul>
+    </header>
+    <script type="text/javascript" src="../../../../statics/public/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../../statics/public/js/api.js"></script>
+    <!-- 本项目公共js -->
+	<script type="text/javascript" src="../../../../statics/public/js/sp_public_p5boss.js"></script>
+    <!-- alertjs -->
+    <script type="text/jscript" src="../../../../statics/public/aui/js/aui-alert.js"></script>
+    <!--end-->
+	<!-- end -->
+	<script type="text/javascript">
+		apiready = function(){
+			api.addEventListener({
+			    name:'keyback'
+			},function(ret,err){
+			  // alert('您按了返回键');
+			   api.closeWin();
+			});
+			changecolor();//根据配置文件改变头部颜色 
+//			listenKeyGoBack();
+			if(api.pageParam.nochat == "nochat"){
+				$('#groupChat').addClass('di-n');
+			}
+			if(api.pageParam.AddTo == "AddTo"){
+				$('#AddTo').removeClass('di-n');
+				$('#groupChat').addClass('di-n');
+			}
+			api.openFrame({//打开oa_person
+	            name: 'edu_learn_look',
+	            url: '../edu_learn_look.html',
+	            rect: {
+		            y:($('header').height()/45*70),
+	            },
+	            bounces:false,
+	            pageParam: {
+					id: api.pageParam.id,
+					type: api.pageParam.type,
+					nochat: api.pageParam.nochat,
+					AddTo: api.pageParam.AddTo,
+					discussionId: api.pageParam.discussionId,
+					type:api.pageParam.type
+	            }
+	        });
+	        if(userAgent()){//系统小于4.4修改Y轴高度
+	        	api.setFrameAttr({
+				    name: 'edu_learn_look',
+				    rect: {y: 45}
+				});
+	        };
+	        //共多少人浏览接口
+	        var url = localStorage.url+"/index.php/Api/Edu/get_edu_material_communist";
+	        api.ajax({
+	    url:url,
+	    method: 'post',
+	    timeout: 100,
+	    data: {//传输参数
+	    	values:{	
+		    	"material_id":api.pageParam.type,//文章id
+			}
+	    }
+    },function(ret,err){
+    	if(ret){
+    		if(ret.status==1){
+    			$("#people_number").html(ret.count);
+			}
+			
+    	}else{
+    		api.hideProgress();//隐藏进度提示框
+    		/**无网络提示 */
+	    	api.toast({msg: '网络链接失败...',duration:3000,location: 'top'});
+    	}
+    });
+	        
+		}
+		
+		//返回------------------------------------------------
+		function goBlack(){
+			api.closeWin({name:api.winName});
+		}
+		//监听返回键退出程序
+		function listenKeyGoBack(){
+			api.addEventListener({
+			    name: 'keyback'
+			}, function(ret, err){
+				api.closeWin({}); //关闭当前页面
+			});
+		}
+		
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+	<title>考试中心</title>
+	<!-- aui核心css -->
+	<link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui.css" />
+	<!-- end -->
+	<!--公用css-->
+	<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public.css" />
+	<!-- end -->
+	<!-- 轮播 -->
+	<link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui-slide.css" />
+	<!-- end -->
+	<!-- 本项目公共css -->
+	<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_mobile.css" />
+	<!-- end -->
+	<!--本页面css-->
+	<link rel="stylesheet" type="text/css" href="css/edu_exam.css" />
+	<link rel="stylesheet" type="text/css" href="css/edu_exam_info.css" />
+	<style>
+		header {
+			background-color: #fff !important;
+			line-height: 3rem !important;
+			position: fixed !important;
+			top: 0 !important;
+		}
+
+		#aui-content {
+			margin-top: 3.25rem !important;
+		}
+
+		.questionId {
+			cursor: pointer;
+			font-size: 0.8rem;
+			line-height: 1.7rem;
+			text-align: center;
+			color: #DCE7F2;
+			border: 0.03rem solid white !important;
+		}
+
+		.question_true_id {
+			color: #FFF;
+			background: #3ead3e;
+			border: 0.03rem solid #3ead3e !important;
+		}
+
+		.question_false_id {
+			color: #FFF;
+			background: #ff4040;
+			border: 0.03rem solid #ff4040 !important;
+		}
+
+		.clickQue {
+			color: #FFF;
+			background: #d4a500;
+			border: 0.03rem solid #d4a500 !important;
+		}
+
+		.question_title {
+			margin-bottom: 1rem;
+		}
+
+		.options {
+			position: absolute;
+			transform: translateY(-50%);
+			top: 50%;
+			left: 0.2rem;
+		}
+
+		#aui-content .content_class .content_classes {
+			padding: 0.7rem;
+		}
+	</style>
+</head>
+
+<body class="bg-color-f9">
+	<header class="aui-bar aui-bar-nav aui-bar-info pt-25em">
+		<ul>
+			<li class="h-45em">
+				<a class="pull-left mt-15em pl-12em" id="edu_back">
+					<img class="w-9em h-19em" src="../../../statics/public/images/back_info.png" alt="返回" />
+				</a>
+				<a class="pull-right mt-15em pr-12em " id="opencard">
+					<img class="w-20em h-20em" src="../../../statics/public/images/edu_dati.png" alt="答题卡">
+				</a>
+			</li>
+		</ul>
+	</header>
+	<div id="aui-content">
+		<div class="content_time_num clearfix">
+			<div class="pull-left">
+				<div class="false po-re mb-8em">
+					<!--<span>得分 :&nbsp;&nbsp;<span class="f-18em color-red" id="income_point">111</span></span>-->
+					<div class="clearfix">
+						<div class="pull-left mr-5em">得分 :</div>
+						<div class="f-18em color-red pull-left mt-2em" id="income_point"></div>
+					</div>
+					
+					<img class="po-ab w-60b top-18em left-30em" src="../../../statics/images/images_edu/fenshu.png">
+				</div>
+			</div>
+			<div class="content_num pull-right">
+				<span class="num questioned">&nbsp;</span>&nbsp;/
+				<span class="question_sum"></span>
+			</div>
+		</div>
+		<div class="content_main">
+			<div class="content_class">
+				<div class="content_class_tit clearfix">
+					<div class="content_class_tit_left pull-left">
+						<i></i>
+						<span class="questions_type"></span>
+					</div>
+					<div class="content_class_tit_right pull-right next" id="nextQuestion">
+						<a href="javascript:;">下一题</a>
+					</div>
+					<div class="content_class_tit_right pull-right submitQuestions" style="display: none">
+						<a href="javascript:;">最后一题</a>
+					</div>
+				</div>
+				<div class="quiz">
+					<div class="content_classes slide active-slide">
+						<ul class="list-unstyled question">
+							<p class="question_title"></p>
+							<div id="question_list"></div>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="content_class answer_analysis">
+				<div class="content_class_tit clearfix">
+					<div class="content_class_tit_left pull-left">
+						<i></i>
+						<span>答案解析</span>
+					</div>
+				</div>
+				<!-- 答案解析 -->
+				<div class="content_classes">
+					<p class="correct_answer f-w">正确答案：<span class="xuanxiang f-w"></span></p>
+					<div class="content_classes_msg"><span class="answer_true"></span><span class="answer_memo"></span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- 选项卡 遮罩层 -->
+	<section class="po-fix w-100b h-100b top-0em left-0em bg-color-000 z-index-mask" style="display: none" id="">
+		<div class="po-ab bottom-0em w-100b bg-color-whiter edu_mask_radius h-97b">
+			<div class="mask_close clearfix pt-16em">
+				<img class="w-12em h-12em pull-right pr-16em" src="../../../statics/images/images_edu/mask_close.png">
+			</div>
+			<div class="f-20em color-21 icon_medium text-align m-a w-180em">答题卡</div>
+			<div class="f-12em color-9e icon_regular text-align m-a w-180em">总分:&nbsp;&nbsp;<span id="exam_point"></span>&nbsp;&nbsp;&nbsp;共<span id="questions_num"></span>道题</div>
+			<!-- 选择题 -->
+			<div class="mt-30em">
+				<div class="clearfix">
+					<div class="pull-left w-8em ml-25em mt-8em h-8em background-d4a500 bor-ra-50b"></div>
+					<div class="pull-left f-16em color-21 ml-12em">题目</div>
+				</div>
+				<div class="list list1 clearfix" id="answerCard">
+					<ul>
+					</ul>
+				</div>
+			</div>
+			<!-- 学习分析 -->
+			<div class="submit_test w-100b" onclick="edu_exam_analysis('edu_exam_analysis_header')">
+				<a class="btns">学习分析</a>
+			</div>
+		</div>
+	</section>
+	<!-- /选项卡 遮罩层 -->
+	<div style="display: none" id="strBtn"></div>
+	<script type="text/jscript" src="../../../statics/public/js/jquery.min.js"></script>
+	<!-- api核心js -->
+	<script type="text/jscript" src="../../../statics/public/js/api.js"></script>
+	<!-- end -->
+	<!-- aui下拉刷新js -->
+	<script type="text/jscript" src="../../../statics/plugins/aui/js/aui-pull-refresh.js"></script>
+	<!-- end -->
+	<!-- aui轮播 -->
+	<script type="text/jscript" src="../../../statics/plugins/aui/js/aui-slide.js"></script>
+	<!-- end -->
+	<!-- 项目公共js -->
+	<script type="text/jscript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+	<!-- end -->
+	<!-- 本页面js -->
+	<script type="text/jscript" src="js/edu_exam_attend.js"></script>
+	<!--<script src="http://cdn.jsdelivr.net/npm/eruda"></script>-->
+	<script>
+		eruda.init();
+	</script>
+	<script>
+	
+		//返回
+		function goBlack() {
+			api.closeWin({
+				name: api.winName
+			});
+		}
+		// 考试详情
+		function openeExamAnalysis(winName) {
+			api.openWin({
+				name: winName,
+				url: './' + winName + '.html'
+			})
+		}
+		 function openMyexam(winName) {
+            api.openWin({
+                name: winName,
+                url: './'+winName + '.html'
+            });
+            //发送监听
+    	  api.sendEvent({
+		 	 name: 'myEvent_openMyexam',
+		     extra: {
+		            state: 'no'
+		        }
+          });
+
+        }
+	</script>
+	<!--end-->
+</body>
+</html>

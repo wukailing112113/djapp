@@ -1,0 +1,24 @@
+.aui-list-view:after,.aui-list-view-cell:after,.aui-list-view-cell:last-child:after{border: none;}
+.laud {font-size: 14px;color: #999;}
+p {margin: 5px 0 !important;display: table;}
+.helper-tag {font-size: 12px;padding-left: 15px;color:#999}
+.aui-ellipsis-4 {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    white-space: normal !important;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+/* iphone5,iphone5s媒体查询 */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    
+}
+.ml-4b{margin-left:4%}
+.pl-16{padding-left:16px!important}
+.w-38b{width:38%}
+.w-45b{width:45%}
+.w-17b{width:17%}
+.w-all{width:100%}

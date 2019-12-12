@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<title>三会一课-会议签到</title>
+		 <!-- aui核心css -->
+	    <link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui.css"/>
+	    <!-- end -->
+	    <!-- aui框架flex删格系统css -->
+	    <link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui-flex.css"/>
+	    <!-- end -->
+	    <!--公用css-->
+	    <link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_mobile.css"/>
+	    <!-- end -->
+	    <!--本页面css-->
+	    <link rel="stylesheet" type="text/css" href="css/oa_attmeeting_signIn.css"/>
+	     <!-- end -->
+		<style>
+		</style>
+	</head>
+	<body class="bg-color-f9">
+		<!--会议主题-->
+			<div class="p-12em bg-color-whiter mb-8em">
+	            <div class="over-h">
+	                <img class="pull-left w-118em h-89em mr-12em" id="meetting_thumb" src="">
+	                <div class="pull-left w-220em">
+						<p id="meeting_name" class="f-16em lh-16em pt-8em color-33 f-w"></p>
+	                    <!--<p class="f-14em lh-14em pt-8em color-fe9776">2017-01-01 14:00</p>-->
+	                    <p class="f-12em lh-12em pt-8em color-33">地址: <span class="color-75" id="meeting_addr"></:span></p>
+	                    <div class="f-12em lh-12em pt-8em color-75 over-h">
+	                        <span id="meeting_host_name" class="pull-left w-30b br-1-df"></span>
+			                <span id="party_name" class="pull-left w-35b br-1-df text-align"></span>
+			                <span id="communist_num" class="pull-left w-35b text-align"></span>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="mt-12em f-12em lh-15em color-75 over-h">
+	              	<span class="pull-left w-40em color-33">主题：</span>
+	              	<span id="memo" class="pull-left w-310em"></span>
+	            </div>
+			</div>
+		<!--结束-->
+			
+		<!--video-->
+			<!--<div id="video1" class="mt-8em mb-8em bg-color-whiter">
+				
+			</div>-->
+<!--			<video id="video" class="w-100b h-150em" controls="controls" autoplay="autoplay" src="http://u166.auto.s.wanglitiaoyi.com/live/3079219066.m3u8"></video>
+-->			<!--<iframe class="w-100b" style="height: 14rem;" src="http://223.99.168.181:8102/live.m3u8?adress=D31D1129-D45D-4E7E-866D-7F4305CF2C70&port=8094&ismix=1&vchn=1&achn=1&vfmt=32769&afmt=32769&valg=5&aalg=3&time=2017-07-31_07.04.48&class=CodecDevice&id=A2894150-4022-43B3-939A-DC21F0B4CD02&chn=0&mode=0&share=5&duration=0&user=F90B9D45-4108-4AA1-8FA2-C5F8A59CF1BF&limit=123.116.249.68&token=af0c419d1c68c39e18bca81456bf8483" frameborder="0"></iframe>-->
+			<!--<p>-->
+			    <!--<iframe width="100%" height="300" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"  src="http://u166.auto.s.wanglitiaoyi.com/live/3079219066.m3u8"></iframe>-->
+			<!--</p>--> 
+
+		<!--结束-->
+			
+		<!--文本域-->
+	       <div id="notes" class="bg-color-whiter p-12em mb-8em mt-8em">
+				<textarea id="textarea" class="h-150em f-15em lh-18em color-33 bor-ra-3" rows="10" placeholder="请输入您的会议笔记" onpropertychange="myFunction(this)" oninput="myFunction(this)" ></textarea>
+			</div>
+		<!--结束-->
+		
+		<!--添加图片-->
+		
+			<div class="pl-12em pr-12em pt-15em pb-15em bg-color-whiter bb-1-df" id="thumb">
+				<p class="f-12em color-99 mb-12em">
+					<span class="f-15em color-33 mr-12em">选择图片</span>
+					已添加<span id="num">0</span>张
+					<i id="ico_add" class="iconfont f-20em pull-right lh-20em color-b3 p-0" onclick="open_uploud_1('add_upload_list')">&#xe6df;</i>
+				</p>
+				<ul id="add_upload_list" class="mb-12em clearfix">
+					
+				</ul>
+			</div>
+     	<!--结束-->
+     	
+     	<!--定位-->
+	     	<p class="p-12em f-12em color-99 mb-60em">
+	     		<i class="iconfont f-12em p-0 color-99">&#xe879;</i>
+	     		<span id="info_address" class="" onclick="getLocation()"></span>
+	     	</p>
+     	<!--结束-->
+     	
+     	<!--按钮-->
+			<div id="niu" class="di-n">
+				<div class="over-h po-fix bottom-0 w-100b h-44em bg-color-whiter" id="sign">
+					<div class="pull-left w-100b h-44em bg-shade f-16em lh-46em text-align color-white" onclick="set_oa_meeting_sign()">签到</div>
+				</div>
+				<div class="over-h po-fix bottom-0 w-100b h-44em bg-color-whiter di-n" id="button">
+					<div class="pull-left w-100b h-44em bg-shade f-14em lh-46em text-align color-white" onclick="save()">提交</div>
+				</div>
+			</div>
+		<!--结束-->
+		
+		<!-- api核心js -->
+		<script type="text/jscript" src="../../../statics/public/js/api.js"></script>
+		<!-- end -->
+		<!--jquery js-->
+		<script type="text/jscript" src="../../../statics/public/js/jquery.min.js"></script>
+		<!--end-->
+		<!-- alertjs -->
+		<script type="text/jscript" src="../../../statics/plugins/aui/js/aui-alert.js"></script>
+		<!--end-->
+		<!-- 时间格式化 -->
+		<script type="text/jscript" src="../../../statics/public/js/formatDate.js"></script>
+		<!-- end -->
+		<!--公司公用js-->
+		<script type="text/javascript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+		<!--end-->
+		<!-- 本页面js -->
+		<script type="text/jscript" src="js/oa_attmeeting_signIn.js"></script>
+		<!-- end -->
+		<script>
+//			apiready=function(){
+//				if(api.pageParam.type=='0'){
+//					$('#titleName').html('党组织一次会议')
+//					$('#video').attr('src','http://u166.auto.s.wanglitiaoyi.com/live/3079219066.m3u8')
+//				}else if(api.pageParam.type=='1'){
+//					$('#titleName').html('党组织二次会议')	
+//					$('#video').attr('src','http://hls.open.ys7.com/openlive/8831e92833db4dab964a6f09e01e40d8.hd.m3u8')
+//				}else if(api.pageParam.type=='2'){
+//					$('#titleName').html('党组织三次会议')
+//					$('#video').attr('src','http://api.v.wanglitiaoyi.cn/?action=show&sid=2949520461')
+//				}
+//			}
+		</script>
+	</body>
+</html>

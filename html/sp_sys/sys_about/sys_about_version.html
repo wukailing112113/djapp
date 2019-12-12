@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>关于版本</title>
+    <!-- aui核心css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/plugins/aui/css/aui.css"/>
+    <!-- end -->
+    <!-- 公司公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public.css"/>
+    <!-- 本页面css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/pages/css/sys/sp_p5boss_mine.css"/>
+    <!-- end -->
+    <style>
+    	.my-info img {
+		    width: 80px;
+		    height: 80px;
+		    border-radius: 10%;
+		}
+    </style>
+</head>
+<body>
+    <div class="aui-content p-15">
+        <div class="my-info aui-text-center">
+            <img src="../../../icon/icon150x150.png">
+            <p id="appVersion">版本号：</p>
+        </div>
+    	<div class="aui-col-xs-12 ti-2" id="introduction">
+    	</div>
+    	<br />
+    	<div class="aui-col-xs-12">
+    		【版本日志】
+    	</div>
+
+		<div class="aui-col-xs-12">
+    		<b class="aui-text-info">V1.0.5</b>
+    		<div class="pl-10"><small>【修改】修改应用中工作流为审核</small></div>
+    		<div class="pl-10"><small>【修改】将关于中内容提到个人中心中</small></div>
+    		<div class="pl-10"><small>【修改】修改个人资料中在线聊天为打电话</small></div>
+    		<div class="pl-10"><small>【修改】修改手机号修改为原是手机和新手机双重验证码</small></div>
+    		<div class="pl-10"><small>【修改】修改审批详情中传输数据内容</small></div>
+    		<div class="pl-10"><small>【修改】修改快捷键发起审批跳转页面地址</small></div>
+    		<div class="pl-10"><small>【修改】修改新建必做任务是否提醒为记住选中</small></div>
+    		<div class="pl-10"><small>【添加】添加新建必做任务中工作进度总结</small></div>
+    	</div>
+    	<div class="aui-col-xs-12">
+    		<b class="aui-text-info">V1.0.4</b>
+    		<div class="pl-10"><small>【优化】优化调整登录页中控件位置</small></div>
+    		<div class="pl-10"><small>【修改】修改消息中心页面展示效果</small></div>
+    		<div class="pl-10"><small>【优化】优化知识库页面展示效果及修改左滑菜单</small></div>
+    		<div class="pl-10"><small>【优化】优化备忘录添加页。</small></div>
+    		<div class="pl-10"><small>【优化】优化工作计划添加页</small></div>
+    		<div class="pl-10"><small>【优化】优化必做任务添加页。</small></div>
+    		<div class="pl-10"><small>【优化】优化日程管理整体模块。</small></div>
+    		<div class="pl-10"><small>【新增】添加版本日志管理。</small></div>
+    	</div>
+    	<div class="aui-col-xs-12">
+    		<b class="aui-text-info">V1.0.3</b>
+    		<div class="pl-10"><small>【优化】消息进入详情后不可编辑，滑动页面回到当前页面，部分头部没有返回</small></div>
+    		<div class="pl-10"><small>【修复】修复p5页面，知识库弹窗取值</small></div>
+    		<div class="pl-10"><small>【添加】添加腾讯信鸽推送</small></div>
+    		<div class="pl-10"><small>【优化】我里面消息通知功能功能，日报管理详情页调整。</small></div>
+    		<div class="pl-10"><small>【添加】添加rsa数据通讯加密算法测试和rsa加密js库</small></div>
+    		<div class="pl-10"><small>【修复】新消息通知逻辑，增减判断时间是否在夜间。</small></div>
+    	</div>
+    	<div class="aui-col-xs-12">
+    		<b class="aui-text-info">V1.0.2</b>
+    		<div class="pl-10"><small>【更换】更换引导页</small></div>
+    		<div class="pl-10"><small>【修改】修改配置文件信息</small></div>
+    	</div>
+    	<div class="aui-col-xs-12">
+    		<b class="aui-text-info">V1.0.1</b>
+    		<div class="pl-10"><small>首次发布</small></div>
+    	</div>
+    </div>
+    <script type="text/javascript" src="../../../statics/public/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../../../statics/plugins/aui/js/aui-alert.js"></script>
+
+<script>
+	apiready = function(){
+		//异步返回结果：项目简介
+		api.loadSecureValue({
+		    key:'introduction'
+		}, function(ret, err){   
+		    $("#introduction").html(ret.value);
+		});
+		//获取软件版本号
+		$("#appVersion").append("V"+api.appVersion);
+	}
+</script>
+</body>
+</html>

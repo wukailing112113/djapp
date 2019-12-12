@@ -1,0 +1,67 @@
+
+#button_div{position:fixed;bottom: 0px;width:100%;margin: 0}
+/*input-placeholder居右*/
+.sum-type::-webkit-input-placeholder { /* WebKit browsers */ direction: rtl;}
+.sum-type:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ direction: rtl;}
+.sum-type::-moz-placeholder { /* Mozilla Firefox 19+ but I'm not sure about working */ direction: rtl;}
+.sum-type:-ms-input-placeholder { /* Internet Explorer 10+ */ direction: rtl;}
+.sum-type{text-align: right}
+.pl-5{padding-left: 5px}
+.pl-45{padding-left: 45px}
+.-magin_t10{margin-top: -10px}
+.-mt10{margin-top: -10px}
+.-magin_l14{margin-left: -14px}
+.fots16{font-size: 16px}
+.istyle{padding-top: 0px !important;padding-left: 0px !important;font-size: 14px !important; !important;padding-right: 0px !important;}
+.aui-img-body a{color: #666}
+/* .fcolor-a9 { color:#a9a9a9!important} */
+.fcolor-white{ color:#fff!important}
+.work-icon{width: 23px;height: 23px;}
+.noborder{border:none!important}
+/* .fsize-34{font-size:34px!important} */
+/* .lh-12{line-height:12px!important} */
+/* .pt-6{padding-top:6px} */
+.p2-0{padding:4px 0px!important}
+.fsize-20{font-size:20px!important}
+.pt-9{padding-top:9px}
+.pb-9{padding-bottom:9px}
+#worklog_title::-webkit-input-placeholder { color:#3D9CF9;font-weight:bold }
+#worklog_title:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color:#3D9CF9;font-weight:bold}
+#worklog_title::-moz-placeholder { /* Mozilla Firefox 19+ but I'm not sure about working */ color:#3D9CF9;font-weight:bold}
+#worklog_title:-ms-input-placeholder { /* Internet Explorer 10+ */ color:#3D9CF9;font-weight:bold}
+.fb{font-weight:bold}
+.aui-fold-active .aui-fold-content {display:none;}
+.aui-fold-active {background: #fff; }
+.border-b-none:after{border-bottom:none;}
+.border-t-none:after{border-top:none;}
+.p9-15{padding:9px 15px 9px 15px!important}
+.badge {
+    position: absolute;
+    top: 50%;
+    left: 25%;   
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: inline-block;
+    padding: 3px 6px;
+    font-size: 12px;
+    line-height: 1;
+    color: #333;
+    background-color: #bdc3c7;
+    border-radius: 100px;
+}
+.text-align{text-align:center !important;}
+.ml5{margin-left: 5px}
+.-ml15{margin-left: -15%}
+.ml--15{margin-left: -15px}
+.-mt3{margin-top: -3%}
+.-mt5{margin-top: -5%}
+.-mt4{margin-top: -4%}
+.-mt10{margin-top: -10%}
+.-ml4{margin-left: -4%}
+.ml12{margin-left: 12%}
+.pr-15{padding-right: 15px}
+.ol-au{overflow:auto}
+.di-n{display: none}
+.lh30{line-height: 30px}
+.fo60{font-size: 60px}
+.bc_gray{color: #d6d6d5}

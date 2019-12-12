@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<title>工作计划</title>
+		<!-- aui核心css -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui.css"/>
+		<!-- end -->
+		<!--公用css-->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public.css"/>
+		<!-- end -->
+		<!-- 下拉 -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/aui/css/aui-pull-refresh.css" />
+		<!-- end -->
+		<!-- 本项目公共css -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_mobile.css"/>
+		<!-- end -->
+		<!--本页面css-->
+		<link rel="stylesheet" type="text/css" href="css/oa_instructions.css" />
+		<style>
+		</style>
+	</head>
+	<body class="bg-color-whiter">
+		<div class="po-fix z-index-max w-100b">
+			<!--搜索框-->
+			<div class="pt-5em pl-12em pr-12em pb-5em bg-color-whiter" id="search1">
+				<input id="keywork" class="w-100b bg-color-f9 f-15em h-35em lh-35em pl-20em" type="text" placeholder="搜索"/>
+			</div>
+			<!--结束-->
+			<!--tab切换-->
+			<!--<ul class="bb-1-dfdfdf" id="tabBox2">
+			    <li id="name1" class="mt-5em mb-5em tabBox2-active"><a name="#tab1">我的工作计划</a><span class="active"></span></li>
+			    <li id="name2" class="mt-5em mb-5em"><a name="#tab2">我安排的工作</a><span class="active"></span></li>
+			</ul>-->
+			<!--结束-->
+		</div>
+		<div class="aui-load-container top-50em">
+			<div class="aui-load-wrap">
+				<div class="aui-loading-dot"></div>
+				<div class="aui-loading-circle"></div>
+				<div class="aui-loading-title"></div>
+			</div>
+			<div class="aui-content">
+				<div class="mt-12em bg-color-whiter" id="listBox">
+					<!--<div class="over-h bb-1-dfdfdf pt-10em pl-12em pr-12em" onclick="openInfo('oa_instructions_info_header')">
+						<div class="pb-10em">
+							<p class="f-14em color-33 lh-15em f-w">完成***项目详细设计<span class="f-10em color-99 pull-right">2017-09-09</span></p>
+							<p class="pt-5em f-12em color-33 lh-15em">今天的工作计划是如何更好的完成党支部下发的个人工作总结</p>
+							<p class="pt-5em f-12em color-99"><i class="iconfont f-10em lh-15em p-0 color-4196ff">&#xe879;</i>山东省济南市高新区</p>
+						</div>
+					</div>
+					<div class="over-h bb-1-dfdfdf pt-10em pl-12em pr-12em" onclick="openInfo('oa_instructions_info_header')">
+						<div class="pb-10em">
+							<p class="f-14em color-33 lh-15em f-w">完成***项目详细设计<span class="f-10em color-99 pull-right">2017-09-09</span></p>
+							<p class="pt-5em f-12em color-33 lh-15em">今天的工作计划是如何更好的完成党支部下发的个人工作总结</p>
+							<p class="pt-5em f-12em color-99"><i class="iconfont f-10em lh-15em p-0 color-4196ff">&#xe879;</i>山东省济南市高新区</p>
+						</div>
+					</div>
+					<div class="over-h bb-1-dfdfdf pt-10em pl-12em pr-12em" onclick="openInfo('oa_instructions_info_header')">
+						<div class="pb-10em">
+							<p class="f-14em color-33 lh-15em f-w">完成***项目详细设计<span class="f-10em color-99 pull-right">2017-09-09</span></p>
+							<p class="pt-5em f-12em color-33 lh-15em">今天的工作计划是如何更好的完成党支部下发的个人工作总结</p>
+							<p class="pt-5em f-12em color-99"><i class="iconfont f-10em lh-15em p-0 color-4196ff">&#xe879;</i>山东省济南市高新区</p>
+						</div>
+					</div>
+					<div class="over-h bb-1-dfdfdf pt-10em pl-12em pr-12em" onclick="openInfo('oa_instructions_info_header')">
+						<div class="pb-10em">
+							<p class="f-14em color-33 lh-15em f-w">完成***项目详细设计<span class="f-10em color-99 pull-right">2017-09-09</span></p>
+							<p class="pt-5em f-12em color-33 lh-15em">今天的工作计划是如何更好的完成党支部下发的个人工作总结</p>
+							<p class="pt-5em f-12em color-99"><i class="iconfont f-10em lh-15em p-0 color-4196ff">&#xe879;</i>山东省济南市高新区</p>
+						</div>
+					</div>
+					<div class="over-h bb-1-dfdfdf pt-10em pl-12em pr-12em" onclick="openInfo('oa_instructions_info_header')">
+						<div class="pb-10em">
+							<p class="f-14em color-33 lh-15em f-w">完成***项目详细设计<span class="f-10em color-99 pull-right">2017-09-09</span></p>
+							<p class="pt-5em f-12em color-33 lh-15em">今天的工作计划是如何更好的完成党支部下发的个人工作总结</p>
+							<p class="pt-5em f-12em color-99"><i class="iconfont f-10em lh-15em p-0 color-4196ff">&#xe879;</i>山东省济南市高新区</p>
+						</div>
+					</div>-->
+					
+				</div>
+			</div>
+		</div>
+		<script type="text/jscript" src="../../../statics/public/js/jquery.min.js"></script>
+		<!-- api核心js -->
+		<script type="text/jscript" src="../../../statics/public/js/api.js"></script>
+		<!-- end -->
+		<!-- aui下拉刷新js -->
+		<script type="text/jscript" src="../../../statics/public/aui/js/aui-pull-refresh.js"></script>
+		<!-- end -->
+		<!-- 项目公共js -->
+		<script type="text/jscript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+		<!-- end -->
+		<!-- 本页面js -->
+		<script type="text/jscript" src="js/oa_instructions.js"></script>
+		<!-- end -->
+		<script type="text/javascript">
+			
+		</script>
+		<!--end-->
+	</body>
+</html>

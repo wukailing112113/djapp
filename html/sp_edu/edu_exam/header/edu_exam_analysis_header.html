@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <title>专题分析</title>
+    <!-- aui核心css -->
+    <link rel="stylesheet" type="text/css" href="../../../../statics/public/aui2/css/aui.css" />
+    <!-- end -->
+    <!-- 公司公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../../statics/public/css/sp_public.css" />
+    <!-- end -->
+    <!-- 本项目公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../../statics/public/css/sp_public_mobile.css" />
+    <!-- end -->
+</head>
+<style>
+   header{background-image: none !important;}
+	.color-21{color:#212121}
+   .border-3em-de{border-bottom:0.03rem solid #dedede}
+</style>
+
+<body>
+     <header class="aui-bar aui-bar-nav aui-bar-info pt-25em border-3em-de bg-color-whiter">
+	    <ul>
+	    	<li class="h-45em">
+	    		<a class="aui-pull-left mt-15em" onclick="goBlack()">
+			        <img class="w-9em h-19em" src="../../../../statics/public/images/back_info.png" alt="返回" />
+			    </a>
+	    		<div class="aui-title color-21 f-18em f-w" id="title">专题分析</div>
+	    	</li>
+	    </ul>
+    </header>
+    <script type="text/javascript" src="../../../../statics/public/js/api.js"></script>
+    <script type="text/javascript" src="../../../../statics/public/js/jquery.min.js"></script>
+    <!-- alertjs -->
+    <script type="text/jscript" src="../../../../statics/public/aui/js/aui-alert.js"></script>
+    <!--end-->
+    <!-- 本项目公共js -->
+    <script type="text/javascript" src="../../../../statics/public/js/sp_public_p5boss.js"></script>
+    <!-- end -->
+    <script type="text/javascript">
+        apiready = function () {
+            changecolor() //根据配置文件改变头部颜色
+            api.openFrame({
+                name: 'edu_exam_analysis',
+                url: '../edu_exam_analysis.html',
+                rect: {
+                    y: ($('header').height() / 45 * 70),
+                },
+                pageParam:{
+		    		id:api.pageParam.id,
+		    		type:api.pageParam.type,
+		    	},
+                bounces: false,
+            });
+
+            if (userAgent()) { //系统小于4.4修改Y轴高度
+                api.setFrameAttr({
+                    name: 'edu_exam_analysis',
+                    rect: {
+                        y: 45
+                    }
+                });
+            };
+            
+            
+//          if(api.pageParam.type==1){
+//          $("#edu_back").click(function(){
+//	            api.openWin({
+//	                name: 'edu_special',
+//	                url: '../edu_special/header/edu_special_twostudies_header.html'
+//	            });
+//	    	  api.sendEvent({
+//			 	 name: 'myEvent_openMyexam',
+//			     extra: {
+//			            state: 'no'
+//			        }
+//	          });
+//          })
+//          }else{
+//           $("#edu_back").click(function(){ 
+//	    	  api.sendEvent({
+//			 	 name: 'myEvent_analysis',
+//			     extra: {
+//			            state: 'no'
+//			        }
+//	          });           
+//           	 api.openWin({
+//	                name: 'edu_exam',
+//	                url: './edu_exam.html',
+//	            });
+//	           
+//	             
+//           })
+//       
+//          }
+            
+           
+           
+           
+            
+            
+            
+        }
+
+//      function openMyexam(winName) {
+//          api.openWin({
+//              name: winName,
+//              url: './'+winName + '.html'
+//          });
+//          //发送监听
+//  	  api.sendEvent({
+//		 	 name: 'myEvent_openMyexam',
+//		     extra: {
+//		            state: 'no'
+//		        }
+//        });
+//
+//      }
+
+        //返回
+        function goBlack() {
+            api.closeWin();
+        }
+    </script>
+</body>
+
+</html>

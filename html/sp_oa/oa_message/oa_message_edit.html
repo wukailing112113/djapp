@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<title>通知公告</title>
+		<!-- aui核心css -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui.css"/>
+		<!-- end -->
+		<!--公用css-->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public.css"/>
+		<!-- end -->
+		<!-- 轮播 -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui-slide.css" />
+		<!-- end -->
+		<!-- 本项目公共css -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_mobile.css"/>
+		<!-- end -->
+		<!--本页面css-->
+		<link rel="stylesheet" type="text/css" href="css/oa_notice.css" />
+		<link rel="stylesheet" type="text/css" href="css/oa_notice_edit.css" />
+		<style>
+		</style>
+	</head>
+	<body class="bg-color-f9">
+		<!--选择人与标题-->
+			<div class="mt-8em mb-12em pl-12em pr-12em bg-color-whiter">
+				<pre ChoosePeopleId="" class="pt-15em pb-15em f-12em lh-15em color-99 bb-1-df m-0 memberList" onclick="openPerson('0','oa_notice_edit')">查看人员 <span id="notice_communist" class="pl-12em"></span><i class="pull-right iconfont f-15em lh-15em color-ff3032 p-0">&#xe613;</i></pre>
+				<!--<pre ChoosePeopleId="" class="pt-15em pb-15em f-12em lh-15em color-99 bb-1-df m-0 memberList" onclick="openPerson('1','oa_notice_edit')">抄        送 <span id="" class="pl-12em"></span><i class="pull-right iconfont f-15em lh-15em color-ff3032 p-0">&#xe613;</i></pre>-->
+				<pre class="pt-15em pb-15em f-12em lh-15em color-99 m-0">标   题 <input id="notice_title" class="di-i w-220em pl-12em f-12em lh-15em h-15em color-33 b-0" type="text" /><i class="pull-right iconfont f-15em lh-15em color-ff3032 p-0"></i></pre>
+				
+			</div>
+		<!--结束-->
+		
+		<!--内容-->
+			<div class="p-12em mb-12em bg-color-whiter">
+				<textarea id="notice_content" class="w-100b h-150em f-15em lh-18em color-b3" name="" id="" placeholder="编辑你的公告内容"></textarea>
+			</div>
+		<!--结束-->
+		
+		<!--图片-->
+			<!--<div class="pl-12em pr-12em pt-15em pb-15em bg-color-whiter bb-1-df">
+				<p class="f-12em lh-20em color-99 mb-12em">
+					<span class="f-15em color-33 mr-12em">选择图片</span>
+					已添加<span id="num">0</span>张
+					<i class="iconfont f-20em pull-right lh-20em color-b3 p-0" onclick="open_uploud('add_upload_list')">&#xe6df;</i>
+				</p>
+				<ul id="add_upload_list" class="over-h mb-12em">
+					<li class="pull-left mr-12em">
+						<img class="w-60em h-60em" src="../../../statics/images/images_oa/oa_img.jpg" alt="" />
+					</li>
+					<li class="pull-left mr-12em">
+						<img class="w-60em h-60em" src="../../../statics/images/images_oa/oa_img.jpg" alt="" />
+					</li>
+					<li class="pull-left mr-12em">
+						<img class="w-60em h-60em" src="../../../statics/images/images_oa/oa_img.jpg" alt="" />
+					</li>
+				</ul>
+			</div>-->
+		<!--结束-->
+		
+		<!--附件-->
+			<div class="bb-1-df mb-35em">
+				<div class="pl-12em pr-12em pt-15em pb-15em bg-color-whiter">
+					<p class="f-12em color-99 mb-12em lh-20em">
+						<span class="f-15em lh-20em color-33 mr-12em">选择附件</span>
+						已添加<span id="num">0</span>份
+						<i class="iconfont f-20em pull-right lh-20 color-b3 p-0" onclick="open_uploud_2('fujian')">&#xe6df;</i>
+					</p>
+					<div id="fujian" class="clearfix mb-12em">
+						<!--<div class="b-1-dfdfdf p-12em bg-color-fcfdfe over-h mb-12em">
+							<div class="pull-left pr-12em">
+								<img class="w-35em h-35em" src="../../../statics/images/images_oa/oa_img_doc.png" alt="" />
+							</div>
+							<div class="pull-left">
+								<p class="f-15em color-b3">李强的文件：二十四号文件附件.doc</p>
+								<p class="f-12em color-b3">1.54 MB</p>
+							</div>
+						</div>
+						<div class="b-1-dfdfdf p-12em bg-color-fcfdfe over-h mb-12em">
+							<div class="pull-left pr-12em">
+								<img class="w-35em h-35em" src="../../../statics/images/images_oa/oa_img_doc.png" alt="" />
+							</div>
+							<div class="pull-left">
+								<p class="f-15em color-b3">李强的文件：二十四号文件附件.doc</p>
+								<p class="f-12em color-b3">1.54 MB</p>
+							</div>
+						</div>
+						<div class="b-1-dfdfdf p-12em bg-color-fcfdfe over-h mb-12em">
+							<div class="pull-left pr-12em">
+								<img class="w-35em h-35em" src="../../../statics/images/images_oa/oa_img_doc.png" alt="" />
+							</div>
+							<div class="pull-left">
+								<p class="f-15em color-b3">李强的文件：二十四号文件附件.doc</p>
+								<p class="f-12em color-b3">1.54 MB</p>
+							</div>
+						</div>-->
+					</div>
+				</div>	
+			</div>
+			<div class="f-10em color-red pl-12em pr-12em pt-10em">注：只能上传 jpg、gif、png、jpeg、xls、xlsx、doc、docx、pdf、mp4 格式文件</div>
+		<!--结束-->
+		
+		<!--发送-->
+			<div class="w-100b h-50em bg-color-whiter po-fix bottom-0">
+				<div class="m-a mt-8em w-350em h-34em f-14em lh-36em color-white text-align grad bor-ra-7" onclick="get_oa_missive_info()">发送</div>
+			</div>
+		<!--结束-->
+		
+		
+		<script type="text/jscript" src="../../../statics/public/js/jquery.min.js"></script>
+		<!-- api核心js -->
+		<script type="text/jscript" src="../../../statics/public/js/api.js"></script>
+		<!-- end -->
+		<!-- aui下拉刷新js -->
+		<script type="text/jscript" src="../../../statics/public/aui2/js/aui-pull-refresh.js"></script>
+		<!-- end -->
+		<!-- aui轮播 -->
+		<script type="text/jscript" src="../../../statics/public/aui2/js/aui-slide.js"></script>
+		<!-- end -->
+		<!-- 项目公共js -->
+		<script type="text/jscript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+		<!-- end -->
+		<!-- 本页面js -->
+		<script type="text/jscript" src="js/oa_notice_edit.js"></script>
+		<!-- end -->
+		<script type="text/javascript">
+			
+		</script>
+		<!--end-->
+	</body>
+</html>

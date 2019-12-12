@@ -1,0 +1,45 @@
+body {
+
+}
+
+
+
+.w-42em{width: 2.1rem;}
+.w-33b{width: 33.33%;}
+
+.h-14em{height: 0.7rem;}
+.h-32em{height: 1.6rem;}
+.h-48em{height: 2.4rem;}
+.h-167em{height: 8.35rem;}
+
+.lh-12em{line-height: 0.6rem;}
+.lh-26em{line-height: 1.3rem;}
+.lh-32em{line-height: 1.6rem;}
+
+.pt-8em{padding-top: 0.4rem;}
+.pt-18em{padding-top: 0.9rem;}
+
+.f-60em{font-size: 3rem;}
+
+.color-75{color: #757575;}
+.color-ff9743{color: #ff9743;}
+
+.bg-color-f1f1f1{background: #f1f1f1;}
+
+.br-1-ff{border-right: 1px solid #fff;}
+.bb-1-ff9033{border-bottom: 1px solid #ff9033;}
+.box-1-1-ffc96d{box-shadow: 0px 1px 1px 0 #ffc96d;}
+
+.bg-color-integral{
+	background: #ffffff url('../../../../statics/images/images_life/life_volunteer_integral.png') no-repeat top center;
+	background-size: contain;
+}
+
+.grad {
+  background: -webkit-linear-gradient(left, #ff4d4d , #ff3032 , #ff5a2d); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #ff4d4d, #ff3032 , #ff5a2d); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #ff4d4d, #ff3032 , #ff5a2d); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #ff4d4d , #ff3032 , #ff5a2d); /* 标准的语法 */
+}
+
+

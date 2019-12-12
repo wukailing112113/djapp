@@ -1,0 +1,25 @@
+.w-7em{width: 0.35rem;}
+.w-44em{width: 2.2rem;}
+.w-118em{width: 5.9rem;}
+.w-33b{width: 33.33%;}
+
+.h-17em{height: 0.85rem;}
+.h-18em{height: 0.9rem;}
+.h-98em{height: 4.9rem;}
+
+.color-fe9776{color: #fe9776 !important;}
+
+.bg-color-ff4844{background: #ff4844}
+
+.br-1-df{border-right: 1px solid #dfdfdf;}
+
+.bb-1-df{border-bottom: 1px solid #dfdfdf !important;}
+
+.bor-ra-10em{border-radius: 0.5rem;}
+
+/*字体渐变*/
+.shade{
+	background-image: -webkit-gradient(linear, left center, right center, from(rgba(252, 152, 118, 1)), to(rgba(254, 192, 115, 1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

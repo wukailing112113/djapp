@@ -1,0 +1,134 @@
+/*——————————————————————————————本页面公用—————————————————————————————————————————*/
+/*width类*/
+.w-16em {width: 0.8rem !important;}
+.w-33b {width: 33.33%;}
+.w-280em {width: 14rem;}
+.w-7em{width:1rem;}
+
+/*height类*/
+.h-7em{height:1.2rem;}
+.h-16em {height: 0.8rem !important;}
+.h-32em {height: 1.6rem;}
+.h-44em {height: 2.2rem;}
+.h-72em {height: 3.6rem;}
+.h-140em {height: 7rem;}
+.h-176em {height: 8.8rem;}
+.h-210em {height: 10.5rem;}
+.h-200em{height: 9.8rem;}
+/*line-height类*/
+.lh-32em {line-height: 1.6rem;}
+.lh-44em {line-height: 2.2rem;}
+.lh-70em {line-height: 3.5rem;}
+/*color类*/
+.color-ff3032 {color: #ff3032;}
+.color-ff4242{color:#ff4242}
+.color-21{color:#212121}
+.color-9e{color: #9e9e9e;}
+/*margin类*/
+.m-4em {margin: 0.2rem;}
+.mt-1em {margin-top: 0.05rem;}
+.mt-f8em {margin-top: -0.8rem;}
+.mt-105mem {margin-top: -5.25rem;}
+.ml-140mem {margin-left: -7rem;}
+.mt-33mem{margin-top:-1.3rem;}
+
+/*background类*/
+.bg-color-fc {background: #fcfcfc;}
+.bg-color-ff1b1e {background: #ff1b1e;}
+.bg-color-1b8cff { background: #1b8cff;}
+.bg-rgba-black-5 {background: rgba(0, 0, 0, 0.7);}
+/*border类*/
+.bor-0 {border: 0 !important;}
+.b-1-33 { border: 1px solid #333333;}
+.bor-r-df {border-right: 1px solid #dfdfdf;}
+.bor-t-df {border-top: 1px solid #dfdfdf;}
+/*box-shadow类*/
+.box-4-df {box-shadow: 0 0 4px 0 #dfdfdf;}
+.box-sha-5-ed {box-shadow: 0 0 5px 0 #ededed;}
+/*left类*/
+.left-0 {left: 0 !important;}
+/*top类*/
+.top-50b {top: 50% !important;}
+.join {opacity: 0.5;}
+/*渐变*/
+.grad {
+  background: -webkit-linear-gradient(left, #ff4d4d, #ff3032, #ff5a2d);
+  /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #ff4d4d, #ff3032, #ff5a2d);
+  /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #ff4d4d, #ff3032, #ff5a2d);
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #ff4d4d, #ff3032, #ff5a2d);
+  /* 标准的语法 */
+}
+
+/*——————————————————————————————分析页欢迎语样式—————————————————————————————————————————*/
+#analysis_con{display:none}
+#integral_con{display:none}
+/*——————————————————————————————专题完成率样式—————————————————————————————————————————*/
+
+.aui-progress-bg{border-radius: 0.4rem;background: #ebebeb;}
+.aui-progress-bar-bg{
+background: linear-gradient(90deg, 
+		#ffba30 0%, 
+		#ff5a2d 100%);
+		border-radius: 0.4rem;
+		}
+.aui-content-padded {
+  	margin-left: 0rem !important;
+  	margin-right: 0rem !important;
+  	position: relative;
+  	word-break: break-all;
+  	-webkit-overflow-scrolling: touch;
+  	margin-top: 0.6rem
+}
+.aui-progress.xs,
+.aui-progress-xs {
+	height: 0.2rem !important;
+}
+/*——————————————————————————————积分排行—————————————————————————————————————————*/
+.ranking_bg1{
+	 background: url("../../../../statics/images/images_edu/ranking_no.png") no-repeat !important; 
+	  background-size: 100% 100% !important;	  
+}
+.ranking_bg2{
+	 background: url("../../../../statics/images/images_edu/ranking_no2.png") no-repeat !important; 
+	  background-size: 100% 100% !important;	  
+}
+.ranking_bg3{
+	 background: url("../../../../statics/images/images_edu/ranking_no3.png") no-repeat !important; 
+	  background-size: 100% 100% !important;	  
+}
+.bor-ra-50{border-radius:50%}
+/*——————————————————————————————其他样式—————————————————————————————————————————*/
+.edu_con{
+	width:94%;
+	margin-left:3%;
+	background-color: #ffffff;
+	box-shadow: 0rem 0rem 0.4rem 0rem 
+		rgba(0, 0, 0, 0.08);
+	border-radius: 0.25rem;
+}
+.border-de-3em{border-bottom: solid 0.03rem #dedede;}
+/*垂直居中*/
+.va-jz{
+	display: flex;
+    align-items:Center; 
+}
+.f-7em{font-size: 0.4rem}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

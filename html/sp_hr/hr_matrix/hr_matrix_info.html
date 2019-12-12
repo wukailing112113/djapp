@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<title>公文收发</title>
+		<!-- aui核心css -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui.css"/>
+		<!-- end -->
+		<!--公用css-->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public.css"/>
+		<!-- end -->
+		<!-- 本项目公共css -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_mobile.css"/>
+		<!-- end -->
+		<!--本页面css-->
+		<link rel="stylesheet" type="text/css" href="css/hr_matrix_info.css" />
+		<style>
+		</style>
+	</head>
+	<body class="bg-color-f9">
+		<!--党务简介-->
+			<div class="pl-6em pr-6em pt-8em pb-4em">
+				<div class="box-4-df p-12em bg-color-whiter bor-ra-3">
+					<p class="f-18em lh-22em shade pb-10em f-w"><img class="pull-left w-7em h-17em lh-22em mr-10em" src="../../../statics/public/aui2/img/tit-icon.png" alt="" />党委简介</p>
+					<p id="memo" class="f-14em lh-18em color-75 pl-8em"></p>
+				</div>
+			</div>
+		<!--结束-->
+		
+		<!--党建数据-->
+			<div class="pl-6em pr-6em pt-8em pb-4em">
+				<div class="box-4-df p-12em bg-color-whiter bor-ra-3">
+					<p class="f-18em lh-22em shade pb-10em f-w"><img class="pull-left w-7em h-17em lh-22em mr-10em" src="../../../statics/public/aui2/img/tit-icon.png" alt="" />党建数据</p>
+					<div class="over-h">
+						<div class="pull-left w-80em h-60em bor-ra-3 mr-6em box-4-df" id="matrix-info-people">
+							<img class="w-25em h-30em m-a mt-10em" src="../../../statics/images/images_hr/hr_matrix_people.jpg" alt="" />
+							<p class="f-12em lh-12em color-white text-align f-w">党员 <span id="communist_num"></span>人</p>
+						</div>
+						<div class="pull-left w-80em h-60em bor-ra-3 mr-6em box-4-df" id="matrix-info-organization">
+							<img class="w-25em h-30em m-a mt-10em" src="../../../statics/images/images_hr/hr_matrix_organization.jpg" alt="" />
+							<p class="f-12em lh-12em color-white text-align f-w">组织 <span id="party_num"></span>个</p>
+						</div>
+						<div class="pull-left w-80em h-60em bor-ra-3 mr-6em box-4-df" id="matrix-info-integral">
+							<img class="w-25em h-30em m-a mt-10em" src="../../../statics/images/images_hr/hr_matrix_integral.jpg" alt="" />
+							<p class="f-12em lh-12em color-white text-align f-w">积分 <span id="integral_total"></span>分</p>
+						</div>
+						<div class="pull-left w-80em h-60em bor-ra-3 box-4-df" id="matrix-info-cost">
+							<img class="w-25em h-30em m-a mt-10em" src="../../../statics/images/images_hr/hr_matrix_cost.jpg" alt="" />
+							<p class="f-12em lh-12em color-white text-align f-w">党费 <span id="dues_amount"></span>元</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!--结束-->
+		
+		<!--谁是党员-->
+			<div class="pl-6em pr-6em pt-8em pb-4em">
+				<div class="box-4-df p-12em bg-color-whiter bor-ra-3">
+					<p class="f-18em lh-22em pb-10em"><img class="pull-left w-7em h-17em lh-22em mr-10em" src="../../../statics/public/aui2/img/tit-icon.png" alt="" />
+					<span class="shade f-w">谁是党员</span><span onclick="openPhonebookRight('nochat')" class="f-12em color-99 lh-22em pull-right">更多<i class="iconfont f-12em lh-24em color-99">&#xe613;</i></span></p>
+					<ul id="communist_list" class="over-h">
+						<!--<li class="pull-left w-25b pb-12em">
+							<img class="w-52em h-52em m-a" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+							<p class="f-12em lh-12em color-75 pt-8em text-align">赵建国</p>
+						</li>
+						<li class="pull-left w-25b pb-12em">
+							<img class="w-52em h-52em m-a" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+							<p class="f-12em lh-12em color-75 pt-8em text-align">赵建国</p>
+						</li>
+						<li class="pull-left w-25b pb-12em">
+							<img class="w-52em h-52em m-a" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+							<p class="f-12em lh-12em color-75 pt-8em text-align">赵建国</p>
+						</li>
+						<li class="pull-left w-25b pb-12em">
+							<img class="w-52em h-52em m-a" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+							<p class="f-12em lh-12em color-75 pt-8em text-align">赵建国</p>
+						</li>
+						<li class="pull-left w-25b pb-12em">
+							<img class="w-52em h-52em m-a" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+							<p class="f-12em lh-12em color-75 pt-8em text-align">赵建国</p>
+						</li>
+						<li class="pull-left w-25b pb-12em">
+							<img class="w-52em h-52em m-a" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+							<p class="f-12em lh-12em color-75 pt-8em text-align">赵建国</p>
+						</li>
+						<li class="pull-left w-25b pb-12em">
+							<img class="w-52em h-52em m-a" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+							<p class="f-12em lh-12em color-75 pt-8em text-align">赵建国</p>
+						</li>
+						<li class="pull-left w-25b pb-12em">
+							<img class="w-52em h-52em m-a" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+							<p class="f-12em lh-12em color-75 pt-8em text-align">赵建国</p>
+						</li>-->
+						
+					</ul>
+					<!--暂无党员-->
+					<div class="none di-n f-14em color-99 pl-12em">暂无人员</div>
+				</div>
+			</div>
+		<!--结束-->
+		
+		<!--党组织活动-->
+			<div class="pl-6em pr-6em pt-8em pb-8em">
+				<div class="box-4-df p-12em bg-color-whiter bor-ra-3">
+					<p class="f-18em lh-22em shade f-w"><img class="pull-left w-7em h-17em lh-22em mr-10em" src="../../../statics/public/aui2/img/tit-icon.png" alt="" />党组织活动</p>
+					<ul id="list" class="pl-12em pt-10em pr-12em">
+						<!--<li class="f-14em lh-14em pb-12em"><span class="color-75 pr-10em">[2017-11-18]</span><span class="color-33 pl-8em">探索扶贫新模式</span></li>
+						<li class="f-14em lh-14em pb-12em"><span class="color-75 pr-10em">[2017-11-18]</span><span class="color-33 pl-8em">探索扶贫新模式</span></li>
+						<li class="f-14em lh-14em pb-12em"><span class="color-75 pr-10em">[2017-11-18]</span><span class="color-33 pl-8em">探索扶贫新模式</span></li>
+						<li class="f-14em lh-14em pb-12em"><span class="color-75 pr-10em">[2017-11-18]</span><span class="color-33 pl-8em">探索扶贫新模式</span></li>-->
+					</ul>
+				</div>
+			</div>
+		<!--结束-->
+		
+		<script type="text/jscript" src="../../../statics/public/js/jquery.min.js"></script>
+		<!-- api核心js -->
+		<script type="text/jscript" src="../../../statics/public/js/api.js"></script>
+		<!-- end -->
+		<!-- aui下拉刷新js -->
+		<script type="text/jscript" src="../../../statics/public/aui/js/aui-pull-refresh.js"></script>
+		<!-- end -->
+		<!-- 项目公共js -->
+		<script type="text/jscript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+		<!-- end -->
+		<!-- 本页面js -->
+		<script type="text/jscript" src="js/hr_matrix_info.js"></script>
+		<!-- end -->
+		<script type="text/javascript">
+			
+		</script>
+		<!--end-->
+	</body>
+</html>

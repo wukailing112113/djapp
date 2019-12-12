@@ -1,0 +1,43 @@
+.my-header{
+    min-height: 170px;
+    height:100%;
+    width:100%
+    position: relative;
+    background: url(../../../public/images/res/custom_info_banner.png);
+    background-size: 100% 100%;
+    }
+.text-align{text-align:center !important;}
+.aui-user-view:after {border-top: none;}
+.aui-fold-active .aui-fold-content {display:none;}
+.fcolor-99 { color:#999!important} 
+.fcolor-a9 { color:#a9a9a9!important}
+.aui-fold-active {background: #fff; }
+.fots60{font-size: 60px}
+.color0{color:#000!important}
+.fb{font-weight: bold!important}
+.lh-15{line-height:15px;}
+.bg-gray{background:#685E55}
+.h-35{height:35px !important;}
+.padding-btn{padding:5px 60px!important}
+.p10-15{padding: 10px 0 15px 0;}
+.f16{font-size:16px!important}
+.lh-10{line-height:10px;}
+.aui-list-view:after {border-top:none;}
+input[type=text]{
+line-height:24px;
+-webkit-input-placeholder { /* WebKit browsers */ direction: rtl;}
+-moz-placeholder { /* Mozilla Firefox 4 to 18 */ direction: rtl;}
+-moz-placeholder { /* Mozilla Firefox 19+ but I'm not sure about working */ direction: rtl;}
+-ms-input-placeholder { /* Internet Explorer 10+ */ direction: rtl;}
+}
+.w85{width:85px}
+.h85{height:85px}
+.lh85{line-height:85px}
+.ml-37b{margin-left:37%}
+.border-2{border:2px solid #fff}
+.p11-15{padding:11px 15px!important}
+.w50{width:50px}
+.h50{height:50px}
+.ptb_3lr_5{padding: 3px 10px 3px 10px}
+.ml-25{margin-left: 25px}
+.fw-b{font-weight:bold;}

@@ -1,0 +1,18 @@
+.aui-list-view-cell .aui-img-object {
+    max-width: 38px !important;
+    height: 38px !important;
+    line-height: 38px !important;
+    border-radius: 50%;
+}
+.aui-img-body a{
+	color: #666
+}
+/*input-placeholder居右*/
+#expire_date::-webkit-input-placeholder { /* WebKit browsers */ direction: rtl;}
+#expire_date:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ direction: rtl;}
+#expire_date::-moz-placeholder { /* Mozilla Firefox 19+ but I'm not sure about working */ direction: rtl;}
+#expire_date:-ms-input-placeholder { /* Internet Explorer 10+ */ direction: rtl;}
+#expire_date{text-align: right}
+.aui-input-row .aui-input-addon {
+    padding-left: 15px;
+}

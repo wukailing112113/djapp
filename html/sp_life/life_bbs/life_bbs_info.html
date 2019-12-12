@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<title>村务论坛</title>
+		<!-- aui核心css -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui.css"/>
+		<!-- end -->
+		<!--公用css-->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public.css"/>
+		<!-- end -->
+		<!-- 轮播 -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui-slide.css" />
+		<!-- end -->
+		<!-- 本项目公共css -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_mobile.css"/>
+		<!-- end -->
+		<!--本页面css-->
+		<link rel="stylesheet" type="text/css" href="css/life_bbs.css" />
+		<style>
+		</style>
+	</head>
+	<body class="bg-color-fc">
+		<!--发帖人信息-->
+		<p class="bg-color-whiter over-h p-12em f-12em lh-20em color-75 bb-1-df">
+			<span class="pull-left pr-5em">发帖人: </span><span id="communist_name" class="pull-left"></span>
+			<span id="add_time" class="pull-right"></span><span class="pull-right pr-5em">发帖时间: </span>
+		</p>
+		<!--结束-->
+		
+		<!--发帖详情-->
+		<div class="bg-color-whiter p-12em bb-1-df">
+			<div id="" class="f-16em lh-24em color-33 f-w">
+				<span id="post_theme"></span>
+				<p class="pull-right">
+				<!--收藏-->
+					<i class="pull-left iconfont f-16em color-df" id="collection" collection="0" onclick="collection()">&#xe881;</i>
+					
+				<!--点赞-->
+					<i class="pull-left iconfont f-16em color-df" id="like" like="0" onclick="like()">&#xe87f;</i>
+					<span class="pull-left f-10em color-b3">0</span>
+				</p>
+			</div>
+			<p id="post_content" class="f-16em lh-20em color-75 pt-10em pb-15em"></p>
+			<div class="over-h pb-5em">
+				<div class="w-33b pull-left"><img id="img_url" class="w-112em h-112em m-a" src="" alt="" /></div>
+				<!--<div class="w-33b pull-left"><img class="w-112em h-112em m-a" src="../../../statics/images/images_life/life_recommend_bg.jpg" alt="" /></div>
+				<div class="w-33b pull-left"><img class="w-112em h-112em m-a" src="../../../statics/images/images_life/life_recommend_bg.jpg" alt="" /></div>-->
+			</div>
+		</div>
+		<!--结束-->
+		
+		<!--评论-->
+		<div id="list" class="bg-color-whiter mb-55em">
+			<!--<p class="f-12em f-w lh-20em color-ff3032 p-12em">大家评论</p>-->
+			
+			<!--<div class="p-12em bb-1-df">
+				<div class="over-h po-re">
+					<img class="po-ab w-22em h-22em left-0 top-0 bor-ra-100b" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+					<div class="pl-40em">
+						<p class="f-14em lh-15em color-ffba66">王国强</p>
+						<p class="f-10em lh-15em color-b3">济南市 高新区党支部</p>
+					</div>
+					<p class="po-ab top-0 right-0 f-10em color-b3">
+						<span class="pr-8em ReplyToComment"><i class="iconfont f-16em color-df">&#xe732;</i>回复</span>
+					</p>
+				</div>
+				<p class="f-16em lh-20em color-33 pl-40em pt-15em pr-35em po-re f-w">嗯，很骄傲很自豪自己身为中国人</p>
+			</div>-->
+			<!--<div class="p-12em bb-1-df">
+				<div class="over-h po-re">
+					<img class="po-ab w-22em h-22em left-0 top-0 bor-ra-100b" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+					<div class="pl-40em">
+						<p class="f-14em lh-15em color-ffba66">王国强</p>
+						<p class="f-10em lh-15em color-b3">济南市 高新区党支部</p>
+					</div>
+					<p class="po-ab top-0 right-0 f-10em color-b3"><i class="iconfont f-16em color-ff1b1e">&#xe87e;</i><span>378</span></p>
+				</div>
+				<p class="f-16em lh-20em color-33 pl-40em pt-15em pr-35em po-re"><b>嗯，很骄傲很自豪自己身为中国人</b></p>
+			</div>-->
+		</div>
+		<!--结束-->
+		
+		<!--输入框-->
+		<div id="comment" class="w-100b h-55em po-fix bottom-0 over-h bg-color-whiter">
+			<input id="commentInput" class="pull-left w-243em h-32em bb-1-df ml-12em mt-10em pl-30em f-14em" type="text" placeholder="评论"/>
+			<div id="replyNum" class="pull-right w-100em lh-55em">
+				<i class="iconfont color-ff3032 f-16em p-0 mt-4em">&#xe732;</i>
+				<span id="comment_num" class="f-14em color-ff3032"></span>
+				<!--<i class="iconfont color-df f-14em ml-10em" onclick="shareIt()">&#xe86e;</i>-->
+			</div>
+			<div id="send" class="pull-right w-50em lh-55em text-align di-n">
+				<span class="f-14em color-99">发送</span>
+			</div>
+		</div>
+		<!--结束-->
+		
+		<script type="text/jscript" src="../../../statics/public/js/jquery.min.js"></script>
+		<!-- api核心js -->
+		<script type="text/jscript" src="../../../statics/public/js/api.js"></script>
+		<!-- end -->
+		<!-- aui下拉刷新js -->
+		<script type="text/jscript" src="../../../statics/public/aui2/js/aui-pull-refresh.js"></script>
+		<!-- end -->
+		<!-- aui轮播 -->
+		<script type="text/jscript" src="../../../statics/public/aui2/js/aui-slide.js"></script>
+		<!-- end -->
+		<!-- 项目公共js -->
+		<script type="text/jscript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+		<!-- end -->
+		<!-- 本页面js -->
+		<script type="text/jscript" src="js/life_bbs_info.js"></script>
+		<!-- end -->
+		<script type="text/javascript">
+			
+		</script>
+		<!--end-->
+	</body>
+</html>

@@ -1,0 +1,58 @@
+body {
+
+}
+
+.w-52em{width: 2.6rem;}
+.h-52em{height: 2.6rem;}
+
+.pl-20em{padding-left: 1rem !important;}
+
+.pt-4em{padding-top: 0.2rem;}
+
+.mr-6em{margin-right: 0.3rem;}
+
+.color-b3{color: #b3b3b3;}
+.color-ffba66{color: #ffba66;}
+.color-4196ff{color: #4196ff;}
+
+.bg-color-f9{background: #f9f9f9 !important;}
+.bg-color-ff3032{background: #ff3032;}
+
+.bb-1-dfdfdf{border-bottom: 1px solid #dfdfdf;}
+
+/*-搜索框样式1-*/
+	#search1 input{border-radius: 1.2rem;}
+/*---end---*/
+
+	#tabBox2{
+		background: #fff;
+		overflow: hidden;
+	}
+	#tabBox2 li{
+		width: 50%;
+		float: left;
+		border-right: 1px solid #eeeeee;
+		text-align: center;
+		position: relative;
+	}
+	#tabBox2 li a{
+		display: block;
+		margin: 0 auto;
+		color: #757575;
+	}
+	#tabBox2 li .active{
+		display: none;
+		width: 2rem;
+		height: 1px;
+		position: absolute;
+		bottom: -0.25rem;
+		left: 50%;
+		background: #ff3032;
+		margin-left: -1rem;
+	}
+	#tabBox2 .tabBox2-active a{
+		color: #ff3032;
+	}
+	#tabBox2 .tabBox2-active .active{
+		display: block;
+	}

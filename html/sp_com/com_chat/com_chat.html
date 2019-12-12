@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>聊天室</title>
+    <!-- aui核心css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/aui/css/aui.css"/>
+    <!-- end -->
+    <!-- aui下拉刷新css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/aui/css/aui-pull-refresh.css"/>
+    <!-- end -->
+    <!-- 公司公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public.css"/>
+    <!-- end -->
+    <!-- 本项目公共css -->
+    <link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_mobile.css"/>
+    <!-- end -->
+    <!-- 本页面css -->
+    <link rel="stylesheet" type="text/css" href="css/com_chat.css"/>
+    <!-- end -->
+    <style>
+    	.lh50{line-height: 50px}
+    	.w50{width: 50px}
+    	.h50{height: 50px}
+    </style>
+</head>
+<body class="bg-color-f9">
+    <!--<div class="aui-content">
+        <div class="aui-load-container">
+            <div class="aui-load-wrap">
+                <div class="aui-loading-dot"></div>
+                <div class="aui-loading-circle"></div>
+                <div class="aui-loading-title"></div>
+            </div>
+			<div class="aui-content aui-content-padded pt-10" id="message-content">        
+		    </div>
+    	</div>
+    	<div class="aui-toast di-n pt-5 po-fix top-40b" id="default">
+	        <i class="">
+	        	<img id="recode_img" src="../../../statics/pages/images/recode.png" alt="" style="width:70px"/>
+        	</i>
+	        <div id="recode_text" class="aui-toast-content fsize-12">手指上滑  取消发送</div>
+	    </div>
+    </div>-->
+    
+    <!--聊天内容-->
+    	<div id="chatList" class="p-12em pb-60em">
+    		<!--<p class="f-12em lh-12em color-99 p-15em text-align">4月17日 下午6：4</p>
+    		<div class="w-100b pl-50em po-re over-h mb-15em">
+    			<div class="pull-left po-re">
+	    			<p class="f-18em lh-22em color-33 p-12em bg-color-whiter ml-15em bor-ra-3 box-4-df mt-4px mb-4px">
+	    				今天开会的内容是关于十九大习总书记的讲话，关于一带一路政策的实施
+	    			</p>
+	    			<div class="po-ab left-1px top-13em w-20em h-20em over-h transform-yes">
+	    				<div class="po-ab left-9em top-0 w-20em h-20em bg-color-whiter box-4-df transform-45"></div>
+	    			</div>
+	    		</div>
+    			<img class="w-44em h-44em mr-10em po-ab left-0 top-0" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+    		</div>
+    		<div class="w-100b pr-50em po-re over-h mb-15em">
+    			<div class="pull-right po-re">
+	    			<p class="f-18em lh-22em color-white p-12em bg-color-ff3032 mr-15em bor-ra-3">
+	    				好的
+	    			</p>
+	    			<div class="po-ab right-1px top-13em w-20em h-20em over-h transform-yes">
+	    				<div class="po-ab right-9em top-0 w-20em h-20em bg-color-ff3032 transform-45"></div>
+	    			</div>
+    			</div>
+    			<img class="w-44em h-44em ml-10em po-ab right-0 top-0" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+    		</div>
+    		<p class="f-12em lh-12em color-99 p-15em text-align">4月17日 下午6：4</p>
+    		<div class="w-100b pl-50em po-re over-h mb-15em">
+    			<div class="pull-left po-re">
+	    			<p class="f-18em lh-22em color-33 p-12em bg-color-whiter ml-15em bor-ra-3 box-4-df mt-4px mb-4px">
+	    				会议内容了解了吗
+	    			</p>
+	    			<div class="po-ab left-1px top-13em w-20em h-20em over-h transform-yes">
+	    				<div class="po-ab left-9em top-0 w-20em h-20em bg-color-whiter box-4-df transform-45"></div>
+	    			</div>
+	    		</div>
+    			<img class="w-44em h-44em mr-10em po-ab left-0 top-0" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+    		</div>
+    		<div class="w-100b pr-50em po-re over-h mb-15em">
+    			<div class="pull-right po-re">
+	    			<p class="f-18em lh-22em color-white p-12em bg-color-ff3032 mr-15em bor-ra-3">
+	    				关于十九大习总书记的讲话，关于一带一路政策的实施，具体文案以了解
+	    			</p>
+	    			<div class="po-ab right-1px top-13em w-20em h-20em over-h transform-yes">
+	    				<div class="po-ab right-9em top-0 w-20em h-20em bg-color-ff3032 transform-45"></div>
+	    			</div>
+    			</div>
+    			<img class="w-44em h-44em ml-10em po-ab right-0 top-0" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+    		</div>-->
+    	</div>
+    <!--结束-->
+    
+    <!--文本输入框-->
+    	<!--<div class="po-fix w-100b h-45em bt-1-df bottom-0 bg-color-f9 bt-1-df">
+    		<div class="pl-12em pt-5em pb-5em pr-12em">
+	    		<input id="chatText" class="pull-left w-306em h-34em lh-34em bor-ra-3 bg-color-whiter p-0 pl-10em" type="text" />
+	    		<span id="chatSend" class="pull-right f-14em h-34em lh-36em color-99 p-0 ml-8em">发送</span>
+	    	</div>
+    	</div>-->
+    <!--结束-->
+    
+    <!-- jquery js -->
+	<script type="text/javascript" src="../../../statics/public/js/jquery.min.js"></script>
+	<!-- end -->
+    <!-- apijs -->
+	<script type="text/javascript" src="../../../statics/public/js/api.js"></script>
+	<!-- end -->
+    <script type="text/javascript" src="../../../statics/public/aui/js/aui-pull-refresh.js"></script>
+    <!-- end -->
+    <script type="text/javascript" src="../../../statics/public/js/formatDate.js"></script>
+    <script type="text/javascript" src="../../../statics/public/js/sp_public_p5boss_rongCloud2.js"></script>
+    <!-- 本项目公共js -->
+	<script type="text/javascript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+	<!-- end -->
+	<!-- 页面 js-->
+    <script type="text/javascript" src="js/com_chat.js"></script>
+    <!-- end -->
+</body>
+</html>

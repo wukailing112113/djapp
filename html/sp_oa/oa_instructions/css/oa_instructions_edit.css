@@ -1,0 +1,49 @@
+body {
+
+}
+
+
+.w-240em{width: 12rem !important;}
+.w-272em{width: 13.6rem !important;}
+.w-287em{width: 14.35rem !important;}
+
+.h-30em{height: 1.5rem !important;}
+.h-150em{height: 7.5rem;}
+
+.pl-10em{padding-left: 0.5rem !important;}
+
+.mb-8em{margin-bottom: 0.4rem;}
+
+.f-15em{font-size: 0.75rem !important;}
+
+.lh-18em{line-height: 0.9rem;}
+.lh-30em{line-height: 1.5rem !important;}
+
+.color-33{color: #333333 !important;}
+
+.bg-color-f9{background: #f9f9f9 !important;}
+
+.box-inset{box-shadow: 0 0 3px 0 #f1f1f1 inset !important;}
+
+.bor-ra-7{border-radius: 7px !important;}
+
+.bb-1-df{border-bottom: 1px solid #dfdfdf;}
+
+
+/* 背景渐变 */
+.grad {
+  background: -webkit-linear-gradient(left, #ff4d4d , #ff3032 , #ff5a2d); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #ff4d4d , #ff3032 , #ff5a2d); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #ff4d4d , #ff3032 , #ff5a2d); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #ff4d4d , #ff3032 , #ff5a2d); /* 标准的语法 */
+}
+
+
+.lh-18em{line-height: 0.9rem;}
+
+.color-b3{color: #b3b3b3;}
+
+.bb-1-df{border-bottom: 1px solid #dfdfdf;}
+.b-1-dfdfdf{border: 1px solid #dfdfdf;}
+
+.bg-color-fcfdfe{background: #fcfdfe;}

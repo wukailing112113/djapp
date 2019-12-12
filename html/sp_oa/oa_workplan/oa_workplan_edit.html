@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<title>日报管理</title>
+		<!-- aui核心css -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui.css"/>
+		<!-- end -->
+		<!--公用css-->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public.css"/>
+		<!-- end -->
+		<!-- 轮播 -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui-slide.css" />
+		<!-- end -->
+		<!-- 本项目公共css -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_mobile.css"/>
+		<!-- end -->
+		<!--本页面css-->
+		<link rel="stylesheet" type="text/css" href="css/oa_workplan.css" />
+		<style>
+			select {
+				text-align: center;
+				text-align-last: center;
+				-webkit-appearance:menulist;
+				}
+		</style>
+	</head>
+	<body>
+		<!--选择人与标题-->
+			<div class="mt-8em mb-12em p-12em over-h bg-color-whiter">
+				<div class="pull-left">
+					<p class="f-15em lh-15em color-33 f-w">日报日期</p>
+					<p id="workplanDate" class="f-10em lh-10em color-99 pt-12em text-align"></p>
+				</div>
+				<select id="workplan_list" class="pull-right w-110em h-30em lh-30em f-15em mt-5em text-align bor-ra-3 mr-8em color-ff3032 b-1-ff3032">
+					<!--<option>1</option>-->
+				</select>
+			</div>
+		<!--结束-->
+		
+		<!--内容-->
+			<div class="p-12em mb-12em bg-color-whiter">
+				<textarea class="w-100b h-30em f-15em lh-30em" name="" id="worklog_title" placeholder="请填写您的标题"></textarea>
+			</div>
+			<div class="p-12em mb-12em bg-color-whiter">
+				<textarea class="w-100b h-150em f-15em lh-18em" name="" id="worklog_summary" placeholder="请填写您的工作总结"></textarea>
+			</div>
+		<!--结束-->
+		
+		<!--图片-->
+			<!--<div class="pl-12em pr-12em pt-15em pb-15em bg-color-whiter bb-1-df">
+				<p class="f-12em lh-20em color-99 mb-12em">
+					<span class="f-15em color-33 mr-12em f-w">选择图片</span>
+					已添加<span>3</span>张
+					<i class="iconfont f-20em pull-right lh-20em color-b3 p-0" onclick="">&#xe6df;</i>
+				</p>
+				<ul class="over-h mb-12em">
+					<li class="pull-left mr-12em">
+						<img class="w-60em h-60em" src="../../../statics/images/images_oa/oa_img.jpg" alt="" />
+					</li>
+					<li class="pull-left mr-12em">
+						<img class="w-60em h-60em" src="../../../statics/images/images_oa/oa_img.jpg" alt="" />
+					</li>
+					<li class="pull-left mr-12em">
+						<img class="w-60em h-60em" src="../../../statics/images/images_oa/oa_img.jpg" alt="" />
+					</li>
+				</ul>
+			</div>-->
+		<!--结束-->
+		
+		<!--附件-->
+			<div class="bb-1-df mb-12em">
+				<div class="pl-12em pr-12em pt-15em pb-15em bg-color-whiter">
+					<p class="f-12em color-99 mb-12em lh-20em">
+						<span class="f-15em lh-20em color-33 mr-12em f-w">选择附件</span>
+						已添加<span id="num">0</span>份
+						<i class="iconfont f-20em pull-right lh-20 color-b3 p-0" onclick="open_uploud_2('add_upload_list')">&#xe6df;</i>
+					</p>
+					<div id="add_upload_list" class="mb-12em clearfix">
+						<!--<div class="b-1-df p-12em bg-color-fcfdfe over-h mb-12em">
+							<div class="pull-left pr-12em">
+								<img class="w-35em h-35em" src="../../../statics/images/images_oa/oa_img_doc.png" alt="" />
+							</div>
+							<div class="pull-left">
+								<p class="f-15em color-b3">李强的文件：二十四号文件附件.doc</p>
+								<p class="f-12em color-b3">1.54 MB</p>
+							</div>
+						</div>
+						<div class="b-1-df p-12em bg-color-fcfdfe over-h mb-12em">
+							<div class="pull-left pr-12em">
+								<img class="w-35em h-35em" src="../../../statics/images/images_oa/oa_img_doc.png" alt="" />
+							</div>
+							<div class="pull-left">
+								<p class="f-15em color-b3">李强的文件：二十四号文件附件.doc</p>
+								<p class="f-12em color-b3">1.54 MB</p>
+							</div>
+						</div>
+						<div class="b-1-df p-12em bg-color-fcfdfe over-h mb-12em">
+							<div class="pull-left pr-12em">
+								<img class="w-35em h-35em" src="../../../statics/images/images_oa/oa_img_doc.png" alt="" />
+							</div>
+							<div class="pull-left">
+								<p class="f-15em color-b3">李强的文件：二十四号文件附件.doc</p>
+								<p class="f-12em color-b3">1.54 MB</p>
+							</div>
+						</div>-->
+					</div>
+				</div>	
+			</div>
+			<div class="f-10em color-red pl-12em pr-12em pb-10em">注：只能上传 jpg、gif、png、jpeg、xls、xlsx、doc、docx、pdf、mp4 格式文件</div>
+		<!--结束-->
+		
+		<!--选择审核人-->
+			<div class="p-12em bb-1-df mb-50em bg-color-whiter">
+				<p class="f-15em lh-15em color-33 f-w pb-12em">审核人</p>
+				<ul id="sh_list" class="over-h" ChoosePeopleId=''>
+					<!--<li class="pull-left mr-20em">
+						<img class="w-38em h-38em bor-ra-100b mb-8em" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+						<p class="f-12em lh-12em color-99 text-align">张书记</p>
+					</li>
+					<li class="pull-left mr-20em">
+						<img class="w-38em h-38em bor-ra-100b mb-8em" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+						<p class="f-12em lh-12em color-99 text-align">张书记</p>
+					</li>
+					<li class="pull-left mr-20em">
+						<img class="w-38em h-38em bor-ra-100b mb-8em" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+						<p class="f-12em lh-12em color-99 text-align">张书记</p>
+					</li>
+					<li class="pull-left mr-20em">
+						<img class="w-38em h-38em bor-ra-100b mb-8em" src="../../../statics/images/images_oa/oa_img_head.png" alt="" />
+						<p class="f-12em lh-12em color-99 text-align">张书记</p>
+					</li>-->
+					
+					<li class="pull-left mr-20em lh-45em" onclick="openPerson(0,'oa_workplan_edit')">
+						<i class="pull-left w-38em h-38em iconfont f-35em color-99 bor-ra-100b mb-8em">&#xe88e;</i>
+						<p class="f-12em lh-12em color-99 text-align">添加人员</p>
+					</li>
+				</ul>
+			</div>
+		<!--结束-->
+		
+		<!--发送-->
+			<div class="w-100b h-50em po-fix bottom-0 bg-color-whiter">
+				<div class="m-a mt-8em w-350em h-34em f-14em lh-36em color-white text-align grad bor-ra-7" onclick="setOaWorklog()">发送</div>
+			</div>
+		<!--结束-->
+		
+		
+		
+		<script type="text/jscript" src="../../../statics/public/js/jquery.min.js"></script>
+		<!-- api核心js -->
+		<script type="text/jscript" src="../../../statics/public/js/api.js"></script>
+		<!-- end -->
+		<!-- aui下拉刷新js -->
+		<script type="text/jscript" src="../../../statics/public/aui/js/aui-pull-refresh.js"></script>
+		<!-- end -->
+		<!-- 项目公共js -->
+		<script type="text/jscript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+		<!-- end -->
+		<!-- 本页面js -->
+		<script type="text/jscript" src="js/oa_workplan_edit.js"></script>
+		<!-- end -->
+		<script type="text/javascript">
+			
+		</script>
+		<!--end-->
+	</body>
+</html>

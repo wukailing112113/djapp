@@ -1,0 +1,21 @@
+body {
+
+}
+#tabBigBox{width:100%;height: 1.7rem;}
+#tabBox2{background: #fff;overflow: hidden;position: fixed;top: 0;/*left: 0;*/}
+#tabBox2 li{float: left;border-right: 1px solid #eeeeee;text-align: center;position: relative;}
+#tabBox2 li a{display: block;margin: 0 auto;color: #757575;padding: 0 1rem;}
+#tabBox2 li .active{display: none;width: 2rem;height: 1px;position: absolute;bottom: -0.25rem;left: 50%;background: #ff3032;margin-left: -1rem;}
+#tabBox2 .tabBox2-active a{color: #ff3032;}
+#tabBox2 .tabBox2-active .active{display: block;}
+
+
+.w-33b{width: 33.33%;}
+
+.lh-15em{line-height: 0.75rem !important;}
+
+
+
+
+
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<title>党员关系转移</title>
+		<!-- aui核心css -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/aui2/css/aui.css"/>
+		<!-- end -->
+		<!--公用css-->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public.css"/>
+		<!-- end -->
+		<!-- 本项目公共css -->
+		<link rel="stylesheet" type="text/css" href="../../../statics/public/css/sp_public_mobile.css"/>
+		<!-- end -->
+		<!--本页面css-->
+		<link rel="stylesheet" type="text/css" href="css/hr_transfer.css" />
+		<link rel="stylesheet" type="text/css" href="css/hr_transfer_info.css" />
+		<style>
+		</style>
+	</head>
+	<body class="bg-color-f9">
+		<!--提交状态-->
+			<div class="p-8em">
+				<div class="over-h box-4-df p-12em bg-color-whiter bor-ra-3">
+					<div id="changeTypeBox" class="over-h pull-left ml-35em">
+						<div class="pull-left w-50em h-50em bor-ra-100b bg-color-f1 f-12em lh-50em text-align color-99">提交</div>
+						<i class="pull-left h-50em f-16em lh-50em iconfont p-0 color-f1 f-w ml-3em mr-3em">&#xe765;</i>
+						<div class="pull-left w-50em h-50em bor-ra-100b bg-color-f1 f-12em lh-50em text-align color-99">审核</div>
+						<i class="pull-left h-50em f-16em lh-50em iconfont p-0 color-f1 f-w ml-3em mr-3em">&#xe765;</i>
+						<div class="pull-left w-50em h-50em bor-ra-100b bg-color-f1 f-12em lh-50em text-align color-99">关系接收</div>
+						<i class="pull-left h-50em f-16em lh-50em iconfont p-0 color-f1 f-w ml-3em mr-3em">&#xe765;</i>
+						<div class="pull-left w-50em h-50em bor-ra-100b bg-color-f1 f-12em lh-50em text-align color-99">完成</div>
+					</div>
+				</div>
+			</div>
+		<!--结束-->
+		
+		<!--关系转入转出-->
+			<div class="pl-8em pr-8em pb-8em">
+				<div class="p-12em box-4-df bg-color-whiter bor-ra-3">
+					<div class="h-32em lh-34em over-h mb-8em">
+						<pre class="pull-left f-14em lh-34em m-0 f-w">转 出 时 间</pre>
+						<img class="pull-left w-6em h-13em ml-14em mr-10em mt-9em" src="../../../statics/public/aui2/img/tit-icon.png" alt="" />
+						<span id="start_time" class="pull-left w-205em h-32em bg-color-f9 box-inset bor-ra-3 f-14em color-33 pl-5em" type="text"></span>
+					</div>
+					<div class="h-32em lh-34em over-h mb-8em">
+						<pre class="pull-left f-14em lh-34em m-0 f-w">转 出 类 型</pre>
+						<img class="pull-left w-6em h-13em ml-14em mr-10em mt-9em" src="../../../statics/public/aui2/img/tit-icon.png" alt="" />
+						<span id="type_name" class="pull-left w-205em h-32em bg-color-f9 box-inset bor-ra-3 f-14em color-33 pl-5em" type="text"></span>
+					</div>
+					<div class="h-32em lh-34em over-h mb-8em">
+						<pre class="pull-left f-14em lh-34em m-0 f-w">当 前 组 织</pre>
+						<img class="pull-left w-6em h-13em ml-14em mr-10em mt-9em" src="../../../statics/public/aui2/img/tit-icon.png" alt="" />
+						<span id="new_party" class="pull-left w-205em h-32em bg-color-f9 box-inset bor-ra-3 f-14em color-33 pl-5em" type="text"></span>
+					</div>
+					<div class="h-32em lh-34em over-h mb-8em">
+						<pre class="pull-left f-14em lh-34em m-0 f-w">转 出 组 织</pre>
+						<img class="pull-left w-6em h-13em ml-14em mr-10em mt-9em" src="../../../statics/public/aui2/img/tit-icon.png" alt="" />
+						<span id="old_party" class="pull-left w-205em h-32em bg-color-f9 box-inset bor-ra-3 f-14em color-33 pl-5em" type="text"></span>
+					</div>
+				</div>
+			</div>
+		<!--结束-->
+		
+		<!--提交内容-->
+			<div class="pl-8em pr-8em">
+				<div class="p-12em box-4-df bg-color-whiter bor-ra-3">
+					<span class="f-14em lh-14em color-33 f-w pb-8em m-0">备注：</span>
+					<div id="memo" class="h-130em w-100b bg-color-f9 box-inset bor-ra-7 p-12em f-16em lh-20em color-df"></div>
+				</div>
+			</div>
+		<!--结束-->
+		
+		<!--提交按钮-->
+			<!--<div class="po-fix bottom-20em w-100b">
+				<div class="w-300em h-32em grad color-white f-14em lh-34em text-align m-a bor-ra-3">提交</div>
+			</div>-->
+		<!--结束-->
+		
+		
+		<script type="text/jscript" src="../../../statics/public/js/jquery.min.js"></script>
+		<!-- api核心js -->
+		<script type="text/jscript" src="../../../statics/public/js/api.js"></script>
+		<!-- end -->
+		<!-- aui下拉刷新js -->
+		<script type="text/jscript" src="../../../statics/public/aui/js/aui-pull-refresh.js"></script>
+		<!-- end -->
+		<!-- 项目公共js -->
+		<script type="text/jscript" src="../../../statics/public/js/sp_public_p5boss.js"></script>
+		<!-- end -->
+		<!-- 本页面js -->
+		<script type="text/jscript" src="js/hr_transfer_info.js"></script>
+		<!-- end -->
+	</body>
+</html>

@@ -1,0 +1,14 @@
+.mui-scroll-wrapper,
+.mui-scroll {
+	background-color: #efeff4;
+}
+.mui-table-view {
+	margin-top: 20px;
+}
+
+.update {
+	font-style: normal;
+	color: #999999;
+	margin-right: -25px;
+	font-size: 15px
+}
